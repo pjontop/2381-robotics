@@ -1,0 +1,75 @@
+
+body,td,th {
+	font-family: Calibri;
+}
+
+/* Navagation Bar */
+    #navbar {
+        overflow: hidden;
+        background-color: white;
+        height: 75px;
+        width: 1280px;
+        position: fixed;
+    }
+/* The White Bar on the left */
+     #left {
+        background-color: white;
+        height: 100%;
+        width: 100px;
+        left: 0;
+        position: fixed;
+        z-index: 100000;
+		opacity:1;
+    }
+/*  Right White Bar*/
+    #right {
+        background-color: white;
+        height: 100%;
+        width: 100px;
+        right: 0;
+        position: fixed;
+        z-index: 100000;
+		opacity:01;
+    }
+/* Individual Buttons on Nav bar*/
+
+    #navbar a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        height: 75px;
+        text-decoration: none;
+        background-color: white;
+        transition-duration: 0.6s;
+        padding-top: 26px;
+    }
+
+
+
+/* Turns text green on hover */
+    #navbar a:hover {
+        color: lightgreen;
+    }
+/* Underline that appears on hover */
+    #navbar .line {
+        height: 1px;
+        margin-bottom: -1px;
+        width: 100%;
+        background-color: rgb(106, 121, 255);
+        opacity: 0;
+        trasition: 0.25s;
+    }
+/* When link is hovered, line becomes visible */
+    #navbar a:hover .line {
+        opacity: 1;
+    }
+.underline {
+   height: 2px;
+   margin-top: -5px;
+   width: 100%;
+   background-color: black;
+   opacity: 1;
+   border-radius: 4px;
+}

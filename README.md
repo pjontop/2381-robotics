@@ -2,7 +2,7 @@
 Colonel By's Kernel Bye VEX EDR teams' official homepage (2019-2020 season).
 
 
-Setup: 
+# Setup: 
 1. Install git https://git-scm.com/
 2. Create a local file on your computer
 3. Right click within the folder, click GITBASH HERE

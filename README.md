@@ -14,7 +14,7 @@ Setup:
 2. Under the To-Do tab, pick a project and drag it to the Open tab (this is what you will be working on)
 3. Navigate back to <>Code in Github, create a new branch and call it the name of the feature you are developing (I.E. Navbar or Community Page etc.)
 4. On your local file explorer, go to the 2381-website file and GITBASH there
-5. Create a new branch by using the command `git branch <local branch name>` (NOTE: this local branch is a different thing than the branch you created in the cloud, and will be denoted as '<local branch name>' as opposed to '<cloud branch name>' )
+5. Create a new branch by using the command `git branch <local branch name>` (NOTE: this local branch is a different thing than the branch you created in the cloud, and will be denoted as `<local branch name>` as opposed to `<cloud branch name>` )
 6. Navigate to the branch you created with `git checkout <local branch name>`
 7. Update your local files with `git pull origin <cloud branch name>`
 8. Do your work (Code the actual shit)

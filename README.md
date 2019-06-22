@@ -35,8 +35,8 @@ Setup:
 2. In Github, in your branch, click Open Pull Request
 3. If it isn't already, change Base Repository to 2381-Website
 4. Make sure the base branch is Master and the compare branch is `<Cloud Branch Name>`
-5. Under <Leave A Comment>, list the changes that you have made, go into detail where necessary
-6. Click <Create Pull Request>
+5. Under `<Leave A Comment>`, list the changes that you have made, go into detail where necessary
+6. Click `<Create Pull Request>`
 *NOTE:* A Pull Request is completely different from a Pull, and should be called a Merge Request if Github wasn't a small Indie games company. A Pull Request is you saying "Hey, I think I have my shit together and my code is good now, can we merge this into the good copy?". This lets your team check through your code, understand wtf is going on, and make sure your shit isn't spaghetti. Everyone needs to read through everyone else's Pull Requests so that you know whats going on. **IT IS EXPECTED FOR EVERYONE TO LEAVE A COMMENT ON ALL PULL REQUESTS SHOWING THAT YOU HAVE READ THROUGH THE CODE. IMA WHIP PEOPLE WHO DONT READ THEIR SHIT - YOU HAVE BEEN WARNED**
 
 

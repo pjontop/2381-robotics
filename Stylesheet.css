@@ -93,9 +93,9 @@ body,td,th {
    opacity: 1;
    border-radius: 4px;
 }
-
-#navbar .dropdown {
- overflow: hidden;
+/*Dropdown menu for 3 teams*/
+#navbar .dropdown{
+  overflow: hidden;
 	float: left;
 	display: block;
 	text-align: center;

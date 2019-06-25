@@ -157,3 +157,41 @@ body,td,th {
 #navbar .dropdown:hover .dropbtn {
 	color: lightgreen;
 }
+
+.slice {
+    overflow: hidden;
+    position: relative;
+
+}
+.fixedWindow{
+  height: 100%;
+  background: url(img_man.jpg) no-repeat center fixed;
+  background-size: cover;
+  z-index:-2;
+}
+.filter-color {
+  background: rgb(35, 163, 237, 0.3); /* Black background with 0.5 opacity */
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+}
+.filter-fade {
+  background: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0,0,0,0)) ; /* Black background with 0.5 opacity */
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+}
+.shadeTextBox {
+  position: absolute;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 50%;
+  left:25%;
+  top:40%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+}

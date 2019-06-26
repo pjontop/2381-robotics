@@ -1,17 +1,47 @@
-* {
-  box-sizing: border-box;
-}
+
 body,td,th {
 	font-family: Calibri;
+}
+*{
+  margin:0;
+  box-sizing: border-box;
+
+}
+#container1{
+    height: 100%;
+    width: 100%;
+    border: 0px solid green;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+#container2{
+    width: 105%;
+    height: 99%;
+    border: 0px solid blue;
+    padding-right: 15px;
+    overflow:auto;
+    box-sizing: content-box;
+}
+
+html, body{
+    height: 99%;
+    border: 0px solid red;
+    overflow:hidden;
 }
 
 /* Navagation Bar */
     #navbar {
         //overflow: hidden;
-        background-color: white;
+        /*background-color: white;*/
         height: 75px;
         width: 1280px;
         position: fixed;
+        color:white;
+
+    }
+    #navbar * {
+      box-sizing: border-box;
     }
 /* The White Bar on the left */
      #left {
@@ -22,6 +52,7 @@ body,td,th {
         position: fixed;
         z-index: 100000;
 		opacity:1;
+
     }
 /*  Right White Bar*/
     #right {
@@ -38,12 +69,12 @@ body,td,th {
     #navbar a {
         float: left;
         display: block;
-        color: black;
+        color: white;
         text-align: center;
         padding: 20px;
         height: 75px;
         text-decoration: none;
-        background-color: white;
+        /*background-color: white;*/
         transition-duration: 0.6s;
         padding-top: 26px;
 				position: relative;
@@ -60,7 +91,7 @@ body,td,th {
         height: 1px;
         margin-bottom: -1px;
         width: 100%;
-        background-color: rgb(106, 121, 255);
+        background-color: white;
         opacity: 0;
         transition-duration: : 0.25s;
     }
@@ -76,6 +107,7 @@ body,td,th {
 /* When link is hovered, line becomes visible */
     #navbar a:hover .line {
         opacity: 1;
+        background-color: rgb(106, 121, 255);
     }
 		#navbar .dropdown:hover .line {
         opacity: 1;
@@ -100,7 +132,7 @@ body,td,th {
 	display: block;
 	text-align: center;
 	height: 50px;
-	background-color: white;
+	/*background-color: white;*/
 	transition-duration: 2s;
 	padding: 26px 10px 20px 10px;
 	padding-top:26px;
@@ -110,7 +142,7 @@ body,td,th {
 #navbar .dropdown .dropbtn {
 	display: block;
 	text-align: center;
-	background-color: white;
+	/*background-color: white;*/
 	transition-duration: 0.6s;
 	font-size : 16px;
 	font-family: Calibri;
@@ -122,15 +154,16 @@ body,td,th {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  /*background-color: red;*/
 }
 
 #navbar .dropdown-content {
 
-  background-color: #f9f9f9;
+  /*background-color: #f9f9f9;*/
   z-index: 1;
 	float: none;
 	margin-top: 20%;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
 }
 
 #navbar .dropdown-content a {
@@ -145,7 +178,7 @@ body,td,th {
 }
 
 #navbar  .dropdown-content a:hover {
-  background-color: #ddd;
+  /*background-color: #ddd;*/
 	color: lightgreen;
 }
 

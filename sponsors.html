@@ -3,10 +3,12 @@
 <head>
     <title>Thank You!</title>
     <style>
-		h1 {
+        h1 {
             font-family: monospace;
             font-size: 50px;
             color: mintcream;
+
+
             animation: flow 30s ease-in-out infinite;
             background: linear-gradient(-60deg, #904e95, gold, #e73c7e, red);
             background-size: 300%;
@@ -14,7 +16,7 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
+
         @keyframes flow {
             0% {
                 background-position: 0 50%;
@@ -26,15 +28,72 @@
                 background-position: 0 50%;
             }
         }
-	</style>
-    <link rel="stylesheet" href="Stylesheet.css" />
+
+        body {
+            background-image: url("images/screw.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /*
+        #probots {
+          height: 110px;
+          width: 450px;
+        }
+
+        #protocase {
+          height: 240px;
+          width: 480px;
+        }
+        */
+
+        #premium {
+          height: 300px;
+          width: 650px;
+        }
+
+
+        .parent {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .protocase {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .probots {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+        }
+
+        .normal {
+          position: absolute;
+          top: 40px;
+          left: 124px;
+        }
+
+        .premium {
+          position: absolute;
+          height: 280px;
+          width: 560px;
+          top: 80px;
+          left: 300px;
+        }
+    </style>
+    <link rel="stylesheet" href="Stylesheet.css"/>
 </head>
 
 <body>
 
-    <div id="navbar" style="z-index: 10000;">
+   <div id = "navbar" style = "z-index: 10000;">
         <b>
-        <div style = " font-size: 48px; margin-left:90px">
+        <div style = " font-size: 48px; margin-top:-18px; margin-left:90px">
             <a href = "Index.html">2381<div class = "underline"></div></a>
         </div>
         <a style = "margin-left: 105px"></a>
@@ -51,10 +110,6 @@
         </b>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
     <center>
         <h1>2381 Sponsor Wall of Fame</h1>
     </center>

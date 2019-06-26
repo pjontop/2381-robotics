@@ -1,7 +1,2 @@
-*.pngg filter=lfs diff=lfs merge=lfs -text
-*.gifg filter=lfs diff=lfs merge=lfs -text
-*.jpegg filter=lfs diff=lfs merge=lfs -text
-*.mp3g filter=lfs diff=lfs merge=lfs -text
-*.psdg filter=lfs diff=lfs merge=lfs -text
-*.mp4g filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
 

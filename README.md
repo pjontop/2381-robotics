@@ -19,8 +19,7 @@ Setup:
 ##### Do this after each time you finish something and after everytime you leave your computer to go do something else. Treat this like a CTRL+S.
 1. Open GITBASH in the 2381-website file
 2. `git add .` This adds all of the changes you made into the local git
-3. `git commit ` This will open your default text editor (Probably Notepad)
-3.5. Note: When you type `git commit` the **vim** text editor might pop up (the one in the terminal). To type stuff into there, just hit `i` (insert), when you are done, hit `esc` and type `:x` to save.
+3. `git commit ` This will open your default text editor (Probably Notepad) Note: When you type `git commit` the **vim** text editor might pop up (the one in the terminal). To type stuff into there, just hit `i` (insert), when you are done, hit `esc` and type `:x` to save.
 4. In the text editor add a commit messages detailing the changes that you have made. This is so that other people will be able to understand the shit you just did. The way this will be formatted is: 
      1.   First Line : One sentence summary of changes you have made i.e. (Fixed the scrolling bug + added image files)
      2.   Lines after that : In depth explanation to how did it. This should be able to be understood by other programmers who need revise and change/fix your code in the future. I.E. (Found conflicting style classes for div element, created new div ID to resolve it with width, height, position properties)

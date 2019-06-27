@@ -256,7 +256,6 @@ html, body{
 }
 .uparrow{
    position: absolute;
-   
    width:5%;
     left: 47.5%;
 		transition-duration: 1s;

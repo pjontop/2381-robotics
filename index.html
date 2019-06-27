@@ -70,7 +70,7 @@
 </div>
 
 </div>
-<div class= "uparrow" id="uparrow" style="top: 80%;" onclick = "upArrowClick()" >
+<div class= "uparrow" id="uparrow1" style="top: 80%;" >
 <img  style = "width: 100%;" src = "Images/Arrow Up Blue.png">
 </div>
 <div class = "window-fixed" id="something">
@@ -88,7 +88,7 @@
 <div class=" fixedWindow"  style="background-image: url(Images/examplebackground2.jpg); ">
 </div></div>
 
-<div class= "uparrow" id="uparrow" style="top:180%" onclick = "upArrowClick()" >
+<div class= "uparrow" id="uparrow2" style="top:180%"  >
 <img  style = "width: 100%;" src = "Images/Arrow Up White.png">
 </div>
 
@@ -134,9 +134,14 @@ function showTopNav(){
   document.getElementById("navbar").style.overflow = "visible";
   document.getElementById("navbar").style.height = "75px";
 }
-function upArrowClick(){
-  document.body.scrollTop = window.innerHeight*0.9;
-}
+
+
+document.getElementById("uparrow1").addEventListener("click", function(){
+  document.body.scrollTop = window.innerHeight*1.0;
+});
+document.getElementById("uparrow2").addEventListener("click", function(){
+  document.body.scrollTop = window.innerHeight*2.0;
+});
 </script>
 </body>
 

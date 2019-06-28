@@ -11,52 +11,27 @@ body,td,th {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
-#container{
-    height: 100%;
-    width: 100%;
-    border: 0px solid green;
-    overflow: visible;
-    box-sizing: content-box;
-}
-.container2{
-    -ms-overflow-style: none;  // IE 10+
-    scrollbar-width: none;  // Firefox
-}
-.container2::-webkit-scrollbar {
-    display: none;  // Safari and Chrome
-}
-
-#container2{
-    min-width: 100%;
-    height: 100%;
-    border: 0px solid blue;
-    padding-right: 0;
-    overflow:scroll;
-    box-sizing: content-box;
-    position:relative;
-}
-#container2 *{
-  box-sizing: border-box;
-}
 
 
 html, body{
     height: 105%;
     border: 0px solid red;
-    overflow:hidden;
     min-width:1280px;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		scroll-behavior: smooth;
 
 }
 
 /* Navagation Bar */
     #navbar {
-        //overflow: hidden;
+			overflow:visible;
         /*background-color: white;*/
         height: 75px;
         width: 1280px;
         position: fixed;
         color:white;
-
+				transition-duration: 1s;
     }
 
     #navbar * {
@@ -214,11 +189,13 @@ html, body{
 	color: lightgreen;
 }
 
-.slice {
+.slide {
     overflow: hidden;
-    position: relative;
-
-
+    position: fixed;
+		transition-duration:1s;
+		height: 100%;
+		width: 100%;
+		top: 100%;
 }
 .fixedWindow{
   height: 100%;
@@ -270,11 +247,22 @@ html, body{
     padding-top:180px;
     width: 100%
 }
-#uparrow{
+.window-fixed{
+    position: fixed;
+    top: 100%;
+    padding-top:180px;
+    width: 100%;
+		transition-duration: 1s;
+}
+.uparrow{
    position: absolute;
-   top: 80%;
    width:5%;
     left: 47.5%;
+		transition-duration: 1s;
+}
+#window1{
+	position: fixed;
+
 }
 #BigLogo{
    font-size: 48px;

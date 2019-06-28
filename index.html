@@ -23,9 +23,6 @@
   </a>
 
 
-
-
-
   <a href="Team.html">POSTS
   <div class="line">
   </div>
@@ -65,20 +62,18 @@
 
 
 </div>
-<div id="container">
-<div id="container2">
 
-<div class = "slice" style = "height: 3000px; top: 0px;">
+<div class = "slide" id="slide1" style = "height: 3000px; top: 0px;">
 <div class = "shadeTextBox-fixed" style= "top:35%">
 <h1>THIS IS A FIXED BACKGROUND</h1></div>
 <div class=" fixedWindow"  style="background-image: url(Images/examplebackground.jpg); ">
 </div>
 
 </div>
-<div class= "uparrow" id="uparrow" >
+<div class= "uparrow" id="uparrow1" style="top: 80%;" >
 <img  style = "width: 100%;" src = "Images/Arrow Up Blue.png">
 </div>
-<div class = "window" >
+<div class = "window-fixed" id="something">
 <center>
 <img style="heigth: auto;" src="Images/ExampleImage1.jpg">
 </center>
@@ -86,27 +81,69 @@
 <h1>INTERMISSION</h1></div></div>
 
 
-<div class = "slice" style = "height: auto; top: 75px;">
+<div class = "slide" id="slide2">
 <div class = "filter-fade"></div>
 <div class = "shadeTextBox" style= "top:30%">
 <h1>THIS IS A FADE OVERLAY</h1></div>
-<div class=" fixedWindow"  style="background-image: url(Images/examplebackground.jpg); ">
+<div class=" fixedWindow"  style="background-image: url(Images/examplebackground2.jpg); ">
 </div></div>
+
+<div class= "uparrow" id="uparrow2" style="top:180%"  >
+<img  style = "width: 100%;" src = "Images/Arrow Up White.png">
+</div>
 
 <div class = "window" style = "top: 400%">
 <center>
 <img style=" height: auto; "src="Images/ExampleImage1.jpg">
 </center>
-<div class = "shadeTextBox" style = " top: 25%">
+<div class = "shadeTextBox" style = "top: 25%">
 <h1>INTERMISSION</h1></div></div>
-<div class = "slice" style = "height: auto; top: 75px;">
+<div class = "slide" id="slide3">
 <div class = "filter-color"></div>
 
 <div class = "shadeTextBox">
 <h1>THIS IS A COLOR OVERLAY</h1></div>
 
-<div class=" fixedWindow"  style="background-image: url(Images/examplebackground.jpg); ">
+<div class=" fixedWindow"  style="background-image: url(Images/examplebackground3.jpg); ">
 </div></div>
-</div></div>
+
+<script>
+window.onscroll= function() {scrollEffect()};
+document.onclick = function(){
+  console.log(document.body.scrollTo)
+
+}
+function scrollEffect() {
+  if (document.body.scrollTop > window.innerHeight*1.8 ) {
+    document.getElementById("slide3").style.top = "0% ";
+
+  } else if(document.body.scrollTop > window.innerHeight*0.8){
+    document.getElementById("slide3").style.top = "100%";
+    document.getElementById("slide2").style.top = "0% ";
+    hideTopNav();
+  } else{
+    document.getElementById("slide2").style.top = "100%";
+    showTopNav();
+  }
+}
+function hideTopNav(){
+  document.getElementById("navbar").style.overflow = "hidden";
+  document.getElementById("navbar").style.height = "0";
+}
+function showTopNav(){
+  document.getElementById("navbar").style.overflow = "visible";
+  document.getElementById("navbar").style.height = "75px";
+}
+
+
+document.getElementById("uparrow1").addEventListener("click", function(){
+  document.body.scrollTop = window.innerHeight*1.0;
+});
+document.getElementById("uparrow2").addEventListener("click", function(){
+  document.body.scrollTop = window.innerHeight*2.0;
+});
+</script>
 </body>
+
+
 </html>

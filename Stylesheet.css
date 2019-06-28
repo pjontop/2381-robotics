@@ -286,6 +286,22 @@ html, body{
 	    -1px 1px 0 #000,
 	     1px 1px 0 #000;
 }
+#navbar #BigLogo:hover .textLogo{
+	opacity:0;
+	transition-duration:0.2s;
+}
+#navbar #BigLogo .textLogo{
+	opacity:1;
+	transition-duration:0.2s;
+}
+#navbar #BigLogo:hover img{
+	opacity:1;
+	transition-duration : 0.2s;
+}
+#navbar #BigLogo img{
+	opacity:0;
+	transition-duration : 0.2s;
+}
 #sidenav {
 		color:white;
 		transition: 0.7s;

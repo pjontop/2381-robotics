@@ -108,8 +108,6 @@ html, body{
 		#navbar .dropdown:hover .line {
         opacity: 1;
     }
-
-
 		#navbar a:hover a {
 				opacity: 1;
 		}
@@ -123,17 +121,14 @@ html, body{
 }
 /*Dropdown menu for 3 teams*/
 #navbar .dropdown{
-  overflow: hidden;
+  /*overflow: hidden;*/
   position:relative;
 	display: inline-block;
 	text-align: center;
-
+	transition-duration: 1s;
 	height: 30px;
 	/*background-color: white;*/
-	transition-duration: 0;
 	padding: 0 10px 20px 10px;
-
-
 }
 
 #navbar .dropdown .dropbtn {
@@ -148,7 +143,6 @@ html, body{
   border: none;
   outline: none;
   float:none;
-
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -156,11 +150,13 @@ html, body{
 }
 
 #navbar .dropdown-content {
-
+	transform: scaleY(0);
   /*background-color: #f9f9f9;*/
   z-index: 1;
 	margin-top: 20%;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	transition-duration: 0.25s;
+	transform-origin: top;
 }
 
 #navbar .dropdown-content a {
@@ -180,9 +176,10 @@ html, body{
 	color: lightgreen;
 }
 
-#navbar .dropdown:hover {
-  overflow: visible;
+#navbar .dropdown:hover .dropdown-content {
 	color: lightgreen;
+	height:auto;
+	transform: scaleY(1);
 }
 
 #navbar .dropdown:hover .dropbtn {
@@ -215,6 +212,14 @@ html, body{
   height:100%;
   width:100%;
   position:absolute;
+  top:0;
+}
+.filter-fade2 {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)) ; /* Black background with 0.5 opacity */
+  height:100%;
+  width:80%;
+  position:absolute;
+	right:0;
   top:0;
 }
 .shadeTextBox {
@@ -260,6 +265,13 @@ html, body{
     left: 47.5%;
 		transition-duration: 1s;
 }
+.rightarrow{
+	position: absolute;
+	width: 12.5%;
+	top: 47.5%;
+
+	 transition-duration: 1s;
+}
 #window1{
 	position: fixed;
 
@@ -267,5 +279,40 @@ html, body{
 #BigLogo{
    font-size: 48px;
     font-weight:bold;
-    margin-left:90px
+    margin-left:90px;
+		text-shadow:
+	   -1px -1px 0 #000,
+	    1px -1px 0 #000,
+	    -1px 1px 0 #000,
+	     1px 1px 0 #000;
+}
+#sidenav {
+		color:white;
+		transition: 0.7s;
+}
+#sidenav .sidelink{
+	padding:5px;
+	height:40px;
+	overflow:hidden;
+	font-size:24px;
+	transition-duration:0.5s;
+}
+
+#sidenav .sidelink:hover{
+	height:100px;
+	padding-top: 40px;
+	background: rgba(245,245,220,0.2);
+	/*text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;*/
+}
+#sidenav .dropdown:hover{
+	height:120px;
+	padding-top:20px;
+}
+#sidenav .dropdown-content{
+	padding-top:1px;
+	font-size:16px
 }

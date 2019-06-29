@@ -280,27 +280,17 @@ html, body{
    font-size: 48px;
     font-weight:bold;
     margin-left:90px;
-		text-shadow:
-	   -1px -1px 0 #000,
-	    1px -1px 0 #000,
-	    -1px 1px 0 #000,
-	     1px 1px 0 #000;
+		transition: text-shadow 0.3s;
+		transition-timing-function: cubic-bezier(.19,1,.22,1);
+
 }
-#navbar #BigLogo:hover .textLogo{
-	opacity:0;
-	transition-duration:0.2s;
+
+#navbar #BigLogo:hover {
+	 text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 45px #e60073;
 }
-#navbar #BigLogo .textLogo{
-	opacity:1;
-	transition-duration:0.2s;
-}
-#navbar #BigLogo:hover img{
-	opacity:1;
-	transition-duration : 0.2s;
-}
-#navbar #BigLogo img{
-	opacity:0;
-	transition-duration : 0.2s;
+
+#sidenav #BigLogo {
+	text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 45px #e60073;
 }
 #sidenav {
 		color:white;

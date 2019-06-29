@@ -92,13 +92,17 @@ function toggleMenu() {
 if(!sideNavOpen) {
 sideNavOpen = true;
 document.getElementById("sidenav").style.width = "260px";
+document.getElementById("sidenavimage").style.marginLeft = "260px";
 document.getElementById("sidenav").style.opacity = 1;
+document.getElementById("sidenavimage").style.opacity = 1;
 document.getElementById("toggleMenu").classList.add("is-active");
 }
 else {
   sideNavOpen = false;
   document.getElementById("sidenav").style.width = "0";
+  document.getElementById("sidenavimage").style.marginLeft = "0";
   document.getElementById("sidenav").style.opacity = 0;
+  document.getElementById("sidenavimage").style.opacity = 0;
   document.getElementById("toggleMenu").classList.remove("is-active");
 }
 }

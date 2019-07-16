@@ -34,8 +34,8 @@ body{
   font-size:38px;
   font-weight:bold;
   letter-spacing: 6px;
-display:inline-block;
-cursor:pointer;
+  display:inline-block;
+  cursor:pointer;
 }
 
 .teamNameRobotics {

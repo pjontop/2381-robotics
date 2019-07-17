@@ -61,7 +61,13 @@
             padding: 10px;
             text-align: right;
         }
-        /* 范德萨而后挖矿机发货的撒娇客户机 */
+        /*  */
+
+        .banner:hover {
+		        -moz-box-shadow: 0 0 10px #ccc;
+		        -webkit-box-shadow: 0 0 10px #ccc;
+		        box-shadow: 0 0 10px #ccc;
+        }
 
         body {
             background-image: url("images/sback.jpg");
@@ -168,6 +174,12 @@
     <div id="sidenavimage">
     </div>
 
+
+
+    <img class = "banner" id="probots" align="right" src="images/probots.jpg" onclick="Alert.render('Thank you to Richard Seniuk, the VEX Competition Support Manager in Canada and the owner of ProBots, for lending us some VEX parts and providing us a space to build and test our robot. We would especially like to thank him for helping all teams during competitions when they were having troubles.');">
+    <img class = "banner" id="cb" align="right" src="images/crestcb.png" onclick="Alert.render('Thanks to Colonel By Secondary School, we were provided with a lab to develop our competitive robots in, with generous amounts of space for field and construction, teacher volunteers who superivsed us, and a plethora of mechanical tools in the lab for custom cutting/finishes.');">
+    <img class = "banner" id="protocase" align="right" src="images/protocase.png" onclick="Alert.render('Thanks to Protocase, we were able to print some custom parts to experiment with different designs, especially for the Skills Ontario Pipeline game of 2018.');">
+
     <div id="dialogoverlay"></div>
     <div id="dialogbox">
         <div>
@@ -176,11 +188,6 @@
             <div id="dialogboxfoot"></div>
         </div>
     </div>
-
-    <img id="probots" align="right" src="images/probots.jpg" onclick="Alert.render('Thank you to Richard Seniuk, the VEX Competition Support Manager in Canada and the owner of ProBots, for lending us some VEX parts and providing us a space to build and test our robot. We would especially like to thank him for helping all teams during competitions when they were having troubles.');">
-    <img id="cb" align="right" src="images/crestcb.png" onclick="Alert.render('Thanks to Colonel By Secondary School, we were provided with a lab to develop our competitive robots in, with generous amounts of space for field and construction, teacher volunteers who superivsed us, and a plethora of mechanical tools in the lab for custom cutting/finishes.');">
-    <img id="protocase" align="right" src="images/protocase.png" onclick="Alert.render('Thanks to Protocase, we were able to print some custom parts to experiment with different designs, especially for the Skills Ontario Pipeline game of 2018.');">
-
     <script>
         sideNavOpen = false;
 

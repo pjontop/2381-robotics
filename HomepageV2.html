@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>Home 2.0</title>
+    <link rel="stylesheet" href="HomepageV2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Half dark red -->
+    <div class="background1"></div>
+    <div class="background2"></div>
+    <div class="texture"></div>
+
+    <!-- NAV BAR -->
+    <div class="topnav">
+
+        <button id="toggleMenu" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
+
+            <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+            <a id="menuButton">MENU<div class="line"></div></a>
+            </span>
+
+        </button>
+        <center>
+            <div class="teamLogo">2381 ROBTICS</div>
+        </center>
+        <div class="contactInfo">
+            <span class="contactText2">CONTACT INFO HERE</span>
+            <span class="contactText1">GET IN TOUCH</span></div>
+
+    </div>
+    <span class="vex2019text"><span style="font-size:40px;">VEX</span>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
+
+    <div>
+        <h1 class="largeTitle">KERNEL BYE'S</h1>
+
+    </div>
+
+    <div>
+        <h1 class="thinTitle"><span style="color:rgb(121,2,24);">2<span style="font-size:150px;">&nbsp;</span>3<span style="font-size:150px;">&nbsp;</span></span><span style="color:rgb(170,7,35);">8<span style="font-size:150px;">&nbsp;</span>1</span></h1>
+    </div>
+    <div>
+        <center>
+            <img src="robot.png" class="robotImage">
+        </center>
+    </div>
+
+    <div id="sidenav">
+        <table class="sidenavContent">
+            <tr>
+                <td><a class="link activeLink" href="#Home">HOME
+
+                           </a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#About">ABOUT
+
+                          </a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#Posts">POSTS
+
+                          </a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#Community">COMMUNITY
+
+                            </a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#Sponsors">SPONSORS
+
+                            </a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#Join Us">JOIN US
+
+                            </a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#Contact">CONTACT
+
+                            </a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="topButton">
+        <a href="#"><img src="arrow.png" width = "30px" height="30px"></a>
+    </div>
+    <script>
+        sideNavIterator = 0;
+        sideNavOpen = false;
+
+        window.onload = function() {  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;}
+
+        function toggleMenu() {
+            if (!sideNavOpen) {
+                sideNavOpen = true;
+                sideNavIterator = 0;
+                document.getElementById("toggleMenu").classList.add("is-active");
+                openMenu = setInterval(openMenuOptions, 75);
+
+            } else {
+                sideNavOpen = false;
+                sideNavIterator = 6;
+                closeMenu = setInterval(closeMenuOptions, 75);
+                document.getElementById("toggleMenu").classList.remove("is-active");
+            }
+        }
+
+        function openMenuOptions() {
+            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "100px";
+            sideNavIterator++;
+            document.getElementById("toggleMenu").disabled = true;
+            if (sideNavIterator == 7) {
+                clearInterval(openMenu)
+                document.getElementById("toggleMenu").disabled = false;
+            }
+        }
+
+        function closeMenuOptions() {
+            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "0px";
+            sideNavIterator--;
+            document.getElementById("toggleMenu").disabled = true;
+            if (sideNavIterator < 0) {
+                clearInterval(closeMenu)
+                document.getElementById("toggleMenu").disabled = false;
+            }
+        }
+
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("topButton").style.opacity = "1";
+    document.getElementById("topButton").style.bottom = "25px";
+  } else {
+    document.getElementById("topButton").style.opacity = "0";
+    document.getElementById("topButton").style.bottom = "0";  }
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,36 +1,33 @@
-Setup: 
-1. Install git https://git-scm.com/
-2. Create a local file on your computer
-3. Right click within the folder, click GITBASH HERE
-4. In the console,  `git clone https://github.com/2381-robotics/2381-robotics.git`
+# 2381 Robotics README
+<h2><b> Why You Should Care </b></h2>
+<p>As a wise person once said:</p>
 
-# Workflow
-### Before You Start Coding
-1. In the repository on Github, navigate to Projects > 2381 Website Development
-2. Under the To-Do tab, pick a project and drag it to the Open tab (this is what you will be working on)
-3. Navigate back to <>Code in Github, create a new branch and call it the name of the feature you are developing (I.E. Navbar or Community Page etc.)
-4. On your local file explorer, go to the 2381-website file and GITBASH there
-5. Create a new branch by using the command `git branch <local branch name>` (NOTE: this local branch is a different thing than the branch you created in the cloud, and will be denoted as <local branch name> as opposed to <cloud branch name>)
-6. Navigate to the branch you created with `git checkout <local branch name>`
-7. Update your local files with `git pull origin <cloud branch name>`
-8. Do your work (Code the actual shit)
+>Reading documentation is fucking tedious. 
+>Writing documentation is more fucking tedious.
+>
+>--<cite>A Wise Person</cite>
 
-### After Coding
-##### Do this after each time you finish something and after everytime you leave your computer to go do something else. Treat this like a CTRL+S.
-1. Open GITBASH in the 2381-website file
-2. `git add .` This adds all of the changes you made into the local git
-3. `git commit ` This will open your default text editor (Probably Notepad) Note: When you type `git commit` the **vim** text editor might pop up (the one in the terminal). To type stuff into there, just hit `i` (insert), when you are done, hit `esc` and type `:x` to save.
-4. In the text editor add a commit messages detailing the changes that you have made. This is so that other people will be able to understand the stuff you just did. The way this will be formatted is: 
-     1.   First Line : One sentence summary of changes you have made i.e. (Fixed the scrolling bug + added image files)
-     2.   Lines after that : In depth explanation to how did it. This should be able to be understood by other programmers who need revise and change/fix your code in the future. I.E. (Found conflicting style classes for div element, created new div ID to resolve it with width, height, position properties)
-5. Now all you have to do is send your changes to the cloud with `git push origin <cloud branch name>`
-*Note* This process should happen several times per project, just like you save an english essay several times before you finish it.
+And we get it. There are probably many things you want to be doing rather than reading this. That makes sense. In fact, I myself have barely read through the document -  and I wrote this shit. However, at 2381 Robotics, we have lots and lots of documentation because it aligns with three of our guiding principles.
 
-### After Finishing A Feature / Project
-1. Make sure that the finished code/ latest version of your code is in the cloud branch
-2. In Github, in your branch, click Open Pull Request
-3. If it isn't already, change Base Repository to 2381-Website
-4. Make sure the base branch is Master and the compare branch is `<Cloud Branch Name>`
-5. Under <Leave A Comment>, list the changes that you have made, go into detail where necessary
-6. Click <Create Pull Request>
-*NOTE:* A Pull Request is completely different from a Pull, and should be called a Merge Request if Github wasn't a small Indie games company. A Pull Request is you saying "Hey, I think I have my shit together and my code is good now, can we merge this into the good copy?". This lets your team check through your code, understand wtf is going on, and make sure your shit isn't spaghetti. Everyone needs to read through everyone else's Pull Requests so that you know whats going on. **IT IS EXPECTED FOR EVERYONE TO LEAVE A COMMENT ON ALL PULL REQUESTS SHOWING THAT YOU HAVE READ THROUGH THE CODE. IM GOING WHIP PEOPLE WHO DONT READ THEIR SHIT - YOU HAVE BEEN WARNED**
+## **PRINCIPLES, PRINCIPALS, AND PINEAPPLES** ##
+*  ## Principle Number One - Engagement
+    Robotics is fucking expensive. With respect to both your time and money, this shit ain't cheap - you might want to get your money's worth in return. Documentation helps in two ways - 
+
+    1.  Maximize your time when you have the robot -> If you are up to date with what is going on within the team and what other people are working on, you will spend less time trying to figure out the fuck is going on and more time getting stuff done.
+
+    2. Contribute even without the robot on hand -> 
+    Alot of the time, it won't be possible or convienient for you to be in the same location as the actual robot. Using this time to clean up the style of the code base or adding to the design docuement is a great way to further your own understanding.
+
+*  ## Principal Number Two - Win
+    At 2381 Robotics, our primary goal is to make sure <s>everyone is safe and is having fun</s> <b>to win.</b> Winning is fun, but to do that, our code - as well as our overall design - needs to not be shit. 
+
+![Code Quality BTW](https://imgs.xkcd.com/comics/wanna_see_the_code_2x.png)
+
+
+*  ## Pineapple Number Three - Help Others 
+    Whenever you are writing anything, keep in mind that some poor miserable soul has to actually read it. Additionally, recognize that that poor miserable soul might know where you live, and not be so happy if you somehow wrote into existance a fucking spaghetti monster. Finally, comprehend that by spending 5 more minutes to add a few comments and update the API, it may save someone else on your team  the amount of work equivilant decryto pting the enigma machine. 
+
+![Ethan Pls](https://imgs.xkcd.com/comics/code_quality_2x.png)
+
+
+### All of that being said, read our full documentation [here.](https://github.com/2381-robotics/2381-robotics/wiki/Contributing)

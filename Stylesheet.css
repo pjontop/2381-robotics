@@ -1,6 +1,7 @@
 
 body,td,th {
-	font-family: Calibri;
+  font-family: Ubuntu;
+  font-weight:500;
 }
 *{
   margin:0;
@@ -11,8 +12,31 @@ body,td,th {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
-
-
+.center {
+   position:absolute; left:50%; top:50%; margin:0; transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+}
+.cascadeImage {
+  position: absolute;
+  top:0;
+  left:0;  
+  width:100%;
+  
+}
+.cascadeImageContainer{
+  width:80%;
+  
+  padding-right:0;
+  padding-left:0;
+}
+.line {
+        height: 1px;
+        margin-bottom: -1px;
+        width: 100%;
+        background-color: white;
+        opacity: 0;
+        transition-duration:  0.25s;
+}
 html, body{
     height: 105%;
     border: 0px solid red;
@@ -219,11 +243,12 @@ html, body{
 .fixedWindow{
   height: 100%;
   background: url(img_man.jpg) no-repeat center fixed;
+  
   background-size: cover;
   z-index:-2;
 }
 .filter-color {
-  background: rgb(35, 163, 237, 0.3); /* Black background with 0.5 opacity */
+  background: rgba(35, 163, 237, 0.3); /* Black background with 0.5 opacity */
   height:100%;
   width:100%;
   position:absolute;
@@ -265,6 +290,17 @@ html, body{
   left:25%;
   top:40%;
   text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+}
+.shadeTextBox-left-fixed{
+  position: fixed;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 50%;
+  left:25%;
+  top:40%;
   padding: 20px;
   border-radius: 4px;
 }
@@ -321,8 +357,7 @@ html, body{
 #sidenav .sidelink{
 	padding:5px;
 	height:40px;
-	overflow:hidden;
-	font-size:24px;
+  overflow:hidden;
 	transition-duration:0.5s;
 }
 

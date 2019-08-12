@@ -1,0 +1,334 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    -ms-overflow-style: none;  /* IE 10+*/
+    scrollbar-width: none;  /* Firefox*/
+
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome*/
+}
+
+@font-face {
+    font-family: "neutra";
+    src: url("./fonts/NeutraText-book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "neutra-bold";
+    src: url("./fonts/NeutraText-bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "robot";
+    src: url("./fonts/Robot Renegades.otf") format("opentype");
+}
+
+body {
+    padding: 0;
+    margin: 0;    
+    font-family: "neutra-bold", 'Ubuntu', Consolas, sans-serif;
+}
+
+.teamLogo {
+    color: rgb(249, 211, 139);
+    position: relative;
+    top: -31px;
+    border: 2px solid rgb(249, 211, 139);
+    padding: 6px;
+    display: inline;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 15px;
+    z-index: 200;
+}
+
+.contactText1 {
+    position: absolute;
+    float: right;
+    color: rgb(249, 211, 139);
+    font-size: 15px;
+    right: 40px;
+    top: 31px;
+    z-index: 100;
+    height: 16px;
+    overflow: hidden;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.contactText2 {
+    position: absolute;
+    float: right;
+    color: rgb(249, 211, 139);
+    font-size: 15px;
+    right: 40px;
+    top: 31px;
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.contactInfo:hover .contactText1 {
+    opacity: 0;
+    height: 0;
+}
+
+.contactInfo:hover .contactText2 {
+    opacity: 1;
+    height: 16px;
+}
+
+#sidenav {
+    position: absolute;
+    top: 33%;
+    left: 35px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+}
+
+.sidenavContent {
+    line-height: 30px;
+}
+
+.sidenavContent a {
+    text-decoration: none;
+    color: rgb(249, 211, 139);
+    font-size: 15px;
+    opacity: 0.4;
+    transition: 0.2s ease-in-out;
+}
+
+.sidenavContent a:hover {
+    opacity: 1;
+    font-size: 16px;
+}
+
+.sidenavContent .activeLink {
+    opacity: 1;
+    font-size: 16px;
+}
+
+.sidenavContent td {
+    padding: 0;
+    width: 0px;
+    height: 25px;
+    overflow: hidden;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+.largeTitle {
+    margin-top: 20px;
+    position: relative;
+    font-size: 70px;
+    color: rgb(249, 211, 139);
+    text-align: center;
+    z-index: 100;
+}
+
+.thinTitle {
+    font-family: 'robot', sans-serif;
+    margin-top: -45px;
+    margin-right: 70px;
+    position: relative;
+    font-size: 240px;
+    text-align: center;
+    z-index: 100;
+    font-weight: light;
+    opacity: 0.6;
+}
+
+.robotImage {
+    margin-top: -317px;
+    position: relative;
+    z-index: 100;
+    opacity: 0.7;
+    width: 245px;
+    height: 245px;
+}
+.background1 {
+    background-color:rgb(170, 7, 35);
+    padding: 0;
+    margin: 0;
+    height: 200%;
+    width: 52%;
+    position: absolute;
+    z-index: 0;
+}
+.background2 {
+    background-color: rgb(137, 4, 29);
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    height: 200%;
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+.texture {
+    background-image: url("images/background-texture.png");
+    background-size: 100px 100px;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.topnav {
+    z-index: 100;
+}
+
+#topButton {
+    padding:10px;
+    background-color:rgb(249, 211, 139);
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    z-index:100;
+    border-radius:50%;
+    opacity:0;
+    bottom:-50px;
+    transition:0.3s ease-in-out;
+}
+
+/* Line stuff */
+
+.line {
+    margin: auto;
+    height: 2px;
+    background-color: rgb(249, 211, 139);
+    opacity: 0;
+    width: 0;
+    transition-duration: 0.25s;
+    border-radius: 2px;
+    margin-left: 35px;
+}
+
+#toggleMenu:hover .line {
+    opacity: 1;
+    width: 42px;
+}
+
+
+/* Hamburger stuff */
+
+.hamburger {
+    outline: none;
+    padding: 15px 15px;
+    padding-top: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: rgb(249, 211, 139);
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: rgb(249, 211, 139);
+}
+
+.hamburger-box {
+    height: 20px;
+    width: 34px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 28px;
+    height: 2px;
+    background-color: rgb(249, 211, 139);
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -7px;
+}
+
+.hamburger-inner::after {
+    bottom: -7px;
+}
+
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#toggleMenu {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 15px;
+    z-index: 100;
+}
+
+#menuButton {
+    margin-left: 35px;
+}
+
+.vex2019text {
+    position: absolute;
+    float: right;
+    color: rgb(249, 211, 139);
+    font-size: 21px;
+    right: 40px;
+    bottom: 31px;
+    z-index: 100;
+}

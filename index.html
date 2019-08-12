@@ -1,283 +1,155 @@
 <html>
 
 <head>
-  <title>Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
-  <script src="./Nodes/jquery.js"></script>
-  <link rel="stylesheet" href="Stylesheet.css" />
-  <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <title>2381 Robotics</title>
+    <link rel="stylesheet" href="HomepageV2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
 </head>
 
+<body>
+    <!-- Half dark red -->
+    <div class="background1"></div>
+    <div class="background2"></div>
+    <div class="texture"></div>
 
-<body style="min-width: 1280px; margin: 0; padding: 0">
-  <div style="background-color: white; width: 1280px; margin: 0 auto">
+    <!-- NAV BAR -->
+    <div class="topnav">
 
-    <div id="navbar" style="z-index: 10000">
+        <button id="toggleMenu" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
 
-      <div id="BigLogo" style="width: 100px; height: 0px;">
-        2381
-        <div class="line" style="width:80%; margin-left: 11%; margin-top: -2%; opacity: 1; height: 2px; "></div>
+            <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+            <a id="menuButton">MENU<div class="line"></div></a>
+            </span>
 
+        </button>
+        <center>
+            <div class="teamLogo">2381 ROBTICS</div>
+        </center>
+        <div class="contactInfo">
+            <span class="contactText2">CONTACT INFO HERE</span>
+            <span class="contactText1">GET IN TOUCH</span></div>
 
-      </div>
+    </div>
+    <span class="vex2019text"><span style="font-size:40px;">VEX</span>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
 
-      <b>
-        <div style="float:right; margin-right:100px; padding-top: 26px;">
+    <div>
+        <h1 class="largeTitle">KERNEL BYE'S</h1>
 
-          <a href="Index.html">HOME
-            <div class="line">
-            </div>
-
-          </a>
-          <a href="About.html">ABOUT
-            <div class="line">
-            </div>
-          </a>
-
-
-          <a href="Team.html">POSTS
-            <div class="line">
-            </div>
-          </a>
-
-          <div class="dropdown">
-            <center>
-              <div class="dropbtn">TEAMS
-              </div>
-              <div class="line">
-              </div>
-
-              <div class="dropdown-content">
-                <a href="#">2381C</a>
-                <a href="#">2381Y</a>
-                <a href="#">2381Z</a>
-              </div>
-            </center>
-          </div>
-          <a href="Community.html">COMMUNITY
-            <div class="line">
-            </div>
-          </a>
-          <a href="sponsors.html">SPONSORS
-            <div class="line">
-            </div>
-          </a>
-          <a href="Join.html">JOIN US
-            <div class="line">
-            </div>
-          </a>
-          <a href="Contact.html">CONTACT
-            <div class="line">
-            </div>
-          </a>
-      </b>
     </div>
 
-
-  </div>
-
-  <div class="sidenav" id="sidenav" style=" position: fixed; right: -20%; width: 20%; min-height:100%; z-index:3">
-
-    <div class="rightarrow" id="rightarrow1" style="left:0">
-      <img style="width: 100%;" src="Images/Arrow left Blue.png">
+    <div>
+        <h1 class="thinTitle"><span style="color:rgb(121,2,24);">2<span style="font-size:150px;">&nbsp;</span>3<span style="font-size:150px;">&nbsp;</span></span><span style="color:rgb(170,7,35);">8<span style="font-size:150px;">&nbsp;</span>1</span></h1>
     </div>
-    <div class="filter-fade2">
-      <center>
-        <div id="BigLogo" style="width: 100px; margin-left: 0px;">
-          2381
-          <div class="line" style="width:80%; margin-left: 11%; margin-top: -2%; opacity: 1; height: 2px; "></div>
-
-
-        </div>
-        <b>
-          <div style="padding-top: 26px;">
-
-            <div class="sideLink">HOME
-              <div class="line">
-              </div>
-
-            </div>
-            <div class="sideLink">ABOUT
-              <div class="line">
-              </div>
-            </div>
-
-
-            <div class="sideLink">POSTS
-              <div class="line">
-              </div>
-            </div>
-
-            <div class="dropdown sidelink">
-              <center>
-                <div class="dropbtn">TEAMS
-                </div>
-                <div class="line">
-                </div>
-
-                <div class="dropdown-content">
-                  <div>2381C</a>
-                    <div>2381Y</a>
-                      <div>2381Z</a>
-                      </div>
-              </center>
-            </div>
-            <div class="sideLink">COMMUNITY
-              <div class="line">
-              </div>
-            </div>
-            <div class="sideLink">SPONSORS
-              <div class="line">
-              </div>
-            </div>
-            <div class="sideLink">JOIN US
-              <div class="line">
-              </div>
-            </div>
-            <div class="sideLink">CONTACT
-              <div class="line">
-              </div>
-            </div>
-          </div>
-        </b>
-      </center>
-    </div>
-  </div>
-  <div class="slide" id="slide1" style="height: 3000px; top: 0px;">
-    <div class="shadeTextBox-fixed" style="top:35%">
-      <h1><b>THIS IS A FIXED BACKGROUND</b></h1>
-    </div>
-    <div class=" fixedWindow" style="background-image: url(Images/examplebackground.jpg); ">
+    <div>
+        <center>
+            <img src="images/robot.png" class="robotImage">
+        </center>
     </div>
 
-  </div>
-  <div class="uparrow" id="uparrow1" style="top: 80%;">
-    <img style="width: 100%;" src="Images/Arrow Up Blue.png">
-  </div>
+    <div id="sidenav">
+        <table class="sidenavContent">
+            <tr>
+                <td><a class="link activeLink" href="#Home">HOME
 
-  <div class="slide" id="slide2">
-    <div class="filter-fade"></div>
-    <div class="shadeTextBox" style="top:30%">
-      <h1><b>THIS IS A FADE OVERLAY</b></h1>
+                           </a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#About">ABOUT
+
+                          </a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#Posts">POSTS
+
+                          </a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#Community">COMMUNITY
+
+                            </a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#Sponsors">SPONSORS
+
+                            </a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#Join Us">JOIN US
+
+                            </a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#Contact">CONTACT
+
+                            </a></td>
+            </tr>
+        </table>
     </div>
-    <div class=" fixedWindow" style="background-image: url(Images/examplebackground2.jpg); ">
+
+    <div id="topButton">
+        <a href="#"><img src="images/back-to-top-arrow.png" width = "30px" height="30px"></a>
     </div>
-  </div>
+    <script>
+        sideNavIterator = 0;
+        sideNavOpen = false;
 
-  <div class="uparrow" id="uparrow2" style="top:180%">
-    <img style="width: 100%;" src="Images/Arrow Up White.png">
-  </div>
+        window.onload = function() {  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;}
 
-  <div class="window" style="top: 400%">
-    <center>
-      <img style=" height: auto; " src="Images/ExampleImage1.jpg">
-    </center>
-    <div class="shadeTextBox" style="top: 25%">
-      <h1><b>INTERMISSION</b></h1>
-    </div>
-  </div>
-  <div class="slide" id="slide3">
-    <div class="filter-color"></div>
+        function toggleMenu() {
+            if (!sideNavOpen) {
+                sideNavOpen = true;
+                sideNavIterator = 0;
+                document.getElementById("toggleMenu").classList.add("is-active");
+                openMenu = setInterval(openMenuOptions, 75);
 
-    <div class="shadeTextBox">
-      <h1><b>THIS IS A COLOR OVERLAY</b></h1>
-    </div>
+            } else {
+                sideNavOpen = false;
+                sideNavIterator = 6;
+                closeMenu = setInterval(closeMenuOptions, 75);
+                document.getElementById("toggleMenu").classList.remove("is-active");
+            }
+        }
 
-    <div class=" fixedWindow" style="background-image: url(Images/examplebackground3.jpg); ">
-    </div>
-  </div>
-  <div class="progress progress-bar-vertical" id="scrollHolder"
-    style="background-color: transparent; position: fixed; height: 80%; right: 0; top:10%;">
-    <div class="progress-bar progress-bar-success bg-info progress-bar-striped active" role="progressbar"
-      aria-valuenow="100" aria-valuemin="0" id="scrollbar" aria-valuemax="100"
-      style="height: 20%; top:0; border-radius:.25rem; position:absolute; z-index:3;">
-      <span class="sr-only">60% Complete</span>
-    </div>
-    <div class="progress-bar active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-      style="height: 100%; opacity:0.4; border-radius:.25rem; position:absolute; z-index:2;">
-      <span class="sr-only">60% Complete</span>
-    </div>
-  </div>
-  <script>
-    window.onscroll = function () { scrollEffect() };
-    // document.onclick = function(){
-    //   console.log(document.body.scrollTo)
+        function openMenuOptions() {
+            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "100px";
+            sideNavIterator++;
+            document.getElementById("toggleMenu").disabled = true;
+            if (sideNavIterator == 7) {
+                clearInterval(openMenu)
+                document.getElementById("toggleMenu").disabled = false;
+            }
+        }
 
-    // }
-    function scrollEffect() {
+        function closeMenuOptions() {
+            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "0px";
+            sideNavIterator--;
+            document.getElementById("toggleMenu").disabled = true;
+            if (sideNavIterator < 0) {
+                clearInterval(closeMenu)
+                document.getElementById("toggleMenu").disabled = false;
+            }
+        }
 
-      scrollBar();
+        window.onscroll = function() {scrollFunction()};
 
-      if (document.body.scrollTop > window.innerHeight * 1.8) {
-        document.getElementById("slide3").style.top = "0% ";
-        document.getElementById("slide2").style.top = "-100% ";
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("topButton").style.opacity = "1";
+    document.getElementById("topButton").style.bottom = "25px";
+  } else {
+    document.getElementById("topButton").style.opacity = "0";
+    document.getElementById("topButton").style.bottom = "0";  }
+}
 
-      } else if (document.body.scrollTop > window.innerHeight * 0.8) {
-        document.getElementById("slide3").style.top = "100%";
-        document.getElementById("slide2").style.top = "0% ";
-        hideTopNav();
-        showSideArrow();
-      } else {
-        document.getElementById("slide2").style.top = "100%";
-        showTopNav();
-        hideSideArrow();
-      }
-
-    }
-    var timer;
-    function scrollBar() {
-      $('#scrollbar').css("height", (100 * $(document).scrollTop() / ($(document).height() - $(window).height())) + "%");
-      $('#scrollHolder').css("opacity", 1);
-      if (timer) {
-        clearTimeout(timer);
-      }
-      timer = setTimeout(function () {
-        $('#scrollHolder').css('opacity', 0);
-      }, 1000);
-    }
-    function hideTopNav() {
-      document.getElementById("navbar").style.overflow = "hidden";
-      document.getElementById("navbar").style.height = "0";
-    }
-    function showTopNav() {
-      document.getElementById("navbar").style.overflow = "visible";
-      document.getElementById("navbar").style.height = "75px";
-    }
-    function showSideArrow() {
-      document.getElementById("sidenav").style.right = "-16%";
-    }
-    function showSideNav() {
-      document.getElementById("sidenav").style.right = "0%";
-    }
-    function hideSideArrow() {
-      document.getElementById("sidenav").style.right = "-20%";
-    }
-    function toggleSideNav() {
-      if (document.getElementById("sidenav").style.right == "0%") {
-        document.getElementById("sidenav").style.right = "-16%";
-      } else {
-        document.getElementById("sidenav").style.right = "0%";
-      }
-    }
-
-    document.getElementById("sidenav").addEventListener("mouseenter", function () {
-      showSideNav();
-    });
-    document.getElementById("sidenav").addEventListener("mouseleave", function () {
-      showSideArrow();
-    });
-    document.getElementById("uparrow1").addEventListener("click", function () {
-      document.body.scrollTop = window.innerHeight * 1.0;
-    });
-    document.getElementById("uparrow2").addEventListener("click", function () {
-      document.body.scrollTop = window.innerHeight * 2.0;
-    });
-
-  </script>
+    </script>
 </body>
-
 
 </html>

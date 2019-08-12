@@ -2,33 +2,33 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    -ms-overflow-style: none;  // IE 10+
-    scrollbar-width: none;  // Firefox
+    -ms-overflow-style: none;  /* IE 10+*/
+    scrollbar-width: none;  /* Firefox*/
 
 }
 body::-webkit-scrollbar { 
-    display: none;  // Safari and Chrome
+    display: none;  /* Safari and Chrome*/
 }
 
 @font-face {
     font-family: "neutra";
-    src: url("NeutraText-book.otf") format("opentype");
+    src: url("./fonts/NeutraText-book.otf") format("opentype");
 }
 
 @font-face {
     font-family: "neutra-bold";
-    src: url("NeutraText-bold.otf") format("opentype");
+    src: url("./fonts/NeutraText-bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "robot";
-    src: url("Robot Renegades.otf") format("opentype");
+    src: url("./fonts/Robot Renegades.otf") format("opentype");
 }
 
 body {
     padding: 0;
     margin: 0;    
-    font-family: "neutra-bold";
+    font-family: "neutra-bold", 'Ubuntu', Consolas, sans-serif;
 }
 
 .teamLogo {
@@ -128,7 +128,6 @@ body {
     color: rgb(249, 211, 139);
     text-align: center;
     z-index: 100;
-    font-family: "neutra";
 }
 
 .thinTitle {

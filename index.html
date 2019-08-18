@@ -1,107 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <html>
 
 <head>
     <title>2381 Robotics</title>
     <link rel="stylesheet" href="HomepageV2.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Stylesheet.css" />
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <!-- Half dark red -->
-    <div class="background1"></div>
+    <div class="background1 "></div>
     <div class="background2"></div>
     <div class="texture"></div>
 
     <!-- NAV BAR -->
-    <div class="topnav">
+    <div class='container-fluid'>
+        <div class="topnav row">
+            <div class='col-4'>
+                <button id="toggleMenu" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        <div id="menuButton">MENU<div class="line"></div></div>
+                    </span>
+                </button>
+            </div>
+            <div class='col-4' >
+                <div class="teamLogo center ">2381 ROBOTICS</div>
+            </div>
+            <div class='col-4' >
+                <div class="contactInfo">
+                    <span class="contactText1 center-v">GET IN TOUCH</span>
+                    <span class="contactText2 center-v">CONTACT INFO HERE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BODY -->
+    <div class='container-fluid'>
+        <span class="vex2019text"><span style="font-size:40px;">VEX</span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
 
-        <button id="toggleMenu" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
-
-            <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-            <a id="menuButton">MENU<div class="line"></div></a>
-            </span>
-
-        </button>
+        <div class="jumbotron text-center" style='margin-bottom:0; margin-top:0; padding:2rem;'>
+            <div class="largeTitle">KERNEL BYE'S</div>
+        </div>
+        <div class='background-title'>
+            <div class='textbox' style='right:50%; color:rgb(121,2,24); text-align: right;'>
+                <span class='text'>2</span>
+                <span class='text-space'>&nbsp;&nbsp;</span>
+                <span class='text'>3</span>
+                <span class='text-space'>&nbsp;</span>
+            </div>
+            <div class='textbox' style='left:50%; color:rgb(170,7,35); text-align: left;'>
+                <span class='text-space'>&nbsp;</span>
+                <span class='text'>8</span>
+                <span class='text-space'>&nbsp;&nbsp;&nbsp;</span>
+                <span class='text'>1</span>
+            </div>
+        </div>
         <center>
-            <div class="teamLogo">2381 ROBTICS</div>
-        </center>
-        <div class="contactInfo">
-            <span class="contactText2">CONTACT INFO HERE</span>
-            <span class="contactText1">GET IN TOUCH</span></div>
-
-    </div>
-    <span class="vex2019text"><span style="font-size:40px;">VEX</span>
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
-
-    <div>
-        <h1 class="largeTitle">KERNEL BYE'S</h1>
-
-    </div>
-
-    <div>
-        <h1 class="thinTitle"><span style="color:rgb(121,2,24);">2<span style="font-size:150px;">&nbsp;</span>3<span style="font-size:150px;">&nbsp;</span></span><span style="color:rgb(170,7,35);">8<span style="font-size:150px;">&nbsp;</span>1</span></h1>
-    </div>
-    <div>
-        <center>
-            <img src="images/robot.png" class="robotImage">
+            <div class=' robotImage'>
+                <img src="images/robot.png" style='position:relative; height:100%'>
+            </div>
         </center>
     </div>
+
+
 
     <div id="sidenav">
         <table class="sidenavContent">
             <tr>
                 <td><a class="link activeLink" href="#Home">HOME
 
-                           </a></td>
+                    </a></td>
             </tr>
             <tr>
                 <td><a class="link" href="#About">ABOUT
 
-                          </a></td>
+                    </a></td>
             </tr>
             <tr>
                 <td><a class="link" href="#Posts">POSTS
 
-                          </a></td>
+                    </a></td>
             </tr>
 
             <tr>
                 <td><a class="link" href="#Community">COMMUNITY
 
-                            </a></td>
+                    </a></td>
             </tr>
             <tr>
                 <td><a class="link" href="#Sponsors">SPONSORS
 
-                            </a></td>
+                    </a></td>
             </tr>
 
             <tr>
                 <td><a class="link" href="#Join Us">JOIN US
 
-                            </a></td>
+                    </a></td>
             </tr>
 
             <tr>
                 <td><a class="link" href="#Contact">CONTACT
 
-                            </a></td>
+                    </a></td>
             </tr>
         </table>
     </div>
 
     <div id="topButton">
-        <a href="#"><img src="images/back-to-top-arrow.png" width = "30px" height="30px"></a>
+        <a href="#"><img src="images/back-to-top-arrow.png" width="30px" height="30px"></a>
     </div>
     <script>
         sideNavIterator = 0;
         sideNavOpen = false;
 
-        window.onload = function() {  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;}
+        window.onload = function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
         function toggleMenu() {
             if (!sideNavOpen) {
@@ -138,16 +162,17 @@
             }
         }
 
-        window.onscroll = function() {scrollFunction()};
+        window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-    document.getElementById("topButton").style.opacity = "1";
-    document.getElementById("topButton").style.bottom = "25px";
-  } else {
-    document.getElementById("topButton").style.opacity = "0";
-    document.getElementById("topButton").style.bottom = "0";  }
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                document.getElementById("topButton").style.opacity = "1";
+                document.getElementById("topButton").style.bottom = "25px";
+            } else {
+                document.getElementById("topButton").style.opacity = "0";
+                document.getElementById("topButton").style.bottom = "0";
+            }
+        }
 
     </script>
 </body>

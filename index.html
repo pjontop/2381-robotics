@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="HomepageV2.css" />
     <link rel="stylesheet" href="Stylesheet.css" />
     <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -23,20 +23,20 @@
     <div class='container-fluid'>
         <div class="topnav row">
             <div class='col-4'>
-                <button id="toggleMenu" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
+                <div id="toggleMenu" class="hamburger hamburger--squeeze">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
-                        <div id="menuButton">MENU<div class="line"></div></div>
+                        <div id="menuButton">MENU<div id="menuLine"></div></div>
                     </span>
-                </button>
+                </div>
             </div>
             <div class='col-4' >
                 <div class="teamLogo center ">2381 ROBOTICS</div>
             </div>
             <div class='col-4' >
                 <div class="contactInfo">
-                    <span class="contactText1 center-v">GET IN TOUCH</span>
-                    <span class="contactText2 center-v">CONTACT INFO HERE</span>
+                    <div class="contactText1 center-v">GET IN TOUCH</div>
+                    <div class="contactText2 center-v">CONTACT INFO HERE</div>
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@
             </div>
         </div>
         <center>
-            <div class=' robotImage'>
+            <div class='robotImage'>
                 <img src="images/robot.png" style='position:relative; height:100%'>
             </div>
         </center>
@@ -75,42 +75,41 @@
     <div id="sidenav">
         <table class="sidenavContent">
             <tr>
-                <td><a class="link activeLink" href="#Home">HOME
-
-                    </a></td>
+                <td><div class="link activeLink" href="#Home">HOME
+                </div></td>
             </tr>
             <tr>
-                <td><a class="link" href="#About">ABOUT
+                <td><div class='link' href="#About">ABOUT
 
-                    </a></td>
+                </div></td>
             </tr>
             <tr>
-                <td><a class="link" href="#Posts">POSTS
+                <td><div class='link' href="#Posts">POSTS
 
-                    </a></td>
-            </tr>
-
-            <tr>
-                <td><a class="link" href="#Community">COMMUNITY
-
-                    </a></td>
-            </tr>
-            <tr>
-                <td><a class="link" href="#Sponsors">SPONSORS
-
-                    </a></td>
+                </div></td>
             </tr>
 
             <tr>
-                <td><a class="link" href="#Join Us">JOIN US
+                <td><div class='link' href="#Community">COMMUNITY
 
-                    </a></td>
+                </div></td>
+            </tr>
+            <tr>
+                <td><div class='link' href="#Sponsors">SPONSORS
+
+                </div></td>
             </tr>
 
             <tr>
-                <td><a class="link" href="#Contact">CONTACT
+                <td><div class='link' href="#Join Us">JOIN US
 
-                    </a></td>
+                </div></td>
+            </tr>
+
+            <tr>
+                <td><div class='link' href="#Contact">CONTACT
+
+                </div></td>
             </tr>
         </table>
     </div>
@@ -118,7 +117,20 @@
     <div id="topButton">
         <a href="#"><img src="images/back-to-top-arrow.png" width="30px" height="30px"></a>
     </div>
+
+
+    
+
+
+    <!--BEGIN: JS-->
+
+    <script src="./Nodes/jquery.js"></script>
+
     <script>
+        $(function(){
+            $("#toggleMenu").click(function(){
+                toggleMenu()});
+        })
         sideNavIterator = 0;
         sideNavOpen = false;
 
@@ -126,24 +138,22 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
         function toggleMenu() {
+            $("#menuLine").toggleClass("fullLength");
+            $("toggleMenu").toggleClass("is-active");
             if (!sideNavOpen) {
                 sideNavOpen = true;
                 sideNavIterator = 0;
-                document.getElementById("toggleMenu").classList.add("is-active");
                 openMenu = setInterval(openMenuOptions, 75);
-
             } else {
                 sideNavOpen = false;
                 sideNavIterator = 6;
-                closeMenu = setInterval(closeMenuOptions, 75);
-                document.getElementById("toggleMenu").classList.remove("is-active");
+                closeMenu = setInterval(closeMenuOptions, 25);
             }
         }
 
         function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "100px";
+            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "200px";
             sideNavIterator++;
             document.getElementById("toggleMenu").disabled = true;
             if (sideNavIterator == 7) {
@@ -175,6 +185,8 @@
         }
 
     </script>
+
+    <!--END: JS-->
 </body>
 
 </html>

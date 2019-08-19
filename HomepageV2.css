@@ -48,7 +48,7 @@ body {
     font-size: 15px;
     z-index: 100;
     opacity: 1;
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
     right:10%;
 }
 
@@ -57,19 +57,17 @@ body {
     font-size: 15px;
     z-index: 100;
     opacity: 0;
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
     right:10%;
 
 }
 
 .contactInfo:hover .contactText1 {
     opacity: 0;
-    height: 0;
 }
 
 .contactInfo:hover .contactText2 {
     opacity: 1;
-    height: 16px;
 }
 
 #sidenav {
@@ -82,30 +80,33 @@ body {
 
 .sidenavContent {
     line-height: 30px;
+    text-decoration: none !important;
+    color: rgb(249, 211, 139);
 }
 
-.sidenavContent a {
-    text-decoration: none;
-    color: rgb(249, 211, 139);
+.sidenavContent .link {
+    /* border-style:solid; */
     font-size: 15px;
     opacity: 0.4;
     transition: 0.2s ease-in-out;
 }
 
-.sidenavContent a:hover {
+.sidenavContent .link:hover {
     opacity: 1;
-    font-size: 16px;
+    padding-left:5px;
+    /* font-size: 16px; */
 }
 
 .sidenavContent .activeLink {
     opacity: 1;
-    font-size: 16px;
+    padding:5px;
+    font-size: 30px;
 }
 
 .sidenavContent td {
     padding: 0;
     width: 0px;
-    height: 25px;
+    height: auto;
     overflow: hidden;
     display: block;
     transition: 0.5s ease-in-out;
@@ -143,7 +144,7 @@ body {
     .background-title .text{
         font-size:20vw;
     }
-
+   
     .text-space {
         font-size: 5vw;
     };
@@ -161,8 +162,8 @@ body {
     background-color:rgb(170, 7, 35);
     padding: 0;
     margin: 0;
-    height: 200%;
-    width: 52%;
+    height: 200vh;
+    width: 50%;
     position: absolute;
     z-index: 0;
 }
@@ -207,20 +208,23 @@ body {
 
 /* Line stuff */
 
-.line {
-    margin: auto;
+#menuLine {
+    opacity:1;
+    float:right;
     height: 2px;
     background-color: rgb(249, 211, 139);
-    opacity: 0;
-    width: 0;
-    transition-duration: 0.25s;
+    width: 100%;
+    transform:scaleX(0);
+    transition-duration: 0.2s;
     border-radius: 2px;
-    margin-left: 35px;
+    transform-origin:100% 0;
 }
+.fullLength {
+    transform:scaleX(1) !important;
+}
+#toggleMenu:hover #menuLine {
+    transform:scaleX(1);
 
-#toggleMenu:hover .line {
-    opacity: 1;
-    width: 42px;
 }
 
 

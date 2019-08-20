@@ -6,10 +6,10 @@ body,td,th {
   margin:0;
   box-sizing: border-box;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0px;
     background: transparent; 
-} */
+}
 .center {
    position:absolute; left:50%; top:50%; margin:0; transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
@@ -49,7 +49,7 @@ body,td,th {
         opacity: 0;
         transition-duration:  0.25s;
 }
-/* html, body{
+html, body{
     height: 105%;
     border: 0px solid red;
     min-width:1280px;
@@ -57,7 +57,7 @@ body,td,th {
 		-ms-overflow-style: none;
 		scroll-behavior: smooth;
 
-} */
+}
 
 /* Navagation Bar */
     #navbar {

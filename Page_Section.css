@@ -1,0 +1,61 @@
+.pageContainer{
+    position:absolute; 
+    min-height:100vh;
+    z-index:1;
+}
+.pageSection {
+    position:relative;
+    height:100vh;
+    min-width:100vw;
+    padding:1px;
+    z-index:1;
+    text-align:center;
+}
+
+.fixed-image{
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position:center;
+}
+
+
+.carousel-item .carousel-image{
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position:center;
+    position:absolute; left:0; top:0; width:100%; height:100%;
+}
+.slideBorderLarge {
+    border: 0.5rem solid #ddd; 
+    border-left:0.7rem solid #2196F3;
+    border-top:0.7rem solid #2196F3;
+
+    border-radius: 1rem 2rem 3rem 4rem;
+    overflow:hidden;
+    width:auto !important;
+    max-width:100%;
+}
+.slideImageSmall {
+    border: 0.5vmin solid rgb(249, 211, 139);
+    border-radius: 1vmin;
+    overflow:hidden;
+    width:auto !important;
+    max-width:100%;
+}
+.slideOverlayLink {
+    position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);
+    text-decoration: none;
+    z-index:1;
+    opacity:0;
+    transition-duration:0.2s;
+    color: rgb(249, 211, 139);
+}
+.slideOverlayLink:hover{
+    opacity:1;
+    color: rgb(249, 211, 139);
+    text-decoration: none;
+}
+.carousel-text {
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f9d38b, 0 0 25px #f9d38b, 0 0 30px #f9d38b, 0 0 35px #f9d38b, 0 0 45px #f9d38b;
+}

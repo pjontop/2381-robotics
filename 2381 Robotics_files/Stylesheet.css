@@ -244,7 +244,7 @@ html, body{
 	color: lightgreen;
 }
 
-.slice {
+.slide {
     overflow: hidden;
     position: fixed;
 		transition-duration:1s;

@@ -486,6 +486,10 @@
 
         <!--BEGIN:ABOUT-->
     <script>
+        $(function(){
+            $("#toggleMenu").click(function(){
+                toggleMenu()});
+        })
         sideNavIterator = 0;
         sideNavOpen = false;
 
@@ -493,8 +497,9 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
         function toggleMenu() {
+            $("#menuLine").toggleClass("fullLength");
+            $("toggleMenu").toggleClass("is-active");
             if (!sideNavOpen) {
                 sideNavOpen = true;
                 sideNavIterator = 0;

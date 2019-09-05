@@ -59,11 +59,19 @@
                 </tr>
                 <tr>
                     <td>
+                        <div class='link' id="TeamsTab" href="#Posts">TEAMS
+                
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <div class='link' href="#Posts">POSTS
 
                         </div>
                     </td>
                 </tr>
+                
                 <tr>
                     <td>
                         <div class='link' href="#Community">COMMUNITY
@@ -92,6 +100,25 @@
                 </tr>
             </table>
         </div>
+        <div id="menuTeamList">
+            </a>
+            <a class="link" href="#2381X">A</a>
+            <br>
+            <a class="link" href="#2381X">B</a>
+            <br>
+            <a class="link" href="#2381X">C</a>
+            <br>
+            <a class="link" href="#2381X">W</a>
+            <br>
+            <a class="link" href="#2381X">X</a>
+            <br>
+            <a class="link" href="#2381Y">Y</a>
+            <br>
+            <a class="link" href="#2381C">Z</a>
+        </div>
+        
+       
+        
     </div>
     <!--END: SIDE NAV-->
     <!--BEGIN: BACK TO TOP BUTTON-->
@@ -244,142 +271,342 @@
                     <img src="images/robot.png" style='position:relative; height:100%'>
                 </div>
             </center>
+            </section>
+
+        <section class='container-fluid pageSection' style='height:auto' name='INFO'>
+
+
+
+            <div id="vexInfoSection">
+                <div class="background-overlay background3"></div>
+                <div class="background-overlay background4"></div>
+                <div id="texture" class="background-overlay" ></div>
+                <div class="container-fluid">
+                <div class="row" style="height:300px; padding-bottom: 0">
+                    <div class="col-md-6" style="text-align: left; padding-left:4%; padding-top:4%; ">
+                        <p class="vexInfoTextbox" style=" width:90%" >2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive
+                            teams
+                            working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics
+                            competition for elementary through university students, where competitors are given a yearly challenge
+                            for which they must design, build, program, and drive a robot to complete the challenge as best as they
+                            can.</p>
+                            <a href="https://www.vexrobotics.com/" target="_blank"
+                                style="color:rgb(249, 211, 139);font-family:'neutra';text-decoration: underline;">Click here to visit
+                                their website</a>
+                    </div>
+                    <div class ='col-md-6'>
+                        <img src="images/towerTakeover.png">
+
+                    </div>
+                </div>
+                    <div class ='row' style="height:400px">
+                        <div class="col-md-6">
+<br>
+<iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+                    <div class="col-md-6" style="text-align: right; padding-right:4%; padding-top: 4%;">
+                         
+                            <p class="vexInfoTextbox">The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field.
+                                Two alliances,
+                                one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second
+                                autonomous period, followed by a one minute and forty-five second driver controlled period. The object
+                                of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or
+                                scoring cubes in goals.</p>
+                            <a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank"
+                                style="color:rgb(249, 211, 139);font-family:'neutra';float:right;text-decoration: underline;">Click here
+                                for more information</a>
+                    </div>
+                    
+                    
+                </div>
+               
+            </div>
+            </div>
+            </section>
+            
+            <div id="teamsContainer">
+                <div class="texture"></div>
+            
+                <div id="teamsBackgroundTitle">
+            
+                    <h2 style='font-size: 100px'>VIEW</h2><br><br>
+                    <h1 style="font-size:250px">TEAMS</h1>
+                    <center>
+                        <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png"
+                                class="pulsate"></button>
+                    </center>
+            
+                </div>
+                <button class="moveTeamsButtonLeft" onclick="moveCardsLeft()">&#11164;</button>
+                <button class="moveTeamsButtonRight" onclick="moveCardsRight()">&#11166;</button>
+                <table id="cardContainer">
+            
+                    <tr>
+            
+                        <td align="center">
+                            <div class="card" onclick="showTeamPageLink(0)"
+                                style="opacity:1;height:400px;background-image:url('images/ExampleBackground.jpg');">
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">A</span></a>
+                                <a href="2381A.ca" class="teamPageLink">Visit Page</a>
+                            </div>
+                        </td>
+                        <td align="center">
+                            <div class="card" onclick="showTeamPageLink(1)"
+                                style="background-image:url('images/ExampleBackground2.jpg');">
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">B</span></a>
+                                <a href="2381B.ca" class="teamPageLink">Visit Page</a>
+                            </div>
+                        </td>
+                        <td align="center">
+                            <div class="card" onclick="showTeamPageLink(2)"
+                                style="background-image:url('images/ExampleBackground3.jpg');">
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">C</span></a>
+                                <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+            
+                            </div>
+                        </td>
+                        <td align="center">
+                            <div class="card" onclick="showTeamPageLink(3)"
+                                style="background-image:url('images/ExampleBackground.jpg');">
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">W</span></a>
+                                <a href="2381W.ca" class="teamPageLink">Visit Page</a>
+            
+                            </div>
+                        </td>
+                        <td align="center">
+                            <div class="card" onclick="showTeamPageLink(4)"
+                                style="background-image:url('images/ExampleBackground2.jpg');">
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">X</span></a>
+                                <a href="2381X.ca" class="teamPageLink">Visit Page</a>
+            
+                            </div>
+                        </td>
+                        <td align="center">
+                            <div class="card" onclick="showTeamPageLink(5)"
+                                style="background-image:url('images/ExampleBackground3.jpg');">
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Y</span></a>
+                                <a href="2381Y.ca" class="teamPageLink">Visit Page</a>
+            
+                            </div>
+                        </td>
+                        <td align="center">
+                            <div class="card" onclick="showTeamPageLink(6)"
+                                style="background-image:url('images/ExampleBackground.jpg');">
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Z</span></a>
+                                <a href="2381Z.ca" class="teamPageLink">Visit Page</a>
+            
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="slideshowContainer">
+            
+                <div class="slideshow">
+                    <div class="slides">
+                        <input type="radio" name="r" id="r1" checked>
+                        <input type="radio" name="r" id="r2">
+                        <input type="radio" name="r" id="r3">
+                        <input type="radio" name="r" id="r4">
+                        <input type="radio" name="r" id="r5">
+                        <input type="radio" name="r" id="r6">
+                        <input type="radio" name="r" id="r7">
+                        <input type="radio" name="r" id="r8">
+                        <input type="radio" name="r" id="r9">
+                        <input type="radio" name="r" id="r10">
+                        <div class="slide s1">
+                            <img src="images/slideshowImage1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage4.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage5.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage6.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage7.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage8.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage9.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slideshowImage10.jpg" alt="">
+                        </div>
+                    </div>
+            
+                    <div class="slideNavigation">
+                        <label for="r1" class="bar"></label>
+                        <label for="r2" class="bar"></label>
+                        <label for="r3" class="bar"></label>
+                        <label for="r4" class="bar"></label>
+                        <label for="r5" class="bar"></label>
+                        <label for="r6" class="bar"></label>
+                        <label for="r7" class="bar"></label>
+                        <label for="r8" class="bar"></label>
+                        <label for="r9" class="bar"></label>
+                        <label for="r10" class="bar"></label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="texture"></div>
+                <center>
+                    <div>
+                        <a href="#"><img src="images/instagramLogo.png"></a>
+                        <a href="#"><img src="images/githubLogo.png"></a>
+                        <a href="#"><img src="images/youtubeLogo.png"></a>
+                    </div>
+                    <div class="logo">2381 ROBOTICS</div>
+                </center>
+            
+            </div>
+            
+            <a href="#" id="topButton">
+                <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+            </a>
+
         </section>
         <!--END: HOME-->
-        <section class="container-fluid pageSection" style='height:40vh;'>
 
-            <div class="background-overlay fixed-image" style="background-image: url('images/flywheel.jpg'); "></div>
-        </section>
         <!--BEGIN:ABOUT-->
-        <section class="container-fluid pageSection" style='height:100vh;'>
-            <div class="background-overlay" id='background-red'></div>
-            <div class="jumbotron text-center" style='margin-bottom:0; margin-top:3vh; padding:2rem; background:none'>
-                <div class="largeTitle">KERNEL BYE'S</div>
-            </div>
-            <div class="row center-h"
-                style="height:60%; width:80%; bottom:10%; top:auto; border-style:none; padding:10px;">
-                <div class="col-sm-12 col-md-7" style="border-style:none;">
+    <script>
+        sideNavIterator = 0;
+        sideNavOpen = false;
 
-                    <div id="slide1" class="carousel slide slideBorderLarge" data-ride="carousel" data-interval="false"
-                        style='height:100%;'>
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#slide1" data-slide-to="0" class="active"></li>
-                            <li data-target="#slide1" data-slide-to="1"></li>
-                            <li data-target="#slide1" data-slide-to="2"></li>
-                        </ul>
+        window.onload = function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
-                        <!-- The slideshow -->
-                        <div class="carousel-inner" style='height:100%'>
-                            <div class="carousel-item active"
-                                style='position:absolute; left:0; width:100%; height:100%;'>
-                                <div class='carousel-image'
-                                    style='background-image: url("images/2019_St._Catharines/_MG_0008.JPG");'></div>
+        function toggleMenu() {
+            if (!sideNavOpen) {
+                sideNavOpen = true;
+                sideNavIterator = 0;
+                document.getElementById("toggleMenu").classList.add("is-active");
+                var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
+                    document.getElementById("sidenav").style.width = "120px";
+                }
+                else {
+                    document.getElementById("sidenav").style.width = "8.7vw";
+                }
+                openMenu = setInterval(openMenuOptions, 75);
+                var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
+                    document.getElementById("menuTeamList").style.marginLeft = "-30px";
+                }
+                else {
+                    document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
 
-                            </div>
-                            <div class="carousel-item" style='position:absolute; left:0;width:100%; height:100%;'>
-                                <div class='carousel-image'
-                                    style='background-image: url("images/2019_St._Catharines/_MG_0028.JPG");'></div>
-                            </div>
-                            <div class="carousel-item" style='position:absolute; left:0;width:100%; height:100%;'>
-                                <div class='carousel-image' style='background-image: url("images/2019_St._Catharines/_MG_0018.JPG");'></div>
-                            </div>
-                        </div>
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#slide1" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#slide1" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-5">
-                    <div class="row" style="height:60%; border-style:none">
-                        <div class="col-12">
-                            <div id="slide-text" class="carousel slide" data-ride="carousel"
-                                style='height:100%; overflow:hidden; padding:2px;' data-interval="false">
+                }
 
-                                <!-- The slideshow -->
-                                <div class="carousel-inner" style='height:100%'>
-                                    <div class="carousel-item"
-                                        style='position:absolute; left:0;width:100%; height:100%;'>
-                                        <div class='carousel-text'>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis lectus,
-                                            consectetur a enim nec, blandit fringilla
-                                            lacus. Mauris ullamcorper justo eu ligula sodales luctus. Quisque vestibulum
-                                            vulputate mi, non egestas velit tristique
-                                            sed. Nulla ultricies quam eu dignissim interdum. Vivamus dignissim eget odio et
-                                            accumsan. Sed ullamcorper faucibus ipsum
-                                            sed porttitor. Aliquam erat volutpat. Etiam vel finibus massa, eget ornare eros.
-                                            Maecenas dignissim dolor in tristique
-                                            faucibus. Phasellus eget pharetra ipsum, eu bibendum ante. Aenean faucibus
-                                            varius turpis id facilisis. Ut eleifend
-                                            aliquet semper. Nunc a tincidunt elit, id lobortis erat. Ut enim justo, feugiat
-                                            nec imperdiet sit amet, porta
-                                            consectetur quam. Aenean sagittis mi pharetra semper ornare.
-                                        </div>
-                                       
-                                    </div>
-                                    <div class="carousel-item active"
-                                        style='position:absolute; left:0;width:100%; height:100%;'>
-                                        In hendrerit malesuada quam quis pulvinar. Etiam et orci libero. Quisque et
-                                        tempor orci. In ac mauris id neque facilisis
-                                        mollis. Pellentesque in gravida velit. Ut id erat velit. Maecenas hendrerit
-                                        tortor lorem, non tincidunt lorem
-                                        pellentesque at. Ut semper, nisl nec tincidunt pellentesque, risus dui elementum
-                                        lectus, vel commodo sapien sem eu
-                                        justo.
-                                    </div>
-                                    <div class="carousel-item"
-                                        style='position:absolute; left:0;width:100%; height:100%;'>
-                                        Aenean convallis vulputate iaculis. Praesent nec aliquam ipsum. Ut turpis arcu,
-                                        commodo et mauris et, rhoncus rutrum
-                                        tortor. Nulla et arcu lacinia, dignissim purus sit amet, pellentesque ex. Mauris
-                                        non dolor id turpis interdum eleifend
-                                        eget eget libero. Fusce sed ex eu mi tempus auctor. Integer sodales volutpat
-                                        risus ac maximus. Donec placerat ipsum eu
-                                        leo ullamcorper elementum.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="height:40%; border-style:none">
-                        <div class="col-12">
-                                <div class='center-h aspect-ratio-height' style='height:100%' ratio="1.5">
+            } else {
+                sideNavOpen = false;
+                sideNavIterator = 7;
+                closeMenu = setInterval(closeMenuOptions, 75);
+                document.getElementById("sidenav").style.width = "0";
+                var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
+                    document.getElementById("menuTeamList").style.marginLeft = "-40px";
+                }
+                else {
+                    document.getElementById("menuTeamList").style.marginLeft = "-3vw";
 
-                                <div id="slide2" class="carousel slide slideImageSmall" data-ride="carousel"
-                                    style='height:100%;' data-interval="false">
-                                    <a href="#slide1" data-slide="next" class='slideOverlayLink'>
-                                        <div class='center' style='font-size:3rem'>
-                                        NEXT
-                                        </div>
-                                    </a>
+                } document.getElementById("toggleMenu").classList.remove("is-active");
+            }
+        }
 
-                                    <!-- The slideshow -->
-                                    <div class="carousel-inner" style='height:100%'>
-                                        <div class="carousel-item" style='position:absolute; left:0; width:100%; height:100%;'>
-                                            <div class='carousel-image' style='background-image: url("images/2019_St._Catharines/_MG_0008.JPG");'></div>
-                                        </div>
-                                        <div class="carousel-item active" style='position:absolute; left:0;width:100%; height:100%;'>
-                                            <div class='carousel-image' style='background-image: url("images/2019_St._Catharines/_MG_0028.JPG");'></div>
-                                        </div>
-                                        <div class="carousel-item" style='position:absolute; left:0;width:100%; height:100%;'>
-                                            <div class='carousel-image' style='background-image: url("images/2019_St._Catharines/_MG_0018.JPG");'></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        function openMenuOptions() {
+            var pageWidth = document.documentElement.clientWidth;
+            if (pageWidth <= 1440) {
+                document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
+            }
+            else {
+                document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "8.7vw";
+            }
+            sideNavIterator++;
+            document.getElementById("toggleMenu").disabled = true;
+            if (sideNavIterator == 8) {
+                clearInterval(openMenu)
+                document.getElementById("toggleMenu").disabled = false;
+            }
+        }
+
+        function closeMenuOptions() {
+            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "0px";
+            sideNavIterator--;
+            document.getElementById("toggleMenu").disabled = true;
+            if (sideNavIterator < 0) {
+                clearInterval(closeMenu)
+                document.getElementById("toggleMenu").disabled = false;
+            }
+        }
+
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                document.getElementById("topButton").style.opacity = "1";
+                document.getElementById("topButton").style.bottom = "25px";
+            } else {
+                document.getElementById("topButton").style.opacity = "0";
+                document.getElementById("topButton").style.bottom = "0";
+            }
+        }
+        counter = 0;
+
+        function moveCardsLeft() {
+            if (counter > 0) {
+                document.getElementsByClassName("card")[counter].style.opacity = "0";
+                document.getElementsByClassName("card")[counter].style.height = "0";
+                counter--;
+                document.getElementsByClassName("card")[counter].style.opacity = "1";
+                document.getElementsByClassName("card")[counter].style.height = "400px";
+
+            }
+        }
+
+        function moveCardsRight() {
+            if (counter < 6) {
+                document.getElementsByClassName("card")[counter].style.opacity = "0";
+                document.getElementsByClassName("card")[counter].style.height = "0";
+
+                counter++;
+                document.getElementsByClassName("card")[counter].style.opacity = "1";
+                document.getElementsByClassName("card")[counter].style.height = "400px";
+
+            }
+        }
+
+        function revealCards() {
+            document.getElementById("teamsBackgroundTitle").style.height = 0;
+        }
+        function showTeamPageLink(i) {
+            document.getElementsByClassName("TeamPageImage")[i].style.backgroundColor = "black";
+            document.getElementsByClassName("TeamPageLink")[i].style.transform = "translateY(10px)";
+            document.getElementsByClassName("TeamPageLink")[i].style.opacity = "1";
+        }
+    </script>
         <!--END:ABOUT-->
 
-    </div>
     <!--END: PAGES-->
 
     <!--BEGIN: JS-->
@@ -388,6 +615,38 @@
     <script src="https://kit.fontawesome.com/8d41975750.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#TeamsTab").click((hover) => {
+                toggleTeamsList();
+            })
+        });
+        var teamListOpen = false;
+        function toggleTeamsList() {
+            var pageWidth = document.documentElement.clientWidth;
+            $("#TeamsTab").toggleClass("link-is-active");
+            if (pageWidth <= 1440) {
+                if (!teamListOpen) {
+                    document.getElementById("menuTeamList").style.marginLeft = "0";
+                    teamListOpen = true;
+                }
+                else {
+                    document.getElementById("menuTeamList").style.marginLeft = "-30px";
+                    teamListOpen = false;
+                }
+            }
+            else {
+                if (!teamListOpen) {
+                    document.getElementById("menuTeamList").style.marginLeft = "0";
+                    teamListOpen = true;
+                }
+                else {
+                    document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
+                    teamListOpen = false;
+                }
+            }
+        }
+    </script>
     <script>
         $(function () {
             $("#toggleMenu").click(function () {
@@ -413,7 +672,7 @@
         // }
         function toggleMenu() {
             $("#menuLine").toggleClass("fullLength");
-            $("toggleMenu").toggleClass("is-active");
+            $("#toggleMenu").toggleClass("is-active");
             if (!sideNavOpen) {
                 sideNavOpen = true;
                 sideNavIterator = 0;

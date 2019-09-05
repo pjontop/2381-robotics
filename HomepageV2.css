@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     -ms-overflow-style: none;  /* IE 10+*/
     scrollbar-width: none;  /* Firefox*/
@@ -34,7 +35,23 @@ body {
 
 }
 
-.teamLogo {
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(170, 7, 35);
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(170, 7, 35);
+    position: relative;
+    border-top: 10px solid rgb(249, 211, 139);
+}
+
+
+.footer .logo {
+    margin-top: 35px;
     color: rgb(249, 211, 139);
     border: 2px solid rgb(249, 211, 139);
     padding: 2px 6px;
@@ -43,6 +60,11 @@ body {
     padding-bottom: 2px; */
     font-size: 15px;
     top:0;
+    border: 2px solid rgb(249, 211, 139);
+    padding: 6px;
+    font-size: 15px;
+    z-index: 200;
+    display: inline-block;
 }
 
 .contactText1 {
@@ -64,17 +86,362 @@ body {
 
 /* .contactInfo:hover .contactText1 {
     opacity: 0;
+    position: relative;
+}*/
+    
+.footer img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    padding: 15px;
 }
 
-.contactInfo:hover .contactText2 {
-    opacity: 1;
-} */
+.slideshowContainer {
+    height: 66vw;
+    width: 100vw;
+}
 
+.slideshow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.slideNavigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(249, 211, 139);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: rgb(249, 211, 139);
+    ;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 10%;
+    transition: 0.6s;
+}
+
+.slide img {
+    position:absolute;
+    width: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -10%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -30%;
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#r6:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#r7:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#r8:checked ~ .s1 {
+    margin-left: -70%;
+}
+
+#r9:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+#r10:checked ~ .s1 {
+    margin-left: -90%;
+}
+#towerTakeoverYT {
+    width: 560px;
+    height: 316px;
+    z-index: 300;
+    border-radius: 9px;
+    position: relative;
+}
+
+#vexInfoSection {
+    width: 100%;
+    height: 700px;
+    height:100%;
+}
+
+#vexInfoSection p {
+    color: rgb(249, 211, 139);
+    font-size: 20px;
+    font-family: 'neutra';
+}
+
+#vexInfoSection img {
+    position: relative;
+    z-index: 200;
+    width: 400px;
+    height: 400px;
+    top:-90px;
+}
+
+@keyframes pulse_animation {
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+.pulsate {
+    border: none;
+    background: none;
+    position:absolute;
+    bottom:35px;
+    animation-name: pulse_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width:50px;
+    height:50px;
+    transform:translateX(-25px);
+}
+
+#cardContainer {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s ease-in-out;
+    left: 0;
+}
+
+#teamsContainer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(170, 7, 35);
+    position: relative;
+    border-bottom: 10px solid rgb(249, 211, 139);
+    overflow-x:hidden;
+}
+
+#teamsBackgroundTitle {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(249, 211, 139);
+    z-index: 200;
+    position: absolute;
+    overflow: hidden;
+    transition: 2.5s ease-in-out;
+}
+
+#teamsBackgroundTitle h1 {
+    font-size: 250;
+    color: rgb(170, 7, 35);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: 200px;
+    margin-top: -35px;
+}
+
+#teamsBackgroundTitle h2 {
+    font-size: 100;
+    color: rgb(137, 4, 29);
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    position: relative;
+    margin-left: 200px;
+}
+
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 135px;
+    text-align:center;
+    display: inline-block;
+    opacity:0;
+    height:0;        
+    margin:0;
+    margin-top:60px;
+    width:800px;
+    
+}
+
+#cardContainer td {
+    width:100%;
+    position:absolute;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
+}
+.vexInfoText1  {
+    width:40%;    
+    margin-left:4%;
+    position:absolute;
+}
+ .vexInfoTextbox {
+        line-height:1.15 ;
+    }
+.vexInfoText2 {
+    width:40%;
+    margin-left:55%;
+    margin-top:200px;
+    text-align:right;
+    position:absolute;
+}
+
+.moveTeamsButtonLeft {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    background: none;
+    font-size: 50px;
+    color: rgb(249, 211, 139);
+    border: none;
+    z-index: 100;
+}
+
+.moveTeamsButtonRight {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background: none;
+    font-size: 50px;
+    color: rgb(249, 211, 139);
+    border: none;
+    z-index: 100;
+}
+
+.teamPageImage {
+    display: inline-block;
+    position: relative;
+    font-size: 150px;
+    color: black;
+    background-color: rgb(249, 211, 139);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height:100%;
+    mix-blend-mode: screen;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.25s ease-in-out;
+    line-height: 125px;
+}
+
+.card:hover .teamPageImage {
+    background-color: black;
+}
+
+.card:hover .teamPageLink {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.teamPageLink {
+    background-color: rgb(249, 211, 139);
+    color: rgb(137, 4, 29);
+    font-size: 16px;
+    border-radius: 5px;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+#splash {
+    height: 100%;
+    width: 100%;
+}
+
+.teamLogo {
+    color: rgb(249, 211, 139);
+    position: relative;
+    top: -34px;
+    border: 2px solid rgb(249, 211, 139);
+    padding: 6px;
+    display: inline;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 15px;
+    z-index: 200;
+}
+
+.contactText1 {
+    position: absolute;
+    color: rgb(249, 211, 139);
+    font-size: 15px;
+    right: 40px;
+    top: 25px;
+    z-index: 100;
+    overflow: hidden;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    text-decoration:none;
+    background-color:rgb(0,123,255);
+    border-radius:5px;
+    padding:10px;
+}
+.contactText1:hover {
+    background-color:rgb(2, 108, 222);
+}
 #sidenav {
     position: absolute;
     top: 33%;
-    left: 35px;
-    transition: 0.5s ease-in-out;
+    left: 45px;
+    transition: 1s ease-in-out;
+
+    overflow:hidden;
+
 }
 
 .sidenavContent {
@@ -85,13 +452,22 @@ body {
 
 .sidenavContent .link {
     /* border-style:solid; */
+
+    text-decoration: none;
+    color: rgb(249, 211, 139);
     font-size: 15px;
     opacity: 0.4;
     z-index:10;
     transition: 0.2s ease-in-out;
+
 }
 
 .sidenavContent .link:hover {
+    opacity: 1;
+    padding-left:5px;
+    /* font-size: 16px; */
+}
+.sidenavContent .link-is-active {
     opacity: 1;
     padding-left:5px;
     /* font-size: 16px; */
@@ -102,15 +478,41 @@ body {
     padding:5px;
     font-size: 30px;
 }
-
 .sidenavContent td {
     padding: 0;
     width: 0px;
-    height: auto;
     overflow: hidden;
-    display: block;
+    height: auto; 
+    display: block; 
     transition: 0.5s ease-in-out;
 }
+
+.sidenavContent .menuTD {
+    padding: 0;
+    width: 0px;
+    overflow: hidden;
+}
+
+#menuTeamList {
+    position: absolute;
+    top: 34%;
+    left:0;
+    margin-left:-40px;
+    width:30px;
+    z-index: 200;
+    transition: 0.75s ease-in-out;
+    background-color:rgb(249, 211, 139);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    text-align:center;
+    line-height:30px;
+    border-radius:0 10px 10px 0;
+    padding:5px;
+}
+#menuTeamList a {
+    color:rgb(170, 7, 35);
+    font-size:20px;
+}
+
 
 .largeTitle {
     position: relative;
@@ -171,6 +573,18 @@ body {
     z-index:-1;
 }
 
+.background3 {
+    background-color: rgb(170, 7, 35);
+    width: 50%;
+}
+
+.background4 {
+    background-image: linear-gradient(rgb(137, 4, 29), rgb(170, 7, 35) 80%);
+    left: 50%;
+    width: 50%;
+}
+
+
 #background-red-light{
     background-color:rgb(170, 7, 35);
     width: 50%;
@@ -190,6 +604,7 @@ body {
     background-size: 100px 100px;
     opacity: 0.6;
     z-index:0;
+
 }
 
 .topnav {
@@ -199,18 +614,22 @@ body {
 }
 
 #topButton {
-    padding:10px;
-    background-color:rgb(249, 211, 139);
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    border-radius:50%;
-    opacity:0;
-    bottom:-50px;
-    z-index:3;
-    transition:0.3s ease-in-out;
+    padding: 10px;
+    background-color: rgb(249, 211, 139);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 3;
+    border-radius: 50%;
+    opacity: 0;
+    bottom: -50px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
+.vexText {
+    font-size:40px;
+}
 /* Line stuff */
 
 #menuLine {
@@ -342,4 +761,596 @@ body {
     font-size: 21px;
     right: 40px;
     bottom: 31px;
+    z-index: 100;
+    
+}
+.vexInfoText1 a .vexInfoText2 a {
+    font-size:16px;
+}
+
+@media only screen and (min-width:1441px){
+
+    .footer {
+        width: 100%;
+        height: 18.3vw;
+        border-top: 0.73vw solid rgb(249, 211, 139);
+    }
+    
+    
+    .footer .logo {
+        margin-top: 2.5vw;
+        border: 0.2vw solid rgb(249, 211, 139);
+        padding: 0.4vw;
+        font-size: 1.1vw;
+    }
+    
+    .footer img {
+        width: 4vw;
+        height: 4vw;
+        margin-top: 4vw;
+        padding: 1.1vw;
+    }
+    
+    .slideshowContainer {
+        height: 66vw;
+        width: 100vw;
+    }
+
+    .slideNavigation {
+        bottom: 20px;
+    }
+    
+    .bar {
+        width: 4vw;
+        height: 0.8vw;
+        border: 0.2vw solid rgb(249, 211, 139);
+        margin: 0.45vw;
+    }
+    #towerTakeoverYT {
+        width: 41vw;
+        height: 23.1vw;
+        border-radius: 9px;
+    }
+    
+    #vexInfoSection {
+        height: 51.2vw;
+    }
+    
+    #vexInfoSection p {
+        font-size: 1.75vw;
+    }
+    
+    #vexInfoSection img {
+        width: 30vw;
+        height: 30vw;
+        margin-left:145%;
+        margin-top: -6.6vw;
+    }
+  
+    .pulsate {
+        bottom:2.6vw;
+        width:5vw;
+        height:5vw;
+        transform:translateX(-2.5vw);
+    }
+
+    #teamsContainer {
+        width: 100%;
+        height: 43.9vw;
+        border-bottom: 0.73vw solid rgb(249, 211, 139);
+    }
+
+    #teamsBackgroundTitle h1 {
+        font-size: 18.3vw;
+        margin-left: 14.6vw;
+        margin-top: -2.6vw;
+    }
+    
+    #teamsBackgroundTitle h2 {
+        font-size: 7.3vw;
+        margin-top: 4vw;
+        margin-left: 14.6vw;
+    }
+    
+    .card {
+        margin-top:13.5vw;
+        width:1200px;
+    }
+    
+    .moveTeamsButtonLeft {
+        left: 4vw;
+        font-size: 4vw;
+    }
+    
+    .moveTeamsButtonRight {
+        right: 4vw;
+        font-size: 4vw;
+    }
+
+    .teamPageLink {  
+        font-size: 16px;
+        border-radius: 5px;     
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .teamLogo {
+        top: -1vw;
+        border: 0.2vw solid rgb(249, 211, 139);
+        padding: 0.4vw;
+        padding-top: 0.15vw;
+        padding-bottom:0.15vw;
+        font-size: 1.1vw;
+    }
+    
+    .contactText1 {
+        font-size: 1.1vw;
+        right: 2.9vw;
+        top: 1.8vw;
+        border-radius:0.36vw;
+        padding:0.75vw;
+    }
+
+    #sidenav {
+        top: 34%;
+        left: 3.3vw;
+    }
+    
+    .sidenavContent {
+        line-height: 2.2vw;
+    }
+    
+    .link {   
+        font-size: 1.1vw;
+    }
+    
+    .link:hover {
+        font-size: 1.2vw;
+        padding-left:0.4vw;
+    }
+    
+    .sidenavContent .activeLink {
+        font-size: 2.2vw;
+        padding-left:0.4vw;
+    }
+
+    #menuTeamList {
+        top: 34%;
+        width:2.2vw;
+        line-height:2.2vw;
+        border-radius:0 10px 10px 0;
+        padding:0.4vw;
+        margin-left:-3vw;
+    }
+    #menuTeamList a {
+        font-size:1.5vw;
+    }
+    
+    
+    .largeTitle {
+        margin-top: 20px;
+        font-size: 5.2vw;
+    }
+    
+    .thinTitle {
+        margin-top: -45px;
+        margin-right: 2.5%;
+        font-size: 17.6vw;
+        letter-spacing:40px;
+    }
+    
+    .robotImage {
+        margin-top: -23vw;
+        width: 18vw;
+        height: 18vw;
+    }
+ 
+    .topnav {
+        z-index: 100;
+    }
+    
+    #topButton {
+        padding: 1vw;
+        bottom: 2vw;
+        right: 2vw;
+        bottom: -4vw;
+    }
+    
+    .vexText {
+        font-size:3vw;
+    }
+    /* Line stuff */
+    
+    .line {
+        height: 0.2vw;
+        margin-left: 2.5vw;
+    }
+    
+    #toggleMenu:hover .line {
+        width:3.6vw;
+    }
+   
+    #toggleMenu {
+        margin-left: 1.8vw;
+        margin-top: 2vw;
+        font-size: 1.3vw;
+    }
+    
+    #menuButton {
+        margin-left: 2.5vw;
+    }
+    
+    .vex2019text {
+        font-size: 1.5vw;
+        right: 3vw;
+        bottom: 2.3vw;
+        
+    }
+    .vexInfoText1 a .vexInfoText2 a {
+        font-size:1.17vw;
+    }
+    .vexInfoText2 {
+        margin-top:20vw;
+    }
+    .card .letter {
+        position:absolute;
+        left:50%;
+        top:125px;
+        font-size:350px;
+    }
+    .card .teamName {
+        position:absolute;
+        left:50%;
+        top:25px;
+        font-size:200px;
+        line-height:150px;
+        transform:translateX(-200px);
+    }
+    
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 2vw;
+    height: 0.3vw;
+}
+.hamburger-inner::before {
+    top: -0.6vw;
+}
+
+.hamburger-inner::after {
+    bottom: -0.6vw;
+}
+}
+
+@media only screen and (min-width:1025px){
+    .card .letter {
+        position:absolute;
+        left:50%;
+        top:125px;
+        font-size:350px;
+    }
+    .card .teamName {
+        position:absolute;
+        left:50%;
+        top:25px;
+        font-size:200px;
+        line-height:150px;
+        transform:translateX(-200px);
+    }
+    #vexInfoSection .texture{
+        height:1000px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #sidenav {
+        top: 200px;
+    }
+    #menuTeamList {
+        top:200px;
+    }
+    .link {
+        font-size: 15px;
+    }
+    
+    .link:hover {
+        font-size: 16px;
+    } 
+    #splash {
+        height:500px;
+    }
+    .vex2019text {
+        position: absolute;
+        top:450px;
+    }
+
+#splash .texture {
+    height:800px;
+}
+    
+.background2 {
+    height:500px;
+}
+#vexInfoSection .texture {
+    height:700px;
+}
+
+    #toggleMenu {
+        font-size: 16px;
+    }
+    #toggleMenu:hover .line {
+        width: 45px;
+    }
+    .teamLogo {
+        font-size: 15px;
+    }
+    .contactText1 {
+        font-size: 15px;
+    }
+    #vexInfoSection p {
+        font-size: 20px;
+    }
+
+
+
+    .thinTitle {
+        font-size: 200px;
+    }
+    #vexInfoSection {
+        height: 675px;
+    }
+    #towerTakeoverYT {
+        width: 40.36vw;
+        height: 22.79vw;
+    }
+    #vexInfoSection img {
+        width: 32.55vw;
+        height: 32.55vw;
+    }
+    #teamsContainer {
+        height: 500px;
+    }
+    #teamsBackgroundTitle h1 {
+        font-size: 160px;
+        margin-left: 100px;
+    }
+    
+    #teamsBackgroundTitle h2 {
+        font-size: 75px;        
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .slideshowContainer {
+        height: 66vw;
+        width: 100vw;
+    }
+    .card {
+        opacity:0;
+        height:0;        margin:0;
+        margin-top:20px;
+        width:275px;
+    }
+    #cardContainer td {
+        width:100%;
+        position:absolute;
+    }
+}
+
+
+
+@media only screen and (max-width:767px) {
+    body{
+        width:100%;
+    }
+    #sidenav {
+        top: 175px;
+        left: 35px;
+    }
+    #menuTeamList {
+        top:175px;
+        width:15px;
+        line-height:15px;
+    }
+    
+    .link {
+        font-size: 10px;
+    } 
+    #splash {
+        height:350px;
+    }
+    .vex2019text {
+        position: absolute;
+        top:280px;
+        font-size: 11px;
+    }
+    .vexText {
+        font-size:25px;
+    }
+    #menuTeamList a {
+        font-size:10px;
+    }
+    .sidenavContent {
+        line-height: 15px;
+    }
+    .vexInfoText1 {
+        text-align:center;
+        width:70%;
+        margin-left:15%;
+        position:relative;
+    }
+    .vexInfoText2 {
+        text-align:center;
+        width:70%;
+        margin-left:15%;
+        margin-top:-50px;
+        position:relative;
+    }
+    .vexInfoText1 a {
+        font-size:11px;
+    }
+   
+    .vexInfoText2 a {
+        font-size:11px;
+        margin-bottom:20px;
+    }
+    #toggleMenu {
+        font-size: 11px;
+        margin-left: 10px;
+    }
+    #toggleMenu:hover .line {
+        width: 45px;
+    }
+    #menubutton {
+        position:relative; 
+    }
+    .teamLogo {
+        font-size: 10px;
+    }
+    .contactText1 {
+        font-size: 10px;
+        right:20px;
+        border-radius:3px;
+        padding:5px;
+    }
+
+    .link:hover {
+        font-size: 11px;
+        padding-left:4px;
+    }
+    
+    .sidenavContent .activeLink {
+        font-size: 15px;
+        padding-left:4px;
+    }
+    #vexInfoSection p {
+        font-size: 13px;
+    }
+    
+#toggleMenu:hover .line {
+    opacity: 1;
+    width: 30px;
+}
+
+.robotImage {
+    margin-top: -125px;
+    width: 100px;
+    height: 100px;
+}
+    .largeTitle {
+        font-size: 40px;
+    }
+
+
+    .thinTitle {
+        font-size: 100px;
+        letter-spacing:20px;
+        padding-top:20px;
+    }
+
+    #towerTakeoverYT {
+        width: 250px;
+        height:150px;
+        margin-left:50%;
+        transform:translateX(-125px);
+        position:relative;
+        margin-bottom:0;
+    }
+    #vexInfoSection img {
+        width: 200px;
+        height: 200px;
+        margin-left:50%;
+        transform:translateX(-100px);  
+        position:relative;
+    }
+    #teamsContainer {
+        height: 500px;
+    }
+    #teamsBackgroundTitle h1 {
+        font-size: 22.5vw;
+        margin-left: 40px;
+    }
+    
+    #teamsBackgroundTitle h2 {
+        font-size: 12.5vw;        
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    .slideshowContainer {
+        height: 66vw;
+        width: 100vw;
+    }
+    .card {
+        opacity:0;
+        height:0;        
+        margin:0;
+        width:200px;
+        margin-top:20px;
+    }
+    #cardContainer td {
+        width:100%;
+        position:absolute;
+    }
+    .bar {
+        width: 4.5vw;
+        height: 1.6vw;
+
+    }
+    
+.footer {
+    height: 125px;
+
+}
+
+
+.footer .logo {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    padding: 15px;
+}
+#topButton {
+display:none;
+}
+#vexInfoSection .texture {
+    height:1000px;
+}
+#splash .texture {
+    height:600px;
+}
+.background2 {
+    height:350px;
+}
+.moveTeamsButtonLeft {
+    left: 10px;
+    font-size: 40px;
+}
+.moveTeamsButtonRight {
+    right: 10px;
+    font-size: 40px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 20px;
+    height: 2px;
+}
+.hamburger-inner::before {
+    top: -5px;
+}
+
+.hamburger-inner::after {
+    bottom: -5px;
+}
+#menuButton {
+    margin-left: 25px;
+
+}
+.line {
+    margin-left: 25px;
+}
 }

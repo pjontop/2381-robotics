@@ -1,0 +1,641 @@
+/* basic media stuff */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+    html,body{
+        width:100%;
+        overflow-x:hidden;
+    }
+}
+
+/* setting up fonts for the webpage */
+@font-face {
+    font-family: "neutra";
+    src: url("neutratext-book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "neutra-bold";
+    src: url("neutratext-bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "robot";
+    src: url("Robot Renegades.otf") format("opentype");
+}
+
+/* setting up basic properties for html and body */
+/* making scrolling smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color:#AA0723;
+    font-family: "neutra-bold";
+}
+/* hiding scroll bar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* start of of SECTION 1 CSS. Splash Page */
+/* container for section 1, splash page */
+#splash {
+    height: 100%;
+    width: 100%;
+}
+/* light red split left half of the background */
+.background1 {
+    background-color: #AA0723;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 52%;
+    position: absolute;
+    z-index: 0;
+}
+/* dark red split right half of the background */
+.background2 {
+    background-color: #790218;
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+}
+/* textured image background for the page */
+.texture {
+    background-image: url("images/background-texture.png");
+    background-size: 100px 100px;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/* top navigation including the team logo, and the contact button */
+.topnav {
+    z-index: 100;
+}
+/* the 2381 black and white logo on the top left of the screen */
+.logo2381 {
+    position:absolute;
+    top:25px;
+    left:35px;
+    width:80px;
+    height:80px;
+    border-radius:10px;
+}
+/* the team logo in the top center of the screen*/
+.teamLogo {
+    color: #F9D38B;
+    position: relative;
+    border: 2px solid #F9D38B;
+    padding: 6px;
+    display: inline-block;
+    margin-top:0px;
+    margin-top:25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 15px;
+    z-index: 200;
+}
+/* get in touch button on the top right of the screen */
+.contactUsButton {
+    position: absolute;
+    color: #F9D38B;
+    font-size: 15px;
+    right: 40px;
+    top: 25px;
+    z-index: 100;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    text-decoration:none;
+    background-color:#004777;
+    border-radius:5px;
+    padding:10px;
+}
+/* hover effect for the contact button */
+.contactUsButton:hover {
+    background-color:#403F4C;
+    cursor:pointer;
+}
+/* Text on the bottom right of the splash page which says VEX 2019 */
+.vex2019text {
+    position: absolute;
+    float: right;
+    color: #F9D38B;
+    font-size: 21px;
+    right: 40px;
+    bottom: 31px;
+    z-index: 100; 
+}
+/* The word VEX which is bigger */
+.vexText {
+    font-size:40px;
+}
+/* beige title that says Kernel Bye*/
+.mainTitle1 {
+    margin-top: 20px;
+    position: relative;
+    font-size: 70px;
+    color: #F9D38B;
+    text-align: center;
+    z-index: 100;
+    font-family: "neutra";
+}
+/* large text that saus 2381 */
+.mainTitle2 {
+    font-family: 'robot', sans-serif;
+    margin-top: -45px;
+    margin-right: 2.5%;
+    position: relative;
+    font-size: 240px;
+    text-align: center;
+    z-index: 100;
+    opacity: 0.9;
+    letter-spacing:40px;
+}
+/* "23" in a darker text */
+.mainTitle2dark {
+    color:#790218;
+}
+/* "81" in a lighter text */
+.mainTitle2light {
+    color:#AA0723;
+}
+/* image of the robot in the center of the splash page */
+.robotImage {
+    margin-top: -317px;
+    position: relative;
+    z-index: 100;
+    opacity: 0.85;
+    width: 245px;
+    height: 245px;
+}
+/* side navigation menu */
+#sidenav {
+    position: absolute;
+    top: 34%;
+    left: 45px;
+    z-index: 100;
+    transition: 1.5s ease-in-out;
+    overflow:hidden;
+}
+/* container for links in the sidenav menu */
+.sidenavContent {
+    line-height: 30px;
+}
+/* Table datas in the sidenav menu containing links*/
+.sidenavContent .menuTD {
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+/* links in the sidenav menu */
+.link {
+    text-decoration: none;
+    color: #F9D38B;
+    font-size: 15px;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+/* Hover effects for the links */
+.link:hover {
+    opacity: 1;
+    font-size: 16px;
+    padding-left:5px;
+}
+/* Special class for the link of the page which the use is currently on. (displays larger) */
+.sidenavContent .activeLink {
+    opacity: 1;
+    font-size: 30px;
+    padding-left:5px;
+}
+/* container for the list of teams in the sidenav menu */
+#menuTeamList {
+    position: absolute;
+    top: 34%;
+    left:0;
+    margin-left:-30px;
+    width:30px;
+    z-index: 200;
+    transition: 0.75s ease-in-out;
+    background-color:#F9D38B;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    text-align:center;
+    line-height:30px;
+    border-radius:0 10px 10px 0;
+    padding:5px;
+}
+/* links in the menuteamlist */
+#menuTeamList a {
+    color:#790218;
+    font-size:20px;
+}
+
+
+
+
+/* start of of SECTION 2 CSS. The information section about VRC */
+/* container of the seconds section of the page */
+#vexInfoSection {
+    width: 100%;
+    height: 700px;
+}
+/*light red split left half of the background */
+.background3 {
+    background-color: #AA0723;
+    padding: 0;
+    margin: 0;
+    height: 700px;
+    width: 52%;
+    position: absolute;
+    z-index: 0;
+}
+/*darkred split right half of the background */
+.background4 {
+    background-image: linear-gradient(#790218, #AA0723 80%);
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    height: 700px;
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+}
+/* first container on the left for text */
+.vexInfoText1  {
+    width:40%;    
+    margin-left:4%;
+    position:absolute;
+}
+/* second container on the right for text */
+.vexInfoText2 {
+    width:40%;
+    margin-left:55%;
+    margin-top:200px;
+    text-align:right;
+    position:absolute;
+}
+/* text in the vex info section */
+#vexInfoSection p {
+    color: #F9D38B;
+    font-size: 20px;
+    font-family: 'neutra';
+}
+/* VEX Robotics competition image on the right */
+#vexInfoSection img {
+    z-index: 200;
+    width: 400px;
+    height: 400px;
+    margin-left:150%;
+    margin-top: -90px;
+    position: absolute;
+}
+/* youtube video of the tower takeover reveal */
+#towerTakeoverYT {
+    width: 560px;
+    height: 316px;
+    z-index: 300;
+    border-radius: 9px;
+    position: relative;
+    margin-top: 40px;
+}
+/* links to external pages*/
+.vexLink {
+    font-size:16px;
+    color:#F9D38B;
+    font-family:'neutra';
+    text-decoration: underline;
+}
+
+
+
+
+/* start of of SECTION 3 CSS. The 2381 team gallery/slider  */
+/* container of section 3, team gallery */
+#teamsContainer {
+    width: 100%;
+    height: 600px;
+    background-color: #AA0723;
+    position: relative;
+    border-bottom: 10px solid #F9D38B;
+    overflow-x:hidden;
+}
+/* cotainer for cards in the slideshow */
+#cardContainer {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s ease-in-out;
+    left: 0;
+}
+/* button for revealing card on the right */
+.moveTeamsButtonLeft {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    background: none;
+    font-size: 50px;
+    color: #F9D38B;
+    border: none;
+    z-index: 100;
+}
+/* button for revealing card on the right */
+.moveTeamsButtonRight {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background: none;
+    font-size: 50px;
+    color: #F9D38B;
+    border: none;
+    z-index: 100;
+}
+/* table datas in the card container */
+#cardContainer td {
+    width:100%;
+    position:absolute;
+}
+/* cards for each team with an image and a link to their page */
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 135px;
+    text-align:center;
+    display: inline-block;
+    opacity:0;
+    height:0;        
+    margin:0;
+    margin-top:60px;
+    width:800px;
+}
+/* hover effect for the cards */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
+}
+/* image of the team on the card */
+.teamPageImage {
+    display: inline-block;
+    position: relative;
+    font-size: 150px;
+    color: #F9D38B;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height:100%;
+    line-height: 125px;
+}
+/* link below the card which contains a link to the team's page */
+.teamPageLink {
+    background-color: #F9D38B;
+    color: #AA0723;
+    font-size: 16px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+    padding-top: 10px;
+    margin-top:10px;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+
+
+
+/* start of of SECTION 4 CSS. Slideshow gallery*/
+/* container of section 4, slideshow gallery */
+.slideshowContainer {
+    height: 66vw;
+    width: 100vw;
+}
+/* slideshow area which displays the images in the slider */
+.slideshow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+/* container of images in the slideshow */
+.slides {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+/* class for a slide inside the slideshow */
+.slide {
+    width: 10%;
+    transition: 0.6s;
+}
+/* class for images in the slideshow */
+.slide img {
+    position:absolute;
+    width: 100%;
+}
+/* container on the bottom of the slideshow which contains the buttons to switch slides */
+.slideNavigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+/* the clickable buttons in the slidenavigation to change slides */
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 4px solid #F9D38B;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+/* hover effect for bars */
+.bar:hover {
+    background: #F9D38B;
+}
+/* input buttons for bars */
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+/* css to move the margin of the slideshow to move the slides to the left or the right on the click of a bar (s1 is the first slide)*/
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -10%;
+}
+#r3:checked ~ .s1 {
+    margin-left: -20%;
+}
+#r4:checked ~ .s1 {
+    margin-left: -30%;
+}
+#r5:checked ~ .s1 {
+    margin-left: -40%;
+}
+#r6:checked ~ .s1 {
+    margin-left: -50%;
+}
+#r7:checked ~ .s1 {
+    margin-left: -60%;
+}
+#r8:checked ~ .s1 {
+    margin-left: -70%;
+}
+#r9:checked ~ .s1 {
+    margin-left: -80%;
+}
+#r10:checked ~ .s1 {
+    margin-left: -90%;
+}
+
+
+
+
+/* start of of SECTION 5 CSS. Footer*/
+/* container for the footer section of the page */
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: #AA0723;
+    position: relative;
+    border-top: 10px solid #F9D38B;
+}
+/* text logo that says 2381 robotics in a rectangle */
+.footer .logo {
+    margin-top: 35px;
+    color: #F9D38B;
+    position: relative;
+    border: 2px solid #F9D38B;
+    padding: 6px;
+    font-size: 15px;
+    z-index: 200;
+    display: inline-block;
+}
+/* media image links in the footer (insta, github, youtube) */
+.footer img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    padding: 15px;
+}
+/* button which brings the user back to top, in the bottom right of the screen */
+#topButton {
+    padding: 10px;
+    background-color: #F9D38B;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 300;
+    border-radius: 50%;
+    opacity: 0;
+    bottom: -50px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* all hamburger related stuff for the menu button in the top left of the splash page */
+.hamburger {
+    outline: none;
+    padding: 15px 15px;
+    padding-top: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: #2D3142;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #2D3142;
+}
+.hamburger-box {
+    height: 20px;
+    width: 34px;
+    display: inline-block;
+    position: relative;
+}
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 28px;
+    height: 2px;
+    background-color: #2D3142;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+.hamburger-inner::before {
+    top: -7px;
+}
+.hamburger-inner::after {
+    bottom: -7px;
+}
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 /* the 2381 black and white logo on the top left of the screen */
 .logo2381 {
     position:absolute;
-    top:0;
+    top:25px;
     left:35px;
     width:80px;
     height:80px;
@@ -116,9 +116,8 @@ body::-webkit-scrollbar {
     position: absolute;
     color: #F9D38B;
     font-size: 15px;
-    float:right;
     right: 40px;
-    top:0;
+    top: 25px;
     z-index: 100;
     opacity: 1;
     transition: 0.2s ease-in-out;

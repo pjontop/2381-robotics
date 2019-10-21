@@ -20,13 +20,13 @@
         <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
         <div id="splash">
             <!-- splitting background into 2 halves and overlaying a textured image -->
-            <div class="background1"></div> <!-- light red-->
-            <div class="background2"></div> <!-- dark red-->
+            <div class="leftBG1"></div> <!-- light red-->
+            <div class="rightBG1"></div> <!-- dark red-->
             <div class="texture"></div> <!-- textured image background-->
             <!-- Nav bar -->
             <div class="topnav">
                 <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
-                <button onclick="changeColor()"><img src="images/2381Logo.png"  class="logo2381"></button> 
+                <button><img src="images/2381Logo.png"  class="logo2381"></button> 
                 <!-- Secondary logo centered on the top of the page -->
                 <center>
                     <div class="teamLogo">2381 ROBOTICS</div>
@@ -57,6 +57,10 @@
             <!-- side navigation menu -->
             <div id="sidenav">
                 <table class="sidenavContent">
+                    <!-- sponsors page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
+                    </tr>
                     <!-- home link -->
                     <tr>
                         <td class="menuTD"><a class="link activeLink" href="#Home">HOME</a></td>
@@ -69,17 +73,13 @@
                     <tr>
                         <td class="menuTD menuTeamLink"><a class="link" href="#Teams" onclick="toggleTeamsList()">TEAMS</a></td>
                     </tr>
+                    <!-- Calender page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Calender">CALENDAR</a></td>
+                    </tr>
                     <!-- posts page -->
                     <tr>
                         <td class="menuTD"><a class="link" href="#Posts">POSTS</a></td>
-                    </tr>
-                    <!-- community page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="#Community">COMMUNITY</a></td>
-                    </tr>
-                    <!-- sponsors page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
                     </tr>
                     <!-- join us page -->
                     <tr>
@@ -88,6 +88,10 @@
                     <!-- contact page -->
                     <tr>
                         <td class="menuTD"><a class="link" href="#Contact">CONTACT</a></td>
+                    </tr>
+                    <!-- resources page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Resources">RESOURCES</a></td>
                     </tr>
                 </table>
             <!-- end of sidenav -->
@@ -113,18 +117,31 @@
         </div>
 
 
+        <!-- <div class="sponsorsContainer">
+            <div class="texture"></div>
+            <div class="sponsorsSubContainer">
+                <h1>Thanks to all of our sponsors!</h1>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
         <!-- Start of SECTION 2. The information section about VRC -->
         <div id="vexInfoSection">
             <!-- splitting background into 2 halves and overlaying a textured image -->
-            <div class="background3"></div> <!-- light red-->
-            <div class="background4"></div> <!-- gradient which fades from light red to dark red-->
+            <div class="leftBG2"></div> <!-- light red-->
+            <div class="rightBG2"></div> <!-- gradient which fades from light red to dark red-->
             <div class="texture"></div> <!-- textured image background-->
             <!-- First block of information (paragraph 1, vex robotics image, and youtube video) -->
             <div class="vexInfoText1">
                 <!-- Vex logo image -->
                 <img src="images/towerTakeover.png">
                 <!-- paragraph about what CB Robotics is about -->
-                <p>2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive teams working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics competition for elementary through university students, where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete the challenge as best as they can.</p>
+                <p><span style="font-weight:bold;">About Us</span><br><br>2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive teams working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics competition for elementary through university students, where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete the challenge as best as they can.</p>
                 <!-- link to VRC website -->
                 <a href="https://www.vexrobotics.com/" target="_blank" class="vexLink">Click here to visit their website</a>
                 <br>
@@ -135,78 +152,29 @@
             <div class="vexInfoText2">
                 <br><br><br><br>
                 <!-- paragraooh about tower takeover -->
-                <p>The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.</p>
+                <p><span style="font-weight:bold;">Tower Takeover</span><br><br>The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.</p>
                 <a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank" class="vexLink" style="float:right;">Click here for more information</a>
             </div>
             <!-- End of SECTION 2 -->
         </div>
 
 
-        <!-- Start of SECTION 3. The 2381 team gallery/slider -->
-        <div id="teamsContainer">
+        <!-- Start of SECTION 3. The info google slides -->
+        <div id="googleSlidesContainer">
             <div class="texture"></div><!-- textured image background-->
             <!-- two buttons to move team slider left and right -->
-            <button class="moveTeamsButtonLeft" onclick="moveCardsLeft()">&#11164;</button><!-- move to the left-->
-            <button class="moveTeamsButtonRight" onclick="moveCardsRight()">&#11166;</button> <!-- move to the right-->
-            <!-- table container for team the cards -->
-            <table id="cardContainer">
-                <tr>
-                    <td align="center">
-                        <!-- card for team A, with button to visit their page-->
-                        <div class="card" onclick="showTeamPageLink(0)"style="opacity:1;height:400px;background-image:url('images/ExampleBackground.jpg');">
-                            <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">A</span></a>
-                            <a href="2381A.ca" class="teamPageLink">Visit Page</a>
-                        </div>
-                    </td>
-                    <td align="center">
-                        <!-- card for team B, with button to visit their page-->
-                        <div class="card" onclick="showTeamPageLink(1)"style="background-image:url('images/ExampleBackground2.jpg');">
-                            <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">B</span></a>
-                            <a href="2381B.ca" class="teamPageLink">Visit Page</a> 
-                        </div>
-                    </td>
-                    <td align="center">
-                        <!-- card for team C, with button to visit their page-->
-                        <div class="card" onclick="showTeamPageLink(2)"style="background-image:url('images/ExampleBackground3.jpg');">
-                            <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">C</span></a>
-                            <a href="2381C.ca" class="teamPageLink">Visit Page</a>
-                            
-                        </div>
-                    </td>
-                    <td align="center">
-                        <!-- card for team W, with button to visit their page-->
-                        <div class="card" onclick="showTeamPageLink(3)"style="background-image:url('images/ExampleBackground.jpg');">
-                            <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">W</span></a>
-                            <a href="2381W.ca" class="teamPageLink">Visit Page</a>
-                            
-                        </div>
-                    </td>
-                    <td align="center">
-                        <!-- card for team X, with button to visit their page-->
-                        <div class="card" onclick="showTeamPageLink(4)"style="background-image:url('images/ExampleBackground2.jpg');">
-                            <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">X</span></a>
-                            <a href="2381X.ca" class="teamPageLink">Visit Page</a>
-                            
-                        </div>
-                    </td>
-                    <td align="center">
-                        <!-- card for team Y, with button to visit their page-->
-                        <div class="card" onclick="showTeamPageLink(5)"style="background-image:url('images/ExampleBackground3.jpg');">
-                            <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Y</span></a>
-                            <a href="2381Y.ca" class="teamPageLink">Visit Page</a>
-                            
-                        </div>
-                    </td>
-                    <td align="center">
-                        <!-- card for team Z, with button to visit their page-->
-                        <div class="card" onclick="showTeamPageLink(6)"style="background-image:url('images/ExampleBackground.jpg');">
-                            <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Z</span></a>
-                            <a href="2381Z.ca" class="teamPageLink">Visit Page</a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        <!-- end of SECTION 3 -->
+            <iframe id="infoSlideshow"src="https://docs.google.com/presentation/d/e/2PACX-1vSibiciqZspD-4BBYf3otZxy5sEgfoQd5j5ulC6bDPp277KBamSilH4MqbbmKlxMN6LOUBq1bZbLq_V/embed?start=false&loop=true&delayms=5000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>        <!-- end of SECTION 3 -->
+            <!-- <iframe id ="JoinUsYT" width="800" height="450" src="https://www.youtube.com/embed/KqlpgIX1Ons" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+
+        <div id="vexInfoSection2">
+            <div class="texture"></div>
+            <center>
+            <h1>About Our Teams</h1>
+            <p>
+                2381 Robotics is a club run in Colonel By Secondary School in Ottawa. We currently have three competitive teams, 2381C, 2381X, and 2381Y, which meet several times a week in order to work on their robot for VEX Robotics Competitions. Our competitive teams are full of dedicated individuals who have been frequently travelling around Ontario to compete against other teams. We will soon offer casual teams, which have fewer meetings and tournaments, and are meant for beginners, or those who are more interested in learning and trying new things as opposed to competing in tournaments. We have a very diverse set of bright students coming from all over the city due to the prestigious International Baccalaureate (IB) program offered at our school.
+            </p>
+        </center>
         </div>
         
         
@@ -215,46 +183,46 @@
             <div class="slideshow">
                 <!-- container of non visible radio buttons which change slides -->
                 <div class="slides">
-                    <input type="radio" name="r" id="r1" checked>
-                    <input type="radio" name="r" id="r2">
-                    <input type="radio" name="r" id="r3">
-                    <input type="radio" name="r" id="r4">
-                    <input type="radio" name="r" id="r5">
-                    <input type="radio" name="r" id="r6">
-                    <input type="radio" name="r" id="r7">
-                    <input type="radio" name="r" id="r8">
-                    <input type="radio" name="r" id="r9">
-                    <input type="radio" name="r" id="r10">
+                    <input type="radio" name="r" id="r1" onclick="changeSlide(0)">
+                    <input type="radio" name="r" id="r2" onclick="changeSlide(1)">
+                    <input type="radio" name="r" id="r3" onclick="changeSlide(2)">
+                    <input type="radio" name="r" id="r4" onclick="changeSlide(3)">
+                    <input type="radio" name="r" id="r5" onclick="changeSlide(4)">
+                    <input type="radio" name="r" id="r6" onclick="changeSlide(5)">
+                    <input type="radio" name="r" id="r7" onclick="changeSlide(6)">
+                    <input type="radio" name="r" id="r8" onclick="changeSlide(7)">
+                    <input type="radio" name="r" id="r9" onclick="changeSlide(8)">
+                    <input type="radio" name="r" id="r10" onclick="changeSlide(9)">
                     <!-- Start of slides -->
-                    <div class="slide s1">
-                        <img src="images/slideshowImage1.jpg" alt="">
+                    <div id="s1" class="slide">
+                        <img src="images/slideshowImage1.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img  src="images/slideshowImage2.jpg" alt="">
+                        <img  src="images/slideshowImage2.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img src="images/slideshowImage3.jpg" alt="">
+                        <img src="images/slideshowImage3.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img  src="images/slideshowImage4.jpg" alt="">
+                        <img  src="images/slideshowImage4.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img src="images/slideshowImage5.jpg" alt="">
+                        <img src="images/slideshowImage5.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img  src="images/slideshowImage6.jpg" alt="">
+                        <img  src="images/slideshowImage6.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img  src="images/slideshowImage7.jpg" alt="">
+                        <img  src="images/slideshowImage7.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img src="images/slideshowImage8.jpg" alt="">
+                        <img src="images/slideshowImage8.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img  src="images/slideshowImage9.jpg" alt="">
+                        <img  src="images/slideshowImage9.JPG" alt="">
                     </div>
                     <div class="slide">
-                        <img  src="images/slideshowImage10.jpg" alt="">
+                        <img  src="images/slideshowImage10.JPG" alt="">
                     </div>
                 </div>
                 <!-- bars/labels for the radio buttons to navigate through slides -->

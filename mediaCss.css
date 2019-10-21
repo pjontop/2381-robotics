@@ -1,5 +1,5 @@
 
-@media only screen and (min-width:1441px){
+@media only screen and (min-width:1440px){
 
     .footer {
         width: 100%;
@@ -45,9 +45,9 @@
     }
     
     #vexInfoSection {
-        height: 51.2vw;
+        height: 57vw;
     }
-    .background3 .background4 {
+    .leftBG2 .rightBG2 {
         height:51.2vw;
     }
     
@@ -69,10 +69,17 @@
         transform:translateX(-2.5vw);
     }
 
-    #teamsContainer {
+    #googleSlidesContainer {
         width: 100%;
         height: 43.9vw;
-        border-bottom: 0.73vw solid #F9D38B;
+        padding-bottom:3.6vw;
+    }
+    #infoSlideshow {
+        height:36vw;
+        width:60.8vw;
+        border-radius:1vw;
+        padding-top:5.2vw;
+
     }
 
     #teamsBackgroundTitle h1 {
@@ -85,31 +92,11 @@
         font-size: 7.3vw;
         margin-top: 4vw;
         margin-left: 14.6vw;
-    }
-    
-    .card {
-        margin-top:13.5vw;
-        width:1200px;
-    }
-    
-    .moveTeamsButtonLeft {
-        left: 4vw;
-        font-size: 4vw;
-    }
-    
-    .moveTeamsButtonRight {
-        right: 4vw;
-        font-size: 4vw;
-    }
+    }    
 
-    .teamPageLink {  
-        font-size: 16px;
-        border-radius: 5px;     
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+
     .teamLogo {
-        border: 0.2vw solid #2D3142;
+        border: 0.2vw solid rgb(249, 211, 139);
         padding: 0.4vw;
         padding-top: 0.15vw;
         padding-bottom:0.15vw;
@@ -184,9 +171,8 @@
         width: 18vw;
         height: 18vw;
     }
- 
     .topnav {
-        z-index: 100;
+        padding-top:1.5vw;
     }
     
     #topButton {
@@ -199,26 +185,6 @@
     .vexText {
         font-size:3vw;
     }
-    /* Line stuff */
-    
-    /* .line {
-        height: 0.2vw;
-        margin-left: 2.5vw;
-    }
-    
-    #toggleMenu:hover .line {
-        width:3.6vw;
-    }
-   
-    #toggleMenu {
-        margin-left: 1.8vw;
-        margin-top: 2vw;
-        font-size: 1.3vw;
-    }
-    
-    #menuButton {
-        margin-left: 2.5vw;
-    } */
     
     .vex2019text {
         font-size: 1.5vw;
@@ -232,54 +198,38 @@
     .vexInfoText2 {
         margin-top:20vw;
     }
-    .card .letter {
-        position:absolute;
-        left:50%;
-        top:125px;
-        font-size:350px;
+    .vexLink {
+        font-size:1.2vw;
     }
-    .card .teamName {
-        position:absolute;
-        left:50%;
-        top:25px;
-        font-size:200px;
-        line-height:150px;
-        transform:translateX(-200px);
+    .sponsorsContainer {
+        height:14vw;
+        border-top:0.73vw solid #F9D38B;
+        border-bottom:0.73vw solid #F9D38B;
     }
-/*     
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-    width: 2vw;
-    height: 0.3vw;
-}
-.hamburger-inner::before {
-    top: -0.6vw;
-}
+    .sponsorsSubContainer h1 {
+        font-size:2.2vw;
+    }
+    .sponsorsSubContainer {
+        margin-left:5.5vw;
+        margin-top:1.83vw;
+    }
+    #vexInfoSection span {
+        font-size:2.5vw;
+    }
+    #vexInfoSection2 {
+        border-width:0.73vw;
+        margin-top:-3.6vw;
+    }
+    #vexInfoSection2 h1 {
+        font-size:3.3vw;
+        padding-top:3.6vw;
+    }
+    #vexInfoSection2 p {
+        width:60%;
+        font-size: 1.6vw;
+        padding-bottom:3.3vw;
+    }
 
-.hamburger-inner::after {
-    bottom: -0.6vw;
-} */
-}
-
-@media only screen and (min-width:1025px){
-    .card .letter {
-        position:absolute;
-        left:50%;
-        top:125px;
-        font-size:350px;
-    }
-    .card .teamName {
-        position:absolute;
-        left:50%;
-        top:25px;
-        font-size:200px;
-        line-height:150px;
-        transform:translateX(-200px);
-    }
-    #vexInfoSection .texture{
-        height:1000px;
-    }
 }
 
 @media only screen and (max-width:1024px) {
@@ -309,19 +259,13 @@
     height:800px;
 }
     
-.background2 {
-    height:500px;
+.rightBG1 {
+    height:550px;
 }
 #vexInfoSection .texture {
-    height:700px;
-}
+    height:800px;
+} 
 
-    /* #toggleMenu {
-        font-size: 16px;
-    }
-    #toggleMenu:hover .line {
-        width: 45px;
-    } */
     .teamLogo {
         font-size: 15px;
     }
@@ -338,9 +282,9 @@
         font-size: 200px;
     }
     #vexInfoSection {
-        height: 675px;
+        height: 800px;
     }
-    .background3, .background4 {
+    .leftBG2, .rightBG2 {
         height:675px;
     }
     #towerTakeoverYT {
@@ -352,10 +296,14 @@
         width: 32.55vw;
         height: 32.55vw;
         margin-left:140%;
-        margin-top: 0px;
+        margin-top: -4vw;
     }
-    #teamsContainer {
-        height: 500px;
+    #googleSlidesContainer {
+        height: 53vw;
+    }
+    #infoSlideshow {
+        height:47vw;
+        width:77vw;
     }
     #teamsBackgroundTitle h1 {
         font-size: 160px;
@@ -371,19 +319,29 @@
         height: 66vw;
         width: 100vw;
     }
-    .card {
-        opacity:0;
-        height:0;        margin:0;
-        margin-top:20px;
-        width:275px;
-    }
-    #cardContainer td {
-        width:100%;
-        position:absolute;
-    }
+    
+
+.sponsorsContainer {
+    height:140px;
+    border-top:7.5px solid #F9D38B;
+    border-bottom:7.5px solid #F9D38B;
+    margin-top:50px;
 }
-
-
+.sponsorsSubContainer h1 {
+    font-size:22.5px;
+}
+.sponsorsSubContainer {
+    margin-left:55px;
+    margin-top:30px;
+}
+#vexInfoSection2 h1 {
+    font-size:35px;
+}
+#vexInfoSection2 p {
+    width:70%;
+    font-size: 20px;
+}
+}
 
 @media only screen and (max-width:767px) {
     body{
@@ -407,7 +365,7 @@
         font-size: 10px;
     } 
     #splash {
-        height:350px;
+        height:400px;
     }
     .vex2019text {
         position: absolute;
@@ -443,17 +401,8 @@
         font-size:11px;
         margin-bottom:20px;
     }
-    /* #toggleMenu {
-        font-size: 11px;
-        margin-left: 10px;
-    }
-    #toggleMenu:hover .line {
-        width: 30px;
-        opacity:1;
-    } */
-    #menubutton {
-        position:relative; 
-    }
+
+
     .teamLogo {
         font-size: 10px;
     }
@@ -485,6 +434,7 @@
 }
     .mainTitle1 {
         font-size: 40px;
+        margin-top:40px;
     }
 
 
@@ -508,11 +458,8 @@
         height: 200px;
         margin-left:50%;
         transform:translateX(-100px);  
-        margin-top: 0px;
+        margin-top: -50px;
         position:relative;
-    }
-    #teamsContainer {
-        height: 500px;
     }
     #teamsBackgroundTitle h1 {
         font-size: 22.5vw;
@@ -528,17 +475,7 @@
         height: 66vw;
         width: 100vw;
     }
-    .card {
-        opacity:0;
-        height:0;        
-        margin:0;
-        width:200px;
-        margin-top:20px;
-    }
-    #cardContainer td {
-        width:100%;
-        position:absolute;
-    }
+
     .bar {
         width: 3vw;
         height: 1.2vw;
@@ -548,7 +485,7 @@
     
 .footer {
     height: 125px;
-
+    border-width:5px;
 }
 
 
@@ -572,33 +509,43 @@ display:none;
 #splash .texture {
     height:600px;
 }
-.background2 {
-    height:350px;
-}
-.moveTeamsButtonLeft {
-    left: 10px;
-    font-size: 40px;
-}
-.moveTeamsButtonRight {
-    right: 10px;
-    font-size: 40px;
-}
- 
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-    width: 20px;
-    height: 2px;
-}
-.hamburger-inner::before {
-    top: -5px;
+.rightBG1 {
+    height:400px;
 }
 
-.hamburger-inner::after {
-    bottom: -5px;
+.sponsorsContainer {
+    height:85px;
+    border-width:5px;
+    margin-top:0px;
 }
-#menuButton {
-    margin-left: 25px;
-
+.sponsorsSubContainer h1 {
+    font-size:15px;
+}
+.sponsorsSubContainer {
+    margin-left:30px;
+    margin-top:15px;
+}
+#googleSlidesContainer {
+    height: 65vw;
+}
+#infoSlideshow {
+    height:60vw;
+    width:90vw;
+}
+#vexInfoSection span {
+    font-size:25px;
+}
+#vexInfoSection2 {
+    border-width:5px;
+    margin-top:-30px;
+}
+#vexInfoSection2 h1 {
+    font-size:25px;
+    padding-top:50px;
+}
+#vexInfoSection2 p {
+    width:80%;
+    font-size: 13px;
+    padding-bottom:45px;
 }
 }

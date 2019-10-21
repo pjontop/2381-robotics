@@ -44,6 +44,7 @@ body {
 /* hiding scroll bar */
 body::-webkit-scrollbar {
     display: none;
+    width:0;
 }
 
 
@@ -54,7 +55,7 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 /* light red split left half of the background */
-.background1 {
+.leftBG1 {
     background-color: #AA0723;
     padding: 0;
     margin: 0;
@@ -64,7 +65,7 @@ body::-webkit-scrollbar {
     z-index: 0;
 }
 /* dark red split right half of the background */
-.background2 {
+.rightBG1 {
     background-color: #790218;
     padding: 0;
     margin: 0;
@@ -86,11 +87,12 @@ body::-webkit-scrollbar {
 /* top navigation including the team logo, and the contact button */
 .topnav {
     z-index: 100;
+    margin-top:25px;
 }
 /* the 2381 black and white logo on the top left of the screen */
 .logo2381 {
-    position:absolute;
-    top:25px;
+    position:relative;
+    top:0;
     left:35px;
     width:80px;
     height:80px;
@@ -100,11 +102,10 @@ body::-webkit-scrollbar {
 .teamLogo {
     color: #F9D38B;
     position: relative;
+    display:inline;
     border: 2px solid #F9D38B;
     padding: 6px;
-    display: inline-block;
-    margin-top:0px;
-    margin-top:25px;
+    top:0px;
     padding-top: 2px;
     padding-bottom: 2px;
     font-size: 15px;
@@ -112,11 +113,12 @@ body::-webkit-scrollbar {
 }
 /* get in touch button on the top right of the screen */
 .contactUsButton {
-    position: absolute;
+    position: relative;
     color: #F9D38B;
     font-size: 15px;
+    float:right;
     right: 40px;
-    top: 25px;
+    top:0;
     z-index: 100;
     opacity: 1;
     transition: 0.2s ease-in-out;
@@ -244,6 +246,27 @@ body::-webkit-scrollbar {
     color:#790218;
     font-size:20px;
 }
+/* section containing the sponser images */
+.sponsorsContainer {
+    height:200px;
+    position:relative;
+    background-color:#AA0723;
+    width:100%;
+    border-top:10px solid #F9D38B;
+    border-bottom:10px solid #F9D38B;
+}
+/* used for spacing of the text */
+.sponsorsSubContainer {
+    margin-left:75px;
+    margin-top:25px;
+}
+/* thanks to all our sponsors */
+.sponsorsSubContainer h1 {
+    color:#F9D38B;
+    position:relative;
+    font-family:'neutra';    
+    font-size:30px;
+}
 
 
 
@@ -252,25 +275,28 @@ body::-webkit-scrollbar {
 /* container of the seconds section of the page */
 #vexInfoSection {
     width: 100%;
-    height: 700px;
+    height: 750px;
+}
+#vexInfoSection .texture{
+    height:150%;
 }
 /*light red split left half of the background */
-.background3 {
+.leftBG2 {
     background-color: #AA0723;
     padding: 0;
     margin: 0;
-    height: 700px;
+    height: 750px;
     width: 52%;
     position: absolute;
     z-index: 0;
 }
 /*darkred split right half of the background */
-.background4 {
+.rightBG2 {
     background-image: linear-gradient(#790218, #AA0723 80%);
     padding: 0;
     margin: 0;
     margin-left: 50%;
-    height: 700px;
+    height: 750px;
     width: 50%;
     position: absolute;
     z-index: 0;
@@ -280,12 +306,14 @@ body::-webkit-scrollbar {
     width:40%;    
     margin-left:4%;
     position:absolute;
+    padding-top:50px;
+
 }
 /* second container on the right for text */
 .vexInfoText2 {
     width:40%;
     margin-left:55%;
-    margin-top:200px;
+    margin-top:250px;
     text-align:right;
     position:absolute;
 }
@@ -294,6 +322,9 @@ body::-webkit-scrollbar {
     color: #F9D38B;
     font-size: 20px;
     font-family: 'neutra';
+}
+#vexInfoSection span {
+    font-size:30px;
 }
 /* VEX Robotics competition image on the right */
 #vexInfoSection img {
@@ -322,100 +353,50 @@ body::-webkit-scrollbar {
 }
 
 
-
-
 /* start of of SECTION 3 CSS. The 2381 team gallery/slider  */
 /* container of section 3, team gallery */
-#teamsContainer {
+#infoSlideshow {
+    height:569px;
+    width:960px;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius:10px;
+}
+
+#googleSlidesContainer {
     width: 100%;
     height: 600px;
     background-color: #AA0723;
     position: relative;
-    border-bottom: 10px solid #F9D38B;
     overflow-x:hidden;
 }
-/* cotainer for cards in the slideshow */
-#cardContainer {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    transition: 0.8s ease-in-out;
-    left: 0;
-}
-/* button for revealing card on the right */
-.moveTeamsButtonLeft {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    background: none;
-    font-size: 50px;
-    color: #F9D38B;
-    border: none;
-    z-index: 100;
-}
-/* button for revealing card on the right */
-.moveTeamsButtonRight {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    background: none;
-    font-size: 50px;
-    color: #F9D38B;
-    border: none;
-    z-index: 100;
-}
-/* table datas in the card container */
-#cardContainer td {
-    width:100%;
-    position:absolute;
-}
-/* cards for each team with an image and a link to their page */
-.card {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
-    border-radius: 10px 10px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-left: 135px;
-    text-align:center;
-    display: inline-block;
-    opacity:0;
-    height:0;        
-    margin:0;
-    margin-top:60px;
-    width:800px;
-}
-/* hover effect for the cards */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
-}
-/* image of the team on the card */
-.teamPageImage {
-    display: inline-block;
-    position: relative;
-    font-size: 150px;
-    color: #F9D38B;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
-    width: 100%;
-    height:100%;
-    line-height: 125px;
-}
-/* link below the card which contains a link to the team's page */
-.teamPageLink {
-    background-color: #F9D38B;
-    color: #AA0723;
-    font-size: 16px;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: 0.25s ease-in-out;
-    padding-top: 10px;
-    margin-top:10px;
-    padding-bottom: 10px;
-    display: block;
-    text-decoration: none;
-}
 
+/* Start of section 5 CSS Vexinfosection2 */
+/*  */
+#vexInfoSection2 {
+    width:100%;
+    background-color:#AA0723;
+    border-bottom: 10px solid #F9D38B;
+    position:relative;
+    margin-top:-50px;
+}
+#vexInfoSection2 h1 {
+    color: #F9D38B;
+    font-family:'neutra';
+    position:relative;
+    font-size:50px;
+    padding-top:50px;
+}
+#vexInfoSection2 p {
+    width:50%;
+    color: #F9D38B;
+    font-size: 22px;
+    font-family:'neutra';
+    text-align:center;
+    position:relative;
+    padding-bottom:75px;
+}
 
 
 
@@ -444,7 +425,7 @@ body::-webkit-scrollbar {
 /* class for a slide inside the slideshow */
 .slide {
     width: 10%;
-    transition: 0.6s;
+    transition: 1.2s ease-in-out;
 }
 /* class for images in the slideshow */
 .slide img {
@@ -477,42 +458,12 @@ input[name="r"] {
     position: absolute;
     visibility: hidden;
 }
-/* css to move the margin of the slideshow to move the slides to the left or the right on the click of a bar (s1 is the first slide)*/
-#r1:checked ~ .s1 {
-    margin-left: 0;
-}
-#r2:checked ~ .s1 {
-    margin-left: -10%;
-}
-#r3:checked ~ .s1 {
-    margin-left: -20%;
-}
-#r4:checked ~ .s1 {
-    margin-left: -30%;
-}
-#r5:checked ~ .s1 {
-    margin-left: -40%;
-}
-#r6:checked ~ .s1 {
-    margin-left: -50%;
-}
-#r7:checked ~ .s1 {
-    margin-left: -60%;
-}
-#r8:checked ~ .s1 {
-    margin-left: -70%;
-}
-#r9:checked ~ .s1 {
-    margin-left: -80%;
-}
-#r10:checked ~ .s1 {
-    margin-left: -90%;
-}
 
 
 
 
-/* start of of SECTION 5 CSS. Footer*/
+
+/* start of of SECTION 6 CSS. Footer*/
 /* container for the footer section of the page */
 .footer {
     width: 100%;
@@ -553,89 +504,4 @@ input[name="r"] {
     bottom: -50px;
     transition: 0.3s ease-in-out;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-}
-
-
-
-/* all hamburger related stuff for the menu button in the top left of the splash page */
-.hamburger {
-    outline: none;
-    padding: 15px 15px;
-    padding-top: 20px;
-    display: inline-block;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: #2D3142;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-    background-color: #2D3142;
-}
-.hamburger-box {
-    height: 20px;
-    width: 34px;
-    display: inline-block;
-    position: relative;
-}
-.hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px;
-}
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-    width: 28px;
-    height: 2px;
-    background-color: #2D3142;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-}
-.hamburger-inner::before,
-.hamburger-inner::after {
-    content: "";
-    display: block;
-}
-.hamburger-inner::before {
-    top: -7px;
-}
-.hamburger-inner::after {
-    bottom: -7px;
-}
-.hamburger--squeeze .hamburger-inner {
-    transition-duration: 0.075s;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.hamburger--squeeze .hamburger-inner::before {
-    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
-}
-.hamburger--squeeze .hamburger-inner::after {
-    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.hamburger--squeeze.is-active .hamburger-inner {
-    transform: rotate(45deg);
-    transition-delay: 0.12s;
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.hamburger--squeeze.is-active .hamburger-inner::before {
-    top: 0;
-    opacity: 0;
-    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-}
-.hamburger--squeeze.is-active .hamburger-inner::after {
-    bottom: 0;
-    transform: rotate(-90deg);
-    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }

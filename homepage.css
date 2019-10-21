@@ -87,11 +87,10 @@ body::-webkit-scrollbar {
 /* top navigation including the team logo, and the contact button */
 .topnav {
     z-index: 100;
-    margin-top:25px;
 }
 /* the 2381 black and white logo on the top left of the screen */
 .logo2381 {
-    position:relative;
+    position:absolute;
     top:0;
     left:35px;
     width:80px;
@@ -102,10 +101,11 @@ body::-webkit-scrollbar {
 .teamLogo {
     color: #F9D38B;
     position: relative;
-    display:inline;
     border: 2px solid #F9D38B;
     padding: 6px;
-    top:0px;
+    display: inline-block;
+    margin-top:0px;
+    margin-top:25px;
     padding-top: 2px;
     padding-bottom: 2px;
     font-size: 15px;
@@ -113,7 +113,7 @@ body::-webkit-scrollbar {
 }
 /* get in touch button on the top right of the screen */
 .contactUsButton {
-    position: relative;
+    position: absolute;
     color: #F9D38B;
     font-size: 15px;
     float:right;

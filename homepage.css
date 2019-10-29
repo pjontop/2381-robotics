@@ -13,17 +13,17 @@ only screen and (min-device-pixel-ratio: 1.5){
 /* setting up fonts for the webpage */
 @font-face {
     font-family: "neutra";
-    src: url("neutratext-book.otf") format("opentype");
+    src: url("neutratext-book.woff") format("woff");
 }
 
 @font-face {
     font-family: "neutra-bold";
-    src: url("neutratext-bold.otf") format("opentype");
+    src: url("neutratext-bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "robot";
-    src: url("Robot Renegades.otf") format("opentype");
+    src: url("Robot Renegades.woff") format("woff");
 }
 
 /* setting up basic properties for html and body */

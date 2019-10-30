@@ -116,7 +116,6 @@ body::-webkit-scrollbar {
     position: absolute;
     color: #F9D38B;
     font-size: 15px;
-    float:right;
     right: 40px;
     top:25px;
     z-index: 100;

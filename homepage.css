@@ -117,12 +117,12 @@ body::-webkit-scrollbar {
     color: #F9D38B;
     font-size: 15px;
     right: 40px;
-    top: 25px;
+    top:25px;
     z-index: 100;
     opacity: 1;
     transition: 0.2s ease-in-out;
     text-decoration:none;
-    background-color:#004777;
+    background-color:rgb(18, 91, 165);
     border-radius:5px;
     padding:10px;
 }
@@ -187,7 +187,7 @@ body::-webkit-scrollbar {
 /* side navigation menu */
 #sidenav {
     position: absolute;
-    top: 34%;
+    top: 30%;
     left: 45px;
     z-index: 100;
     transition: 1.5s ease-in-out;

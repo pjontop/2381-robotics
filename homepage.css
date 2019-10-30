@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 /* the 2381 black and white logo on the top left of the screen */
 .logo2381 {
     position:absolute;
-    top:0;
+    top:25px;
     left:35px;
     width:80px;
     height:80px;
@@ -118,12 +118,12 @@ body::-webkit-scrollbar {
     font-size: 15px;
     float:right;
     right: 40px;
-    top:0;
+    top:25px;
     z-index: 100;
     opacity: 1;
     transition: 0.2s ease-in-out;
     text-decoration:none;
-    background-color:#004777;
+    background-color:rgb(18, 91, 165);
     border-radius:5px;
     padding:10px;
 }
@@ -188,7 +188,7 @@ body::-webkit-scrollbar {
 /* side navigation menu */
 #sidenav {
     position: absolute;
-    top: 34%;
+    top: 30%;
     left: 45px;
     z-index: 100;
     transition: 1.5s ease-in-out;

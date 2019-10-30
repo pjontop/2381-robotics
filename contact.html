@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title>2381 Robotics</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- basic CSS document -->
+        <link rel="stylesheet" href="homepage.css"/>
+        <link rel="stylesheet" href="contact.css"/>
+        <!-- media query CSS document -->
+        <link rel="stylesheet" href="mediaCss.css"/>
+        <!-- Javascript file -->
+        <script src="homepage.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- hidden container for colour palette -->
+        <div style="display:none;">
+            #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
+        </div>
+
+        <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
+        <div id="splash">
+            <!-- splitting background into 2 halves and overlaying a textured image -->
+            <div class="leftBG1"></div> <!-- light red-->
+            <div class="rightBG1"></div> <!-- dark red-->
+            <div class="texture"></div> <!-- textured image background-->
+            <!-- Nav bar -->
+            <div class="topnav">
+                <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
+                <button><img src="images/2381Logo.png"  class="logo2381"></button> 
+                <!-- Secondary logo centered on the top of the page -->
+                <center>
+                    <div class="teamLogo">2381 ROBOTICS</div>
+                </center>
+                <!-- get in touch button which links to the contact page -->
+                <div>
+                    <a class="contactUsButton">GET IN TOUCH</a>
+                </div>
+            <!-- End of Nav bar -->
+            </div>
+
+            <div class="largeTitle">
+                <h1>QUESTIONS?</h1>
+                <h1>COMMENTS?</h1>
+                <h1>CONCERNS?</h1>
+            </div>
+    
+            <div class="formContainer">
+                <div id="contactForm">
+                    <form action="">
+                        <label>Name</label><br>
+                        <center><input id="name" type="text" required></center>
+                        <label>Email</label><br>
+                        <center><input id="email" type="email" required></center>
+                        <label>Subject</label><br>
+                        <center><input id="subject" type="text" required></center>
+                        <label>Message</label><br>
+                        <center><textarea id="message" required></textarea></center>
+                    </form>
+                    <center><button id="submitForm" type="submit">Send</button></center>
+    
+                </div>
+                <div id="postSubmission">
+                    <p>Submit another response</p>
+                </div>
+            </div>
+
+            <!-- side navigation menu -->
+            <div id="sidenav">
+                <table class="sidenavContent">
+                    <!-- sponsors page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
+                    </tr>
+                    <!-- home link -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="index.html">HOME</a></td>
+                    </tr>
+                    <!-- about page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#About">ABOUT</a></td>
+                    </tr>
+                    <!-- teams link which opens the list of teams on the side of the page -->
+                    <tr>
+                        <td class="menuTD menuTeamLink"><a class="link" href="#Teams" onclick="toggleTeamsList()">TEAMS</a></td>
+                    </tr>
+                    <!-- Calender page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Calender">CALENDAR</a></td>
+                    </tr>
+                    <!-- posts page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Posts">POSTS</a></td>
+                    </tr>
+                    <!-- join us page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Join Us">JOIN US</a></td>
+                    </tr>
+                    <!-- contact page -->
+                    <tr>
+                        <td class="menuTD"><a class="link activeLink" href="#">CONTACT</a></td>
+                    </tr>
+                    <!-- resources page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Resources">RESOURCES</a></td>
+                    </tr>
+                </table>
+            <!-- end of sidenav -->
+            </div>
+            <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
+            <div id="menuTeamList">
+                <!-- list of team letters from A to Z -->
+                <a class="link" href="#2381X">A</a>
+                <br>
+                <a class="link" href="#2381X">B</a>
+                <br>
+                <a class="link" href="#2381X">C</a>
+                <br>
+                <a class="link" href="#2381X">W</a>
+                <br>
+                <a class="link" href="#2381X">X</a>
+                <br>
+                <a class="link" href="#2381Y">Y</a>
+                <br>
+                <a class="link" href="#2381C">Z</a>
+            </div>
+            <!-- End of splash page -->
+        </div>
+
+        <!-- start of section 2 -->
+        <!-- <div class="sponsorsContainer">
+            <div class="texture"></div>
+            <div class="sponsorsSubContainer">
+                <h1>Thanks to all of our sponsors!</h1>
+            </div>
+        </div> -->
+        <!-- end of section 2 -->
+        <div id="vexInfoSection">
+                <!-- splitting background into 2 halves and overlaying a textured image -->
+            <div class="leftBG2"></div> <!-- light red-->
+            <div class="rightBG2"></div> <!-- gradient which fades from light red to dark red-->
+            <div class="texture"></div> <!-- textured image background-->
+            <center>
+                <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11194.939958297802!2d-75.60307030409709!3d45.45499617216066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce10225d8e40cb%3A0x3025fa1e80ed33f8!2sColonel%20By%20Secondary%20School!5e0!3m2!1sen!2sca!4v1572442860330!5m2!1sen!2sca" heightframeborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </center>
+        </div>
+        
+
+
+        <!-- start of SECTION 3. Footer-->
+        <div class="footer">
+            <div class="texture"></div><!-- textured image background -->
+            <!-- media links -->
+            <center>
+                <div>
+                    <a href="#"><img src="images/instagramLogo.png"></a> <!--instagram-->
+                    <a href="#"><img src="images/githubLogo.png"></a><!--github-->
+                    <a href="#"><img src="images/youtubeLogo.png"></a><!--youtube-->
+                </div>
+                <!--2381 seondary logo-->
+                <div class="logo">2381 ROBOTICS</div>
+            </center>
+        <!-- end of SECTION 3 -->
+        </div>
+        
+        <!-- back to top button -->
+        <a href="#" id="topButton">
+            <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+        </a>
+
+       
+    </body>
+</html>
+    
+
+

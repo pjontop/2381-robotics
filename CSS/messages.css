@@ -1,0 +1,163 @@
+iframe {
+    position:absolute;
+    z-index:200;
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-top:50px;
+}
+
+#splashPage, .rightBG1, .leftBG1, #splashPage .texture{
+height:1080px;
+}
+
+.mainTitle1 {
+    margin-top:60px;
+}
+
+#messageTable {
+    position:relative;
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+
+#messageTable .messageContainer{
+    width:600px;
+    padding:20px;
+}
+
+#messageTable .messageTitle {
+    font-size:30px;
+    color:#F9D38B;
+
+}
+#messageTable .messageContent {
+    font-size:20px;
+    color:#F9D38B;
+    font-family:'neutra';
+}
+#messageTable .messageDate {
+    font-size:15px;
+    color:#F9D38B;
+    font-family:'neutra';
+}
+
+.buttonContainer {
+    position:relative;
+    margin-left:50%;
+    transform: translateX(-50%);
+    width:600px;
+}
+.buttonContainer .messageButtons{
+    font-family:'neutra-bold';
+    color:#AA0723;
+    background-color: #F9D38B;
+    padding:10px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    float:right;
+}
+
+td:hover {
+    cursor:pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 500; /* Sit on top */
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    overflow-y:auto;
+    border-radius: 10px;
+    position: relative;
+    background-color: #AA0723;
+    margin: auto;
+    padding: 25px;
+    border: 2px solid #F9D38B;
+    width: 80%;
+    height:55%;
+    color:#F9D38B;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-family:'neutra';
+  }
+ 
+
+ 
+  ::-webkit-scrollbar {
+     width: 30px;
+    background-color: rgba(255,255,255,0);
+
+  }
+  
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {
+      border: 16px solid rgba(255,255,255,0);
+      background-clip: padding-box;
+  }
+  
+  ::-webkit-scrollbar-track {
+      background-color: #ccc;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background-color: #F9D38B;
+      border: 10px solid transparent;
+      border-radius:50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+
+  }
+
+
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #F9D38B;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #AA0723;
+    color: #F9D38B;
+    border-radius: 10px;
+
+  }
+  
+  .modal-body {padding: 2px 16px;}

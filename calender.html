@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title>2381 Robotics</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- basic CSS document -->
+        <link rel="stylesheet" href="CSS/homepage.css"/>
+        <link rel="stylesheet" href="CSS/contact.css"/>
+        <!-- media query CSS document -->
+        <link rel="stylesheet" href="CSS/mediaCss.css"/>
+        <link rel="stylesheet" href="CSS/mediaCssContact.css"/>
+        <link rel="stylesheet" href="CSS/calender.css"/>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <!-- Javascript file -->
+        <script src="JS/homepage.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
+        <div id="splashPage">
+            <!-- splitting background into 2 halves and overlaying a textured image -->
+            <div class="leftBG1"></div> <!-- light red-->
+            <div class="rightBG1"></div> <!-- dark red-->
+            <div class="texture"></div> <!-- textured image background-->
+            <!-- Nav bar -->
+            <div class="topnav">
+                <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
+                <button><img src="images/2381Logo.png"  class="logo2381"></button> 
+                <!-- Secondary logo centered on the top of the page -->
+                <center>
+                    <div class="teamLogo">2381 ROBOTICS</div>
+                </center>
+                <!-- get in touch button which links to the contact page -->
+                <div>
+                    <a class="contactUsButton" href="contact.html">GET IN TOUCH</a>
+                </div>
+            <!-- End of Nav bar -->
+            </div>
+            <!-- side navigation menu -->
+            <div id="sidenav">
+                <table class="sidenavContent">
+                    <!-- sponsors page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
+                    </tr>
+                    <!-- home link -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="index.html">HOME</a></td>
+                    </tr>
+                    <!-- about page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#About">ABOUT</a></td>
+                    </tr>
+                    <!-- teams link which opens the list of teams on the side of the page -->
+                    <tr>
+                        <td class="menuTD menuTeamLink"><a class="link" href="#Teams" onclick="toggleTeamsList()">TEAMS</a></td>
+                    </tr>
+                    <!-- Calender page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Calender">CALENDAR</a></td>
+                    </tr>
+                    <!-- posts page -->
+                    <tr>
+                        <td class="menuTD"><a class="link activeLink" href="#">MESSAGE BOARD</a></td>
+                    </tr>
+                    <!-- join us page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Join Us">JOIN US</a></td>
+                    </tr>
+                    <!-- contact page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
+                    </tr>
+                    <!-- resources page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Resources">RESOURCES</a></td>
+                    </tr>
+                </table>
+            <!-- end of sidenav -->
+            </div>
+            <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
+            <div id="menuTeamList">
+                <!-- list of team letters from A to Z -->
+                <a class="link" href="#2381X">A</a>
+                <br>
+                <a class="link" href="#2381X">B</a>
+                <br>
+                <a class="link" href="#2381X">C</a>
+                <br>
+                <a class="link" href="#2381X">W</a>
+                <br>
+                <a class="link" href="#2381X">X</a>
+                <br>
+                <a class="link" href="#2381Y">Y</a>
+                <br>
+                <a class="link" href="#2381C">Z</a>
+            </div>
+            <center>
+                <h1 class="mainTitle1">MESSAGE BOARD</h1>
+            </center>
+            <table id="messageTable">
+            </table>
+            <div class="buttonContainer">
+                <a href="#"><button id="nextButton" class="messageButtons" onclick="showNext()">NEXT</button></a>
+                <a href="#"><button id="prevButton" class="messageButtons" style="display:none;" onclick="showPrev()">PREV</button></a>
+            </div>
+           <!-- End of splash page -->
+        </div>
+        
+        <div id="myModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&#10005;</span>
+            <h2></h2>
+            </div>
+            <div class="modal-body">
+            <p></p>
+            <p></p>
+            </div>
+        </div>
+
+</div>
+        <script>
+
+var currentMessageSet = 0;
+var sheetDataLength = 0;
+var messages = [];
+$(document).ready(function () {
+    $.getJSON("https://spreadsheets.google.com/feeds/list/1_N_KNtrumRViyYE_GtDQ6dkLJNkvacX3_H2IfdyF9O4/od6/public/values?alt=json", function (data) {
+var sheetData = data.feed.entry;
+var i;
+var tempList;
+sheetDataLength = sheetData.length;
+for (i = 0; i < sheetData.length; i++) {
+
+  var title = data.feed.entry[i]['gsx$_cn6ca']['$t'];
+  var date = data.feed.entry[i]['gsx$_cokwr']['$t'];
+  var content = data.feed.entry[i]['gsx$_cpzh4']['$t'];
+
+    tempList = [title, date, content];
+    messages.push(tempList);
+
+}
+setMessages(messages);
+
+});
+});
+
+function setMessages(arr){
+    var length = arr.length;
+    var i;
+    for(i=0;i< length; i++) {
+        var title = arr[i][0].toUpperCase();
+        var date = arr[i][1];
+        var content = arr[i][2].split(" ");
+        var printContent = content[0] + " " + content[1] + " " + content[2] + " " + content[3] + " " + content[4] + " " + content[5] + " " + content[6] + " " + content[7] + " " + content[8] + " " + content[9] + " " + content[10] + " " + content[11] + " " + content[12] + " " + content[13] + " " + content[14] + "..."; 
+        if (i > 3) {
+            document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")' style='display:none'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Eshwar Chockalingam on " + date + "</i></p></td></tr>"
+        }
+        else{
+        document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Eshwar Chockalingam on " + date + "</i></p></td></tr>"
+        }
+    }
+    console.log(arr);
+    
+
+}
+function showNext(){
+    currentMessageSet += 1;
+    for(i = 0; i < 4; i++) {
+        currentMessage = currentMessageSet * 4  + i;
+        oldMessage = (currentMessageSet - 1) * 4 + i; 
+        document.getElementById("messageTable").getElementsByTagName("tr")[currentMessage].style.display = "block";
+        document.getElementById("messageTable").getElementsByTagName("tr")[oldMessage].style.display = "none";
+    }
+    
+document.getElementById("prevButton").style.display = "block";
+if((currentMessageSet + 1) * 4 >= sheetDataLength){
+    document.getElementById("nextButton").style.display = "none";
+
+}
+}
+
+function showPrev(){
+    currentMessageSet -= 1;
+    for(i = 0; i < 4; i++) {
+        currentMessage = currentMessageSet * 4  + i;
+        oldMessage = (currentMessageSet + 1) * 4 + i; 
+        document.getElementById("messageTable").getElementsByTagName("tr")[currentMessage].style.display = "block";
+        document.getElementById("messageTable").getElementsByTagName("tr")[oldMessage].style.display = "none";
+    }
+document.getElementById("nextButton").style.display = "block";
+if(currentMessageSet <= 0){
+    document.getElementById("prevButton").style.display = "none";
+
+}
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function messageViewer(messageNum) {
+    var title = messages[messageNum][0].toUpperCase();
+    var date = messages[messageNum][1];
+    var content = messages[messageNum][2];
+    document.getElementsByClassName("modal-header")[0].getElementsByTagName("h2")[0].innerHTML = title;
+    document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[0].innerHTML = "<i>Posted by Eshwar Chockalingam on " + date + "</i>";
+    document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[1].innerHTML = content;
+    modal.style.display = "block";
+
+}
+        </script>
+<!-- start of SECTION 3. Footer-->
+<div class="footer">
+    <div class="texture"></div><!-- textured image background -->
+    <!-- media links -->
+    <center>
+        <div>
+            <a href="#"><img src="images/instagramLogo.png"></a> <!--instagram-->
+            <a href="#"><img src="images/githubLogo.png"></a><!--github-->
+            <a href="#"><img src="images/youtubeLogo.png"></a><!--youtube-->
+        </div>
+        <!--2381 seondary logo-->
+        <div class="logo">2381 ROBOTICS</div>
+    </center>
+<!-- end of SECTION 3 -->
+</div>
+
+<!-- back to top button -->
+<a href="#" id="topButton">
+    <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+</a>
+    </body>
+</html>
+    

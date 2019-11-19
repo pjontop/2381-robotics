@@ -13,17 +13,17 @@ only screen and (min-device-pixel-ratio: 1.5){
 /* setting up fonts for the webpage */
 @font-face {
     font-family: "neutra";
-    src: url("neutratext-book.woff") format("woff");
+    src: url("../fonts/neutratext-book.woff") format("woff");
 }
 
 @font-face {
     font-family: "neutra-bold";
-    src: url("neutratext-bold.woff") format("woff");
+    src: url("../fonts/neutratext-bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "robot";
-    src: url("Robot Renegades.woff") format("woff");
+    src: url("../fonts/Robot Renegades.woff") format("woff");
 }
 
 /* setting up basic properties for html and body */
@@ -77,7 +77,7 @@ body::-webkit-scrollbar {
 }
 /* textured image background for the page */
 .texture {
-    background-image: url("images/background-texture.png");
+    background-image: url("../images/background-texture.png");
     background-size: 100px 100px;
     opacity: 0.4;
     width: 100%;

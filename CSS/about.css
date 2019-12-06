@@ -1,0 +1,78 @@
+#splash {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+#infoSection {height:100%;}
+
+#splash .texture, #splash .rightBG1, #splash .leftBG1, #infoSection .texture{
+    height:100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+.mainTitle1 {
+    position:absolute;
+    padding-top:90px;
+    font-size:150px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom:0;
+}
+
+#aboutSplashContent {
+    position:relative;
+    margin-left:50%;
+    transform: translateX(-50%);
+    text-align:center;
+    padding-top:30px;
+}
+
+#aboutSplashContent p{
+    font-size: 18px;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+}
+
+#aboutContentLeft {
+    padding-top:25px;
+    position:absolute;
+    width:450px;
+    margin-left:25%;
+    transform: translateX(-50%);
+    padding-bottom:75px;
+}
+
+#aboutContentRight {
+    padding-top:25px;
+    position:relative;
+    margin-left:75%;
+    transform: translateX(-50%);
+    padding-bottom:75px;
+}
+
+
+#aboutContentLeft h1, #aboutContentRight h1{
+    font-size: 38px;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+    margin-top:0;
+}
+#aboutContentLeft p, #aboutContentRight p{
+    font-size: 16px;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+}
+
+.joinUsVid {
+    width:1000px;
+    height:500px;
+    position:relative;
+    border-radius:10px;
+}
+

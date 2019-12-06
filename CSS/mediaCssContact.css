@@ -230,7 +230,7 @@
         padding-top:20px;
     }
     
-    #contactForm input {
+    #contactForm .textInput {
         width:225px;
         font-size:15px;
     }
@@ -271,6 +271,7 @@
         border-radius:10px;
         margin-top:30px;
     }
+    
     .postSubmission h1 {
         padding:20px;
         font-size:16px;

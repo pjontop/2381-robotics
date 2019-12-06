@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>2381 Robotics</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- basic CSS document -->
+        <link rel="stylesheet" href="CSS/homepage.css"/>
+        <link rel="stylesheet" href="CSS/about.css"/>
+
+        <!-- media query CSS document -->
+        <link rel="stylesheet" href="CSS/mediaCss.css"/>
+        <link rel="stylesheet" href="CSS/mediaCssAbout.css"/>
+
+        <!-- <link rel="stylesheet" href="CSS/mediaCssMessages.css"/> -->
+
+        <!-- Javascript file -->
+        <script src="JS/menu.js"></script>
+        <script src="JS/topButton.js"></script><link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
+        <div id="splash">
+            <!-- splitting background into 2 halves and overlaying a textured image -->
+            <div class="leftBG1"></div> <!-- light red-->
+            <div class="rightBG1"></div> <!-- dark red-->
+            <div class="texture"></div> <!-- textured image background-->
+            <!-- Nav bar -->
+            <div class="topnav">
+                <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
+                <button><img src="images/2381Logo.png"  class="logo2381"></button> 
+                <!-- Secondary logo centered on the top of the page -->
+                <center>
+                    <div class="teamLogo">2381 ROBOTICS</div>
+                </center>
+                <!-- get in touch button which links to the contact page -->
+                <div>
+                    <a class="contactUsButton" href="contact.html">GET IN TOUCH</a>
+                </div>
+            <!-- End of Nav bar -->
+            </div>
+            <center>
+                <h1 class="mainTitle1">ABOUT US</h1>
+            </center>
+            <div id="aboutSplashContent"> 
+                <p>2381 Robotics is a club run in Colonel By Secondary School in Ottawa. We currently have three competitive teams, 2381C, 2381X, and 2381Y, which meet several times a week in order to work on their robot for VEX Robotics Competitions. Our competitive teams are full of dedicated individuals who have been frequently travelling around Ontario to compete against other teams. We will soon offer casual teams, which have fewer meetings and tournaments, and are meant for beginners, or those who are more interested in learning and trying new things as opposed to competing in tournaments. We have a very diverse set of bright students coming from all over the city due to the prestigious International Baccalaureate (IB) program offered at our school.</p>
+            </div>
+                        <!-- side navigation menu -->
+            <div id="sidenav">
+                <table class="sidenavContent">
+                    <!-- sponsors page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
+                    </tr>
+                    <!-- home link -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="index.html">HOME</a></td>
+                    </tr>
+                    <!-- about page -->
+                    <tr>
+                        <td class="menuTD"><a class="link activeLink" href="#">ABOUT</a></td>
+                    </tr>
+                    <!-- teams link which opens the list of teams on the side of the page -->
+                    <tr>
+                        <td class="menuTD menuTeamLink"><a class="link" href="#Teams" onclick="toggleTeamsList()">TEAMS</a></td>
+                    </tr>
+                    <!-- Calender page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Calender">CALENDAR</a></td>
+                    </tr>
+                    <!-- posts page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="messages.html">POSTS</a></td>
+                    </tr>
+                    <!-- join us page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Join Us">JOIN US</a></td>
+                    </tr>
+                    <!-- contact page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
+                    </tr>
+                    <!-- resources page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Resources">RESOURCES</a></td>
+                    </tr>
+                </table>
+            <!-- end of sidenav -->
+            </div>
+            <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
+            <div id="menuTeamList">
+                <!-- list of team letters from A to Z -->
+                <a class="link" href="#2381X">A</a>
+                <br>
+                <a class="link" href="#2381X">B</a>
+                <br>
+                <a class="link" href="#2381X">C</a>
+                <br>
+                <a class="link" href="#2381X">W</a>
+                <br>
+                <a class="link" href="#2381X">X</a>
+                <br>
+                <a class="link" href="#2381Y">Y</a>
+                <br>
+                <a class="link" href="#2381C">Z</a>
+            </div>
+           <!-- End of splash page -->
+        </div>
+        <div id="googleSlidesContainer">
+                <div class="leftBG1"></div> <!-- light red-->
+                <div class="rightBG1"></div> 
+                <div class="texture"></div><!-- textured image background-->
+                <!-- two buttons to move team slider left and right -->
+                <iframe id="infoSlideshow"src="https://docs.google.com/presentation/d/e/2PACX-1vSibiciqZspD-4BBYf3otZxy5sEgfoQd5j5ulC6bDPp277KBamSilH4MqbbmKlxMN6LOUBq1bZbLq_V/embed?start=false&loop=true&delayms=5000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>        <!-- end of SECTION 3 -->
+                <!-- <iframe id ="JoinUsYT" width="800" height="450" src="https://www.youtube.com/embed/KqlpgIX1Ons" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            </div>
+   <!-- Start of SECTION 2. The information section about VRC -->
+        <div id="infoSection">
+                <!-- splitting background into 2 halves and overlaying a textured image -->
+                <div class="leftBG2"></div> <!-- light red-->
+                <div class="rightBG2"></div> <!-- gradient which fades from light red to dark red-->
+                <div class="texture"></div> <!-- textured image background-->
+                <div id="aboutContentLeft">
+                <h1 class="subtitle">Teams</h1>
+                <p>2381 Robotics is a club run in Colonel By Secondary School in Ottawa. We currently have three competitive teams, 2381C, 2381X, and 2381Y, which meet several times a week in order to work on their robot for VEX Robotics Competitions. Our competitive teams are full of dedicated individuals who have been frequently travelling around Ontario to compete against other teams. We will soon offer casual teams, which have fewer meetings and tournaments, and are meant for beginners, or those who are more interested in learning and trying new things as opposed to competing in tournaments. We have a very diverse set of bright students coming from all over the city due to the prestigious International Baccalaureate (IB) program offered at our school.</p>
+                       
+                <h1 class="subtitle">History</h1>
+                        <p>Our club has been around for a very long time, however, we only started competing in VEX competitions since the 2017-18 season. Our executive team has been working tirelessly in order to organize all the events and incorporate the VEX experience into the club. It currently is the main focus of the club’s activities.</p>
+                </div>
+                <div id="aboutContentRight">
+                        <h1 class="subtitle">Values</h1>
+                        <p>At Colonel By Robotics, we believe in hard work, passion, and most important of all, having fun. Our school provides a dedicated workspace for us to practice and prepare for competitions. With experienced members and all the necessary resources, all our members are afforded the opportunity to test, build, and program their robots. We encourage all members to do research outside of school and communicate effectively with all their team members in order to get the most out of their experiences.</p>
+        
+                            <h1 class="subtitle">Awards</h1>
+                            <p>Our club has had a history of performing well in competitions, and we have the awards to prove it. Last year, our club’s 2381C team won the Innovate Award for creating a unique design and innovative program. This year, our 2381X team won the Build Award, Tournament Champions and the Think Award. With half a year left, our three competitive teams will compete for many more.</p>
+                               
+                </div>
+        </div>
+        <div id="googleSlidesContainer">
+                <div class="texture"></div> <!-- textured image background-->
+
+<center>
+        <iframe class="joinUsVid" src="https://www.youtube.com/embed/KqlpgIX1Ons" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    </div>
+<!-- start of SECTION 3. Footer-->
+<div class="footer">
+    <div class="texture"></div><!-- textured image background -->
+    <!-- media links -->
+    <center>
+        <div>
+            <a href="#"><img src="images/instagramLogo.png"></a> <!--instagram-->
+            <a href="#"><img src="images/githubLogo.png"></a><!--github-->
+            <a href="#"><img src="images/youtubeLogo.png"></a><!--youtube-->
+        </div>
+        <!--2381 seondary logo-->
+        <div class="logo">2381 ROBOTICS</div>
+    </center>
+<!-- end of SECTION 3 -->
+</div>
+
+<!-- back to top button -->
+<a href="#" id="topButton">
+    <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+</a>
+    </body>
+</html>
+    

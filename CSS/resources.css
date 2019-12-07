@@ -1,0 +1,45 @@
+
+.largeTitle {
+    position:absolute;
+    margin-left:225px;
+    padding-top:90px;
+    width:400px;
+}
+.largeTitle h1 {
+    font-size: 60px;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+}
+.largeTitle p {
+    font-size:20px;
+    text-decoration:italic;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+}
+.linksContainer {
+    margin-top:100px;
+    width:500px;
+    position: relative;
+    margin-left: 75%;
+    transform:translateX(-50%);
+}
+.linksContainer td {
+    padding:20px;
+    width:50%;
+}
+.linksContainer h1 {
+    font-size:25px;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+}
+.linksContainer a {
+    font-size:20px;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+    text-decoration: underline;
+    cursor: pointer;
+}

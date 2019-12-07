@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
 }
-#infoSection {height:100%;}
+#infoSection {height:650px;}
 
 #splash .texture, #splash .rightBG1, #splash .leftBG1, #infoSection .texture{
     height:100%;

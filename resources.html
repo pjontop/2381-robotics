@@ -5,22 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- basic CSS document -->
         <link rel="stylesheet" href="CSS/homepage.css"/>
-        <link rel="stylesheet" href="CSS/messages.css"/>
-
+        <link rel="stylesheet" href="CSS/resources.css"/>
         <!-- media query CSS document -->
         <link rel="stylesheet" href="CSS/mediaCss.css"/>
-        <link rel="stylesheet" href="CSS/mediaCssMessages.css"/>
+        <link rel="stylesheet" href="CSS/mediaCssResources.css"/>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <!-- Javascript file -->
-        <script src="JS/messages.js"></script>
         <script src="JS/menu.js"></script>
-        <script src="JS/topButton.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+        <script src="JS/topButton.js"></script>        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
     </head>
     <body>
+            <div class="texture"></div> <!-- textured image background-->
+
+        <!-- hidden container for colour palette -->
+        <div style="display:none;">
+            #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
+        </div>
+
         <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
-        <div id="splashPage">
+        <div id="splash">
             <!-- splitting background into 2 halves and overlaying a textured image -->
             <div class="leftBG1"></div> <!-- light red-->
             <div class="rightBG1"></div> <!-- dark red-->
@@ -39,6 +42,38 @@
                 </div>
             <!-- End of Nav bar -->
             </div>
+
+            <div class="largeTitle">
+                    <h1>RESOURCES</h1>
+                    <p>A list of all the recommended tools for robotics. Immerse yourself in this collection of helpful links and files.</p>
+                </div>
+            <table class="linksContainer">
+                <tr>
+                    <td><h1>FAQ</h1>
+                        <a target="_blank" href="https://docs.google.com/document/d/1G3CO0z7aCOXH_JJ0eBCxwba0oI1-uWOt2pAkguHgc_g/edit">Click here</a></td>
+                    <td><h1>VEX ROBOTICS</h1>
+                        <a target="_blank" href="https://www.vexrobotics.com/vexedr">Click here</a></td>
+                 </tr>
+                <tr>
+                    <td><h1>ROBOT EVENTS</h1>
+                        <a target="_blank" href="https://www.robotevents.com/">Click here</a></td>
+                    <td><h1>VEX FORUM</h1>
+                        <a target="_blank" href="https://www.vexforum.com/">Click here</a></td>
+                 </tr>
+                 <tr>
+                        <td><h1>PRE-SEASON MEETING SLIDES</h1>
+                            <a target="_blank" href="https://docs.google.com/presentation/d/1lbLfFN7JI20XXoc1qQlxK-hAkWI-VGcfsl__4EnDppg/edit">Click here</a></td>
+                        <td><h1>VEX DOWNLOADS</h1>
+                            <a target="_blank" href="https://www.vexrobotics.com/download-search?refinementList[document_types][0]=Game%20Manual">Click here</a></td>
+                     </tr>
+
+                
+                
+                
+    
+            </table>
+
+
             <!-- side navigation menu -->
             <div id="sidenav">
                 <table class="sidenavContent">
@@ -64,7 +99,11 @@
                     </tr>
                     <!-- posts page -->
                     <tr>
-                        <td class="menuTD"><a class="link activeLink" href="#">POSTS</a></td>
+                        <td class="menuTD"><a class="link" href="messages.html">POSTS</a></td>
+                    </tr>
+                    <!-- join us page -->
+                    <tr>
+                        <td class="menuTD"><a class="link" href="#Join Us">JOIN US</a></td>
                     </tr>
                     <!-- contact page -->
                     <tr>
@@ -72,7 +111,7 @@
                     </tr>
                     <!-- resources page -->
                     <tr>
-                        <td class="menuTD"><a class="link" href="resources.html">RESOURCES</a></td>
+                        <td class="menuTD"><a class="link activeLink" href="#">RESOURCES</a></td>
                     </tr>
                 </table>
             <!-- end of sidenav -->
@@ -94,52 +133,43 @@
                 <br>
                 <a class="link" href="#2381C">Z</a>
             </div>
-            <center>
-                <h1 class="mainTitle1">POSTS</h1>
-            </center>
-            <table id="messageTable">
-            </table>
-            <div class="buttonContainer">
-                <a href="#"><button id="nextButton" class="messageButtons" onclick="showNext()">NEXT</button></a>
-                <a href="#"><button id="prevButton" class="messageButtons" style="display:none;" onclick="showPrev()">PREV</button></a>
+            <!-- End of splash page -->
+        </div>
+
+        <!-- start of section 2 -->
+        <!-- <div class="sponsorsContainer">
+            <div class="texture"></div>
+            <div class="sponsorsSubContainer">
+                <h1>Thanks to all of our sponsors!</h1>
             </div>
-           <!-- End of splash page -->
+        </div> -->
+        <!-- end of section 2 -->
+        
+        <!-- start of SECTION 3. Footer-->
+        <div class="footer">
+            <div class="texture"></div><!-- textured image background -->
+            <!-- media links -->
+            <center>
+                <div>
+                    <a href="#"><img src="images/instagramLogo.png"></a> <!--instagram-->
+                    <a href="#"><img src="images/githubLogo.png"></a><!--github-->
+                    <a href="#"><img src="images/youtubeLogo.png"></a><!--youtube-->
+                </div>
+                <!--2381 seondary logo-->
+                <div class="logo">2381 ROBOTICS</div>
+            </center>
+        <!-- end of SECTION 3 -->
         </div>
         
-        <div id="myModal" class="modal">
-    <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-            <span class="close" onclick="closeModal()">&#10005;</span>
-            <h2></h2>
-            </div>
-            <div class="modal-body">
-            <p></p>
-            <p></p>
-            </div>
-        </div>
+        <!-- back to top button -->
+        <a href="#" id="topButton">
+            <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+        </a>
 
-</div>
-<!-- start of SECTION 3. Footer-->
-<div class="footer">
-    <div class="texture"></div><!-- textured image background -->
-    <!-- media links -->
-    <center>
-        <div>
-            <a href="#"><img src="images/instagramLogo.png"></a> <!--instagram-->
-            <a href="#"><img src="images/githubLogo.png"></a><!--github-->
-            <a href="#"><img src="images/youtubeLogo.png"></a><!--youtube-->
-        </div>
-        <!--2381 seondary logo-->
-        <div class="logo">2381 ROBOTICS</div>
-    </center>
-<!-- end of SECTION 3 -->
-</div>
 
-<!-- back to top button -->
-<a href="#" id="topButton">
-    <img src="images/back-to-top-arrow.png" width="30px" height="30px">
-</a>
+       
     </body>
 </html>
     
+
+

@@ -7,15 +7,16 @@
 
 .largeTitle {
     position:absolute;
-    margin-left:225px;
+    margin-left:200px;
     padding-top:90px;
     width:400px;
 }
 .largeTitle h1 {
-    font-size: 60px;
+    font-size: 7vw !important;
     color: rgb(249, 211, 139);
     z-index: 200;
     font-family: "neutra";
+    margin-bottom:0;
 }
 .largeTitle p {
     font-size:20px;
@@ -61,7 +62,7 @@
 #contactForm .textInput {
     background:none;
     border:none;
-    width:300px;
+    width:22vw;
     border-bottom:2px solid rgb(249, 211, 139);
     color:rgb(249, 211, 139);
     font-size:16px;
@@ -69,7 +70,7 @@
 }
 #contactForm textarea {
     background:none;
-    width:300px;
+    width:22vw;
     height:110px;
     border:none;
     border:2px solid rgb(249, 211, 139);
@@ -86,7 +87,7 @@
     padding:8px;
     width:250px;
     font-size:18px;
-    margin-top:30px;
+    margin-top:5vw;
     font-weight:bold;
     color:rgb(170, 7, 35);
     border:none;

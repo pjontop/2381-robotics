@@ -1,5 +1,4 @@
 
-@media only screen and (min-width:1440px){
 
     .footer {
         width: 100%;
@@ -156,13 +155,17 @@
     
     .mainTitle1 {
         margin-top: 20px;
-        font-size: 5.2vw;
+        font-size: 7vw;
+    }
+    .marginLeft {
+        margin-left:-4.5vw;
+
     }
     
     .mainTitle2 {
         margin-top: -45px;
         margin-right: 2.5%;
-        font-size: 17.6vw;
+        font-size: 19vw;
         letter-spacing:40px;
     }
     
@@ -230,7 +233,7 @@
         padding-bottom:3.3vw;
     }
 
-}
+
 
 @media only screen and (max-width:1024px) {
     #sidenav {
@@ -348,23 +351,74 @@
         width:100%;
     }
     .logo2381 {
-        top:25px;left:35px;width:40px;height:40px;border-radius:5px;
+        top:75px;left:35px;width:40px;height:40px;border-radius:5px;
     }
-    #sidenav {
-        top: 175px;
-        left: 35px;
+
+    
+    #sidenav, #menuTeamList{
+        display:none;
     }
-    #menuTeamList {
-        top:175px;
-        width:15px;
-        line-height:15px;
-        margin-left:-20px;
+  
+#mobileNav {
+    opacity:0.9;
+    display:block;
+    background-color:#F9D38B;
+    width:100%;
+    height:50px;
+    position:fixed; 
+    z-index: 1000;
+    overflow:hidden;
+    transition:0.6s ease-in-out;
     }
+    .mobileNavContent {
+        margin-top:50px;
+        width:100%;
+        height:500px;
+    }
+    .mobileNavTD {
+    width:100%;
+    text-align:center;
+    height:50px;
+    }
+    
+    #mobileNav .link {
+    color:#AA0723;
+    font-size:16px;
+    text-decoration:none;
+    transition:0.2s ease-in-out;
+    }
+    
+    #mobileNav .link:hover {
+    font-size:20px;
+    }
+    
+    
+    #mobileNav .activeLink {
+        font-weight:bold;
+        font-size:30px;
+    }
+    #mobileNav .activeLink:hover {
+    font-size:30px;
+    }
+    #toggleMobileNav {
+        width:50px;
+        height:50px;
+        position: absolute;
+        right:25px;
+        top:0;
+    }
+
+    #vexInfoSection {
+        padding-bottom:100px;
+    }
+
     
     .link {
         font-size: 10px;
     } 
+
     #splash {
+        margin-top:50px;
         height:400px;
     }
     .vex2019text {
@@ -411,6 +465,7 @@
         right:20px;
         border-radius:3px;
         padding:5px;
+        top:80px;
     }
 
     .link:hover {

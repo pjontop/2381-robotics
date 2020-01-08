@@ -1,13 +1,13 @@
 
-@media only screen and (min-width:1440px){
     
 .largeTitle {
-    margin-left:16.5vw;
+    margin-left:11vw;
     padding-top:6.6vw;
     width:29.28vw;
 }
 .largeTitle h1 {
     font-size: 4.4vw;
+    margin-bottom:0;
 }
 .largeTitle p {
     font-size:1.5vw;
@@ -24,7 +24,6 @@
 }
 .linksContainer a {
     font-size:1.5vw;
-}
 }
 
 @media only screen and (max-width:1024px) {

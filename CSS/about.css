@@ -9,6 +9,13 @@
     height:100%;
 }
 
+#aboutContainer {
+    background-color: #AA0723;
+    position: relative;
+    overflow-x:hidden;
+        width: 100%;
+        height: 50vw;
+}
 body {
     margin:0;
     padding:0;
@@ -16,7 +23,7 @@ body {
 .mainTitle1 {
     position:absolute;
     padding-top:90px;
-    font-size:150px;
+    font-size:90px;
     margin-top: 20px;
     position: relative;
     margin-bottom:0;

@@ -6,6 +6,9 @@
         <!-- basic CSS document -->
         <link rel="stylesheet" href="CSS/homepage.css"/>
         <link rel="stylesheet" href="CSS/contact.css"/>
+        <link rel="stylesheet" href="CSS/hamburger.css"/>
+        <script src="JS/mobileMenu.js"></script>
+
         <!-- media query CSS document -->
         <link rel="stylesheet" href="CSS/mediaCss.css"/>
         <link rel="stylesheet" href="CSS/mediaCssContact.css"/>
@@ -16,6 +19,51 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="mobileNav">
+            <button onclick="toggleMobileNav()" id="toggleMobileNav" class="hamburger hamburger--squeeze" type="button">
+    
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+    
+                </button>
+    
+                <table class="mobileNavContent">
+                    <!-- sponsors page -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
+                    </tr>
+                    <!-- home link -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link" href="index.html">HOME</a></td>
+                    </tr>
+                    <!-- about page -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link" href="about.html">ABOUT</a></td>
+                    </tr>
+                    <!-- teams link which opens the list of teams on the side of the page -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link" href="teams.html">TEAMS</a></td>
+                    </tr>
+                    <!-- Calender page -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
+                    </tr>
+                    <!-- posts page -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link" href="messages.html">MESSAGES</a></td>
+                    </tr>
+                    <!-- contact page -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link activeLink">CONTACT</a></td>
+                    </tr>
+                    <!-- resources page -->
+                    <tr>
+                        <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
+                    </tr>
+                </table>
+    <!-- end of sidenav -->
+    </div>
         <!-- hidden container for colour palette -->
         <div style="display:none;">
             #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
@@ -43,7 +91,7 @@
             </div>
 
             <div class="largeTitle">
-                <h1>CONTACT US</h1>
+                <h1>CONTACT</h1>
                 <p>Comments, questions, or concerns? We have answers! Let us know by filling out this form.<br>Also visit our FAQ page by clicking the link below.</p>
                 <a href="#">FAQ Page</a>
             </div>
@@ -76,19 +124,19 @@
                     </tr>
                     <!-- teams link which opens the list of teams on the side of the page -->
                     <tr>
-                        <td class="menuTD menuTeamLink"><a class="link" href="#Teams" onclick="toggleTeamsList()">TEAMS</a></td>
+                        <td class="menuTD menuTeamLink"><a class="link" href="teams.html">TEAMS</a></td>
                     </tr>
                     <!-- Calender page -->
                     <tr>
-                        <td class="menuTD"><a class="link" href="#Calender">CALENDAR</a></td>
+                        <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
                     </tr>
                     <!-- posts page -->
                     <tr>
-                        <td class="menuTD"><a class="link" href="messages.html">POSTS</a></td>
+                        <td class="menuTD"><a class="link" href="messages.html">MESSAGES</a></td>
                     </tr>
                     <!-- contact page -->
                     <tr>
-                        <td class="menuTD"><a class="link activeLink" href="#">CONTACT</a></td>
+                        <td class="menuTD"><a class="link activeLink">CONTACT</a></td>
                     </tr>
                     <!-- resources page -->
                     <tr>

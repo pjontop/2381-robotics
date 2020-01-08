@@ -7,7 +7,7 @@ iframe {
 }
 
 #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-height:170%;
+height:56.25vw;
 }
 
 .mainTitle1 {
@@ -16,47 +16,58 @@ height:170%;
 
 #messageTable {
     position:relative;
+    width:70vw;
     margin-left:50%;
     transform: translateX(-50%);
 }
 
-#messageTable .messageContainer{
-    width:600px;
-    padding:20px;
+#messageTable div{
+    width:19.5vw;
+    height:19.5vw;
+    border: 2px solid #F9D38B;
+    background-color: #AA0723; 
+    margin:2.6vw !important;
+    padding:0;
 }
 
 #messageTable .messageTitle {
-    font-size:30px;
-    color:#F9D38B;
+    font-size:1.56vw;
+    background-color:#F9D38B;
+    color:#AA0723;
+    padding:0.52vw 1.04vw;
+    width:17.45vw;
+    margin:0;
+    
 
 }
 #messageTable .messageContent {
-    font-size:20px;
+    font-size:1.3vw;
     color:#F9D38B;
     font-family:'neutra';
+    padding: 0 1vw;
 }
 #messageTable .messageDate {
-    font-size:15px;
+    font-size:1.8vw;
     color:#F9D38B;
     font-family:'neutra';
+    padding: 0 1vw;
 }
 
 .buttonContainer {
     position:relative;
-    margin-left:50%;
-    transform: translateX(-50%);
-    width:600px;
+  margin-left:65vw;
 }
 .buttonContainer .messageButtons{
     font-family:'neutra-bold';
     color:#AA0723;
     background-color: #F9D38B;
-    padding:10px;
-    margin:10px;
+    padding:1vw;
+    margin:1vw;
     border:none;
+    font-size:1.5vw;
     border-radius:5px;
-    float:right;
-}
+    text-decoration: none;
+  float:left;}
 
 td:hover {
     cursor:pointer;
@@ -95,6 +106,16 @@ td:hover {
     animation-name: animatetop;
     animation-duration: 0.4s;
     font-family:'neutra';
+    font-size:1.3vw;
+
+  } 
+.modal-header h2 {
+    font-size:2.6vw;
+    margin:0;
+  }
+  .modal-date {
+    font-size:2.6vw;
+    font-weight: bold;
   }
  
 

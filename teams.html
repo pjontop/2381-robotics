@@ -5,18 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- basic CSS document -->
         <link rel="stylesheet" href="CSS/homepage.css"/>
-        <link rel="stylesheet" href="CSS/contact.css"/>
+        <link rel="stylesheet" href="CSS/teams.css"/>
         <link rel="stylesheet" href="CSS/hamburger.css"/>
-        <script src="JS/menu.js"></script>
         <script src="JS/mobileMenu.js"></script>
+
 
         <!-- media query CSS document -->
         <link rel="stylesheet" href="CSS/mediaCss.css"/>
-        <link rel="stylesheet" href="CSS/mediaCssContact.css"/>
+        <link rel="stylesheet" href="CSS/mediaCssTeams.css"/>
 
         <!-- Javascript file -->
         <script src="JS/menu.js"></script>
-        <script src="JS/topButton.js"></script>        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+        <script src="JS/topButton.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="mobileNav">
@@ -43,7 +45,7 @@
                     </tr>
                     <!-- teams link which opens the list of teams on the side of the page -->
                     <tr>
-                        <td class="mobileNavTD"><a class="link" href="teams.html">TEAMS</a></td>
+                        <td class="mobileNavTD"><a class="link activeLink">TEAMS</a></td>
                     </tr>
                     <!-- Calender page -->
                     <tr>
@@ -55,7 +57,7 @@
                     </tr>
                     <!-- contact page -->
                     <tr>
-                        <td class="mobileNavTD"><a class="link activeLink">CONTACT</a></td>
+                        <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
                     </tr>
                     <!-- resources page -->
                     <tr>
@@ -64,13 +66,8 @@
                 </table>
     <!-- end of sidenav -->
     </div>
-        <!-- hidden container for colour palette -->
-        <div style="display:none;">
-            #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
-        </div>
-
         <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
-        <div id="splash">
+        <div id="splashPage">
             <!-- splitting background into 2 halves and overlaying a textured image -->
             <div class="leftBG1"></div> <!-- light red-->
             <div class="rightBG1"></div> <!-- dark red-->
@@ -89,30 +86,6 @@
                 </div>
             <!-- End of Nav bar -->
             </div>
-
-            <div class="largeTitle">
-                <h1>CONTACT</h1>
-                <p>Comments, questions, or concerns? We have answers! Let us know by filling out this form.<br>Also visit our FAQ page by clicking the link below.</p>
-                <a href="#">FAQ Page</a>
-            </div>
-    
-            <div class="formContainer">
-                <div id="contactForm">
-                    <form method="POST" id="contact_form" action="https://inviable-gyroscope.000webhostapp.com/contact-form-handler.php">
-                        <label>Name</label><br>
-                        <center><input class="textInput"id="name" type="text" name="name" required></center>
-                        <label>Email</label><br>
-                        <center><input class="textInput"id="email" type="email" name="email" required></center>
-                        <label>Subject</label><br>
-                        <center><input class="textInput" id="subject" type="text" name="subject" required></center>
-                        <label>Message</label><br>
-                        <center><textarea id="message" name="message" required></textarea></center>
-                        <center><input id="submitForm" type="submit" value="Submit"></center>
-                    </form>
-                </div>
-            </div>
-
-
             <!-- side navigation menu -->
             <div id="sidenav">
                 <table class="sidenavContent">
@@ -130,7 +103,7 @@
                     </tr>
                     <!-- teams link which opens the list of teams on the side of the page -->
                     <tr>
-                        <td class="menuTD menuTeamLink"><a class="link" href="teams.html">TEAMS</a></td>
+                        <td class="menuTD menuTeamLink"><a class="link activeLink">TEAMS</a></td>
                     </tr>
                     <!-- Calender page -->
                     <tr>
@@ -142,7 +115,7 @@
                     </tr>
                     <!-- contact page -->
                     <tr>
-                        <td class="menuTD"><a class="link activeLink">CONTACT</a></td>
+                        <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
                     </tr>
                     <!-- resources page -->
                     <tr>
@@ -168,54 +141,60 @@
                 <br>
                 <a class="link" href="#2381C">Z</a>
             </div>
-            <!-- End of splash page -->
-        </div>
-
-        <!-- start of section 2 -->
-        <!-- <div class="sponsorsContainer">
-            <div class="texture"></div>
-            <div class="sponsorsSubContainer">
-                <h1>Thanks to all of our sponsors!</h1>
-            </div>
-        </div> -->
-        <!-- end of section 2 -->
-        <div id="vexInfoSection">
-                <!-- splitting background into 2 halves and overlaying a textured image -->
-            <div class="leftBG2"></div> <!-- light red-->
-            <div class="rightBG2"></div> <!-- gradient which fades from light red to dark red-->
-            <div class="texture"></div> <!-- textured image background-->
             <center>
-                <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11194.939958297802!2d-75.60307030409709!3d45.45499617216066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce10225d8e40cb%3A0x3025fa1e80ed33f8!2sColonel%20By%20Secondary%20School!5e0!3m2!1sen!2sca!4v1572442860330!5m2!1sen!2sca" heightframeborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <h1 class="mainTitle1">TEAMS</h1>
             </center>
+            <table>
+                <tr>
+                    <td class="left-text" valign="top"><h1>2381A</h1><p>(From left to right) Jeffrey Li, Eshwar Chockalingam, Ethan Wu, Jenna Wang, Jeffrey Zhang, John Ma</p></td>
+                    <td><img src="images/slideshowImage1.JPG"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/slideshowImage2.JPG"></td>
+                    <td valign="top"><h1>2381C</h1><p>(From left to right) Jeffrey Li, Eshwar Chockalingam, Ethan Wu, Jenna Wang, Jeffrey Zhang, John Ma</p></td>
+
+                </tr>
+                <tr>
+                    <td valign="top"><h1>2381D</h1><p>(From left to right) Jeffrey Li, Eshwar Chockalingam, Ethan Wu, Jenna Wang, Jeffrey Zhang, John Ma</p></td>
+                    <td><img src="images/slideshowImage3.JPG"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/slideshowImage4.JPG"></td>
+                    <td valign="top"><h1>2381W</h1><p>(From left to right) Jeffrey Li, Eshwar Chockalingam, Ethan Wu, Jenna Wang, Jeffrey Zhang, John Ma</p></td>
+                </tr>
+                <tr>
+                    <td valign="top"><h1>2381Y</h1><p>(From left to right) Jeffrey Li, Eshwar Chockalingam, Ethan Wu, Jenna Wang, Jeffrey Zhang, John Ma</p></td>
+                    <td><img src="images/slideshowImage5.JPG"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/slideshowImage6.JPG"></td>
+                    <td valign="top"><h1>2381Z</h1><p>(From left to right) Jeffrey Li, Eshwar Chockalingam, Ethan Wu, Jenna Wang, Jeffrey Zhang, John Ma</p></td>
+                </tr>
+            </table>
+           <!-- End of splash page -->
         </div>
         
 
-
-        <!-- start of SECTION 3. Footer-->
-        <div class="footer">
-            <div class="texture"></div><!-- textured image background -->
-            <!-- media links -->
-            <center>
-                <div>
-                    <a href="#"><img src="images/instagramLogo.png"></a> <!--instagram-->
-                    <a href="#"><img src="images/githubLogo.png"></a><!--github-->
-                    <a href="#"><img src="images/youtubeLogo.png"></a><!--youtube-->
-                </div>
-                <!--2381 seondary logo-->
-                <div class="logo">2381 ROBOTICS</div>
-            </center>
-        <!-- end of SECTION 3 -->
+<!-- start of SECTION 3. Footer-->
+<div class="footer">
+    <div class="texture"></div><!-- textured image background -->
+    <!-- media links -->
+    <center>
+        <div>
+            <a href="#"><img src="images/instagramLogo.png"></a> <!--instagram-->
+            <a href="#"><img src="images/githubLogo.png"></a><!--github-->
+            <a href="#"><img src="images/youtubeLogo.png"></a><!--youtube-->
         </div>
-        
-        <!-- back to top button -->
-        <a href="#" id="topButton">
-            <img src="images/back-to-top-arrow.png" width="30px" height="30px">
-        </a>
+        <!--2381 seondary logo-->
+        <div class="logo">2381 ROBOTICS</div>
+    </center>
+<!-- end of SECTION 3 -->
+</div>
 
-
-       
+<!-- back to top button -->
+<a href="#" id="topButton">
+    <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+</a>
     </body>
 </html>
     
-
-

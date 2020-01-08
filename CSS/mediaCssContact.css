@@ -1,4 +1,3 @@
-@media only screen and (min-width:1440px){
     #splash .texture, #splash .rightBG1, #splash .leftBG1{
         height:56vw;
     }
@@ -6,12 +5,13 @@
         height:56vw;
     }
     .largeTitle {
-        margin-left:17.6vw;
+        margin-left:16vw;
         padding-top:6.6vw;
         width:29vw;
     }
     .largeTitle h1 {
         font-size: 4.4vw;
+        margin-bottom:0;
     }
     .largeTitle p {
         font-size:1.5vw;
@@ -52,7 +52,7 @@
         padding:0.6vw;
         width:18.3vw;
         font-size:1.3vw;
-        margin-top:2.9vw;
+        margin-top:5vw;
         border-radius:0.7vw;
     }
     .submissionText {
@@ -98,7 +98,7 @@
 }
 
 @media only screen and (max-width:1024px) {
-    #splash {
+    #splash , #splash .texture, #splash .rightBG1{
         height:800px;
     }
     .rightBG1{
@@ -136,7 +136,11 @@
         font-size:17px;
         margin-left:25px;
     }
-    
+   
+    .textInput {
+        width:300px !important;
+    }
+
     #contactForm textarea {
         width:300px;
         height:110px;
@@ -180,7 +184,7 @@
         height:750px;
     }
     #splash .texture{
-        height:755px;
+        height:755px; 
     }
     .largeTitle {
         margin-left:50%;
@@ -221,7 +225,8 @@
     
     #contactForm {
         width:250px;
-        height:350px;
+        height:305px;
+        border-radius: 10px;
     }
     
     #contactForm label {
@@ -231,21 +236,23 @@
     }
     
     #contactForm .textInput {
-        width:225px;
+        width:225px !important;
         font-size:15px;
+        margin-top:5px;
     }
     #contactForm textarea {
         width:225px;
         height:90px;
         font-size:15px;
         border-radius:2px;
+        margin-top:10px;
     }
     
     #submitForm {
         padding:4px;
         width:200px;
-        font-size:12px;
-        margin-top:20px;
+        font-size:12px !important;
+        margin-top:10vw;
         border-radius:5px;
     }
     .submissionText {
@@ -259,10 +266,10 @@
       }
     
       #vexInfoSection {
-        height: 300px;
+        height: 200px;
     }
     #vexInfoSection .texture, #vexInfoSection .rightBG2, #vexInfoSection .leftBG2{
-        height:300px;
+        height:400px;
     }
     
     .googleMaps {

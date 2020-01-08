@@ -5,20 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- basic CSS document -->
         <link rel="stylesheet" href="CSS/homepage.css"/>
-        <link rel="stylesheet" href="CSS/messages.css"/>
+        <link rel="stylesheet" href="CSS/calendar.css"/>
         <link rel="stylesheet" href="CSS/hamburger.css"/>
         <script src="JS/mobileMenu.js"></script>
 
 
         <!-- media query CSS document -->
         <link rel="stylesheet" href="CSS/mediaCss.css"/>
-        <link rel="stylesheet" href="CSS/mediaCssMessages.css"/>
+        <link rel="stylesheet" href="CSS/mediaCssCalendar.css"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <!-- Javascript file -->
-        <script src="JS/messages.js"></script>
         <script src="JS/menu.js"></script>
         <script src="JS/topButton.js"></script>
+        <script src="JS/calendar.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -30,40 +31,41 @@
                     </span>
     
                 </button>
-                <table class="mobileNavContent">
-                    <!-- sponsors page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
-                    </tr>
-                    <!-- home link -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="index.html">HOME</a></td>
-                    </tr>
-                    <!-- about page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="about.html">ABOUT</a></td>
-                    </tr>
-                    <!-- teams link which opens the list of teams on the side of the page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="teams.html">TEAMS</a></td>
-                    </tr>
-                    <!-- Calender page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
-                    </tr>
-                    <!-- posts page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link activeLink">MESSAGES</a></td>
-                    </tr>
-                    <!-- contact page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
-                    </tr>
-                    <!-- resources page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
-                    </tr>
-                </table>
+    
+        <table class="mobileNavContent">
+            <!-- sponsors page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
+            </tr>
+            <!-- home link -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="index.html">HOME</a></td>
+            </tr>
+            <!-- about page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="about.html">ABOUT</a></td>
+            </tr>
+            <!-- teams link which opens the list of teams on the side of the page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="teams.html">TEAMS</a></td>
+            </tr>
+            <!-- Calender page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link activeLink">EVENTS</a></td>
+            </tr>
+            <!-- posts page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="messages.html">MESSAGES</a></td>
+            </tr>
+            <!-- contact page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
+            </tr>
+            <!-- resources page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
+            </tr>
+        </table>
     <!-- end of sidenav -->
     </div>
         <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
@@ -107,11 +109,11 @@
                     </tr>
                     <!-- Calender page -->
                     <tr>
-                        <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
+                        <td class="menuTD"><a class="link activeLink">EVENTS</a></td>
                     </tr>
                     <!-- posts page -->
                     <tr>
-                        <td class="menuTD"><a class="link activeLink">MESSAGES</a></td>
+                        <td class="menuTD"><a class="link" href="messages.html">MESSAGES</a></td>
                     </tr>
                     <!-- contact page -->
                     <tr>
@@ -142,14 +144,19 @@
                 <a class="link" href="#2381C">Z</a>
             </div>
             <center>
-                <h1 class="mainTitle1">MESSAGES</h1>
+                <h1 class="mainTitle1">EVENTS</h1>
             </center>
             <table id="messageTable">
+                <tr id="calendarContainer">
+
+                </tr>
             </table>
             <div class="buttonContainer">
-                <a href="#"><button id="nextButton" class="messageButtons" onclick="showNext()">NEXT</button></a>
                 <a href="#"><button id="prevButton" class="messageButtons" style="display:none;" onclick="showPrev()">PREV</button></a>
+
+                <a href="#"><button id="nextButton" class="messageButtons" onclick="showNext()">NEXT</button></a>
             </div>
+            
            <!-- End of splash page -->
         </div>
         

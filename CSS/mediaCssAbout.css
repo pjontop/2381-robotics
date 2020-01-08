@@ -1,5 +1,4 @@
 
-@media only screen and (min-width:1440px){
     #splash, #splash .texture, #splash .leftBG1, #splash .rightBG1{
         height:100%;
     }
@@ -8,10 +7,10 @@
     }
     .mainTitle1 {
         padding-top:6.6vw;
-    font-size:11vw;
+    font-size:7vw;
     margin-top: 1.46vw;
     }
-    #googleSlidesContainer .texture, #googleSlidesContainer .leftBG1 ,#googleSlidesContainer .rightBG1 {
+    #aboutContainer .texture, #aboutContainer .leftBG1 ,#aboutContainer .rightBG1 {
         height: 50vw;
     }
     #infoSlideshow {
@@ -51,7 +50,6 @@
     height:36.6vw;
     border-radius:1vw;
 }
-}
 
 @media only screen and (max-width:1024px) {
     #splash, #splash .texture, #splash .leftBG1, #splash .rightBG1{
@@ -68,23 +66,29 @@
         margin-top: 1.5vw;
         font-size:13vw;
     }
-    #googleSlidesContainer .texture, #googleSlidesContainer .leftBG1 ,#googleSlidesContainer .rightBG1 {
+    #aboutContainer .texture, #aboutContainer .leftBG1 ,#aboutContainer .rightBG1 {
         height: 53vw;
     }
     
 #aboutContentLeft {
     padding-top:0;
     position:relative;
-    width:90vw;
+    width:75vw;
     margin-left:50%;
     padding-bottom:0;
 }
 
 #aboutContentRight {
-    width:90vw;
+    width:75vw;
     padding-top:0;
     margin-left:50%;
     padding-bottom:0;
+}
+
+
+#aboutContainer{
+
+        height: 53vw;
 }
 
 
@@ -104,13 +108,13 @@
     border-radius:1vw;
 }
 #infoSection, #infoSection .texture , #infoSection .leftBG2, #infoSection .rightBG2{
-    height:130vw;
+    height:150vw;
 }
 }
 
 @media only screen and (max-width:767px) {
     #splash, #splash .texture, #splash .leftBG1, #splash .rightBG1{
-        height:140vw;
+        height:120vw;
     }
     #aboutSplashContent p {
         font-size:3vw;
@@ -119,20 +123,19 @@
         padding-top:12vw;
         margin-top: 1.5vw;
     }
-    #googleSlidesContainer .texture, #googleSlidesContainer .leftBG1 ,#googleSlidesContainer .rightBG1 {
-        height: 65vw;
+    #aboutContainer .texture, #aboutContainer .leftBG1 ,#aboutContainer .rightBG1 {
+        height: 53vw;
     }
-    
 #aboutContentLeft {
     padding-top:0;
     position:relative;
-    width:90vw;
+    width:75vw;
     margin-left:50%;
     padding-bottom:0;
 }
 
 #aboutContentRight {
-    width:90vw;
+    width:75vw;
     padding-top:0;
     margin-left:50%;
     padding-bottom:0;
@@ -148,13 +151,13 @@
     text-align: center;
 
 }
-#infoSection {
-    height:170vw;
+#infoSection , #infoSection .texture{
+    height:195vw;
 }
 
 .joinUsVid {
-    width:90vw;
-    height:55vw;
+    width:74vw;
+    height:45vw;
     border-radius:1vw;
 }
     

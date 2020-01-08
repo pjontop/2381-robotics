@@ -6,7 +6,7 @@
     width:400px;
 }
 .largeTitle h1 {
-    font-size: 60px;
+    font-size: 6.6vw !important;
     color: rgb(249, 211, 139);
     z-index: 200;
     font-family: "neutra";

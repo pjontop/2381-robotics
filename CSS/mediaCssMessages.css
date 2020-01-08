@@ -1,28 +1,41 @@
-
-
-
-@media only screen and (min-width:1440px){
     #splash .texture, #splash .rightBG1, #splash .leftBG1{
-        height:56vw;
+        height:70vw;
     }
     #splash {
-        height:56vw;
+        height:70vw;
     }
-}
 
 @media only screen and (max-width:1024px) {
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:1100px;
+        height:140vw;
+        }
+        #messageTable {
+            width:65vw;
+        }
+        
+        #messageTable .messageTitle {
+            font-size:4vw;
+        
+        }
+        #messageTable .messageContent {
+            font-size:2.25vw;
+        }
+        #messageTable .messageDate {
+            font-size:2vw;
+        }
+        .buttonContainer .messageButtons{
+            padding:1.7vw;
+            margin:1.7vw;
+            font-size:2.2vw;
         }
 }
 
 @media only screen and (max-width:767px) {
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:160vw;
+        height:150vw;
         }
-        #messageTable .messageContainer{
-            width:200%;
-            padding:20px;
+        #messageTable {
+            width:70vw;
         }
         
         #messageTable .messageTitle {
@@ -53,15 +66,24 @@
             padding: 15px;
             width: 70%;
         }     
+        .modal-header h2 {
+            font-size:7vw;
+        
+          }
+       
+        
+          .modal-body p {
+            font-size:3.5vw;
+          }
 }
 @media only screen and (max-width:640px) {
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:160vw;
+        height:175vw;
         }
 }
 @media only screen and (max-width:450px) {
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:210vw;
+        height:205vw;
         }
 }
 @media only screen and (max-width:330px) {

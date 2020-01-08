@@ -1,10 +1,84 @@
+@media only screen and (max-width:1024px) {
+    #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
+        height:200vw;
+        }
+    #messageTable {
+        width:70vw;
+        margin-left:50%;
+        transform: translateX(-50%);
+    }
+
+    #messageTable td {
+        position:absolute;
+        margin-left:50%;
+        transform: translateX(-50%);
+    }
+   
+    #messageTable .event2 {
+        margin-top:55vw !important;
+    } 
+    
+    #messageTable .event3 {
+        margin-top:110vw;
+    }
+    
+    #messageTable div{
+        width:45vw;
+        height:45vw;
+        border: 0.5vw solid #F9D38B;
+        margin:2.6vw !important;
+    }
+    
+    #messageTable .messageTitle {
+        font-size:4vw;
+        padding:1vw 2vw;
+        width:41vw;
+        
+    
+    }
+    #messageTable .messageContent {
+        font-size:2.6vw;
+        padding: 0 2vw;
+    }
+    #messageTable .messageDate {
+        font-size:3vw;
+        padding: 0 2vw;
+    }
+    
+    .buttonContainer {
+        position:relative;
+        margin-top:160vw;
+        margin-left:60vw;
+    }
+    .buttonContainer .messageButtons{
+        padding:2vw;
+        margin:2vw;
+        font-size:3.5vw;
+        border-radius:5px;
+    }
+    
+  
+  /* Modal Content */
+  .modal-content {
+    font-size:3.2vw;
+
+  } 
+.modal-header h2 {
+    font-size:4vw;
+  }
+  .modal-date {
+    font-size:4vw;
+  }
+
+}
+
 @media only screen and (max-width:767px) {
     #splashPage {
-        margin-top:50px;
+        padding-top:50px;
 
     }
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:260vw;
+        height:270vw;
         }
     #messageTable {
         width:70vw;

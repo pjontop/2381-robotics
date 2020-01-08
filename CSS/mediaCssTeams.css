@@ -1,0 +1,88 @@
+@media only screen and (max-width:1024px) {
+    #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
+        height:250vw;
+        }
+
+        .rightBG1 {
+            height:250vw;
+        }
+        
+
+        .mainTitle1 {
+            margin-top:3.3vw;
+        }
+        
+        table {
+        width:100%;
+        position: relative;
+        }
+        
+        td {
+            padding:5vw;
+        }
+        
+        table img {
+            width:40vw;
+            border-radius: 0.52vw;
+        }
+        
+        table h1 {
+            color:#F9D38B;
+            font-size:3vw;
+            padding-top:3vw;
+        }
+        
+        table p {
+            color:#F9D38B;
+            font-size:2vw;
+        }
+        
+        .left-text {
+            padding-left:15.6vw;
+        } 
+}
+
+@media only screen and (max-width:767px) {
+    #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
+        height:260vw;
+        padding-top:50px;
+        }
+
+        .rightBG1 {
+            height:260vw;
+        }
+        
+
+        .mainTitle1 {
+            margin-top:3.3vw;
+        }
+        
+        table {
+        width:100%;
+        position: relative;
+        }
+        
+        td {
+            padding:5vw;
+        }
+        
+        table img {
+            width:40vw;
+            border-radius: 0.52vw;
+        }
+        
+        table h1 {
+            color:#F9D38B;
+            font-size:4vw;
+            padding-top:2vw;
+        }
+        
+        table p {
+            color:#F9D38B;
+            font-size:2.8vw;
+        }
+        
+        .left-text {
+            padding-left:5vw;
+        } 
+}

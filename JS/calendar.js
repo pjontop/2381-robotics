@@ -3,7 +3,7 @@ var currentMessageSet = 0;
 var sheetDataLength = 0;
 var messages = [];
 $(document).ready(function () {
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1_N_KNtrumRViyYE_GtDQ6dkLJNkvacX3_H2IfdyF9O4/od6/public/values?alt=json", function (data) {
+    $.getJSON("https://spreadsheets.google.com/feeds/list/1h3CvnbLg2FR25cifLhgmqkNKqd49gBcsJD6DxeLfttQ/od6/public/values?alt=json", function (data) {
 var sheetData = data.feed.entry;
 var i;
 var tempList;

@@ -218,6 +218,19 @@ body::-webkit-scrollbar {
     font-size: 16px;
     padding-left:5px;
 }
+
+#mobileNav .activeLink {
+    font-weight:bold;
+    font-size:30px;
+}
+#mobileNav .activeLink:hover {
+font-size:30px;
+}
+
+#mobileNav {
+    display:none;
+}
+
 /* Special class for the link of the page which the use is currently on. (displays larger) */
 .sidenavContent .activeLink {
     opacity: 1;

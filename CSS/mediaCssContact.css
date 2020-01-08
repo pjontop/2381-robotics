@@ -98,7 +98,7 @@
 }
 
 @media only screen and (max-width:1024px) {
-    #splash {
+    #splash , #splash .texture, #splash .rightBG1{
         height:800px;
     }
     .rightBG1{
@@ -184,7 +184,7 @@
         height:750px;
     }
     #splash .texture{
-        height:755px;
+        height:755px; 
     }
     .largeTitle {
         margin-left:50%;
@@ -225,7 +225,8 @@
     
     #contactForm {
         width:250px;
-        height:350px;
+        height:305px;
+        border-radius: 10px;
     }
     
     #contactForm label {
@@ -235,20 +236,22 @@
     }
     
     #contactForm .textInput {
-        width:225px;
+        width:225px !important;
         font-size:15px;
+        margin-top:5px;
     }
     #contactForm textarea {
         width:225px;
         height:90px;
         font-size:15px;
         border-radius:2px;
+        margin-top:10px;
     }
     
     #submitForm {
         padding:4px;
         width:200px;
-        font-size:12px;
+        font-size:12px !important;
         margin-top:10vw;
         border-radius:5px;
     }

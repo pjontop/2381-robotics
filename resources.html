@@ -6,6 +6,9 @@
         <!-- basic CSS document -->
         <link rel="stylesheet" href="CSS/homepage.css"/>
         <link rel="stylesheet" href="CSS/resources.css"/>
+        <link rel="stylesheet" href="CSS/hamburger.css"/>
+        <script src="JS/mobileMenu.js"></script>
+
         <!-- media query CSS document -->
         <link rel="stylesheet" href="CSS/mediaCss.css"/>
         <link rel="stylesheet" href="CSS/mediaCssResources.css"/>
@@ -21,6 +24,51 @@
         <div style="display:none;">
             #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
         </div>
+        <div id="mobileNav">
+            <button onclick="toggleMobileNav()" id="toggleMobileNav" class="hamburger hamburger--squeeze" type="button">
+    
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+    
+                </button>
+    
+        <table class="mobileNavContent">
+            <!-- sponsors page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
+            </tr>
+            <!-- home link -->
+            <tr>
+                <td class="mobileNavTD"><a class="link activeLink" href="#">HOME</a></td>
+            </tr>
+            <!-- about page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="about.html">ABOUT</a></td>
+            </tr>
+            <!-- teams link which opens the list of teams on the side of the page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="#Teams" onclick="toggleTeamsList()">TEAMS</a></td>
+            </tr>
+            <!-- Calender page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="#Calender">CALENDAR</a></td>
+            </tr>
+            <!-- posts page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="messages.html">POSTS</a></td>
+            </tr>
+            <!-- contact page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
+            </tr>
+            <!-- resources page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
+            </tr>
+        </table>
+    <!-- end of sidenav -->
+    </div>
 
         <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
         <div id="splash">

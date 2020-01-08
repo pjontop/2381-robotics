@@ -351,23 +351,14 @@
         width:100%;
     }
     .logo2381 {
-        top:25px;left:35px;width:40px;height:40px;border-radius:5px;
+        top:75px;left:35px;width:40px;height:40px;border-radius:5px;
     }
 
     
     #sidenav, #menuTeamList{
         display:none;
     }
-    .hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-    background-color: #AA0723;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-    background-color: #AA0723;
-}
+  
 #mobileNav {
     opacity:0.9;
     display:block;
@@ -427,6 +418,7 @@
     } 
 
     #splash {
+        margin-top:50px;
         height:400px;
     }
     .vex2019text {
@@ -473,7 +465,7 @@
         right:20px;
         border-radius:3px;
         padding:5px;
-        top:30px;
+        top:80px;
     }
 
     .link:hover {

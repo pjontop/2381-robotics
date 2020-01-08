@@ -31,6 +31,10 @@
 }
 
 @media only screen and (max-width:767px) {
+    #splashPage {
+        margin-top:50px;
+
+    }
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
         height:150vw;
         }
@@ -60,7 +64,8 @@
             border-radius:2px;
         }
         .modal-content {
-            
+            margin-top:50px;
+
             border-radius: 10px;
            font-size:14px;
             padding: 15px;

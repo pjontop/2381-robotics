@@ -1,0 +1,78 @@
+#splashPage {
+    height:56.25vw;
+    position: relative;
+}
+#splashPage .texture, #splashPage .rightBG1, #splashPage .leftBG1{
+    height:56.25vw;
+}
+
+
+.largeTitle {
+    position:absolute;
+    margin-left:13vw;
+    padding-top:13vw;
+    width:20.8vw;
+}
+.largeTitle h1 {
+    font-size: 7vw !important;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+    margin-bottom:0;
+}
+.largeTitle p {
+    font-size:1vw;
+    text-decoration:italic;
+    color: rgb(249, 211, 139);
+    z-index: 200;
+    font-family: "neutra";
+}
+.largeTitle a {
+    font-size:1vw;
+    color: rgb(249, 211, 139);
+    font-family: "neutra";
+
+}
+.sponsors-container {
+    position:relative;
+    margin-left:50vw;
+    margin-top:5vw;
+    width:50vw;
+}
+
+.sponsors-container td {
+    padding:2.5vw;
+    width:25vw;
+}
+ 
+/* .sponsors-container img {
+    width:200px;
+    height:300px;
+} */
+
+.sponsors-container div {
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-top:6vw;
+    text-align:center;
+}
+
+.sponsor-image {
+    width:15.6vw;
+    height:23.4vw;
+    border-radius:0.5vw;
+    }   
+
+.sponsors-container p {
+    font-size:35px;
+    color:rgb(249, 211, 139);
+    /* font-style: italic; */
+    font-family:'neutra';
+}
+
+.sponsors-container span {
+    font-size:1vw;
+    color:rgb(249, 211, 139);
+    font-style: italic;
+    font-family:'neutra';
+}

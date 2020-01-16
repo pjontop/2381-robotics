@@ -40,10 +40,10 @@ function setMessages(arr){
             }
         }
         if (i > 3) {
-            document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")' style='display:none'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Eshwar Chockalingam on " + date + "</i></p></td></tr>"
+            document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")' style='display:none'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Benjamin Hudson on " + date + "</i></p></td></tr>"
         }
         else{
-        document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Eshwar Chockalingam on " + date + "</i></p></td></tr>"
+        document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Benjamin Hudson on " + date + "</i></p></td></tr>"
         }
     }
     console.log(arr);
@@ -101,7 +101,7 @@ function messageViewer(messageNum) {
     var date = messages[messageNum][1];
     var content = messages[messageNum][2];
     document.getElementsByClassName("modal-header")[0].getElementsByTagName("h2")[0].innerHTML = title;
-    document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[0].innerHTML = "<i>Posted by Eshwar Chockalingam on " + date + "</i>";
+    document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[0].innerHTML = "<i>Posted by Benjamin Hudson on " + date + "</i>";
     document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[1].innerHTML = content;
     document.getElementById("myModal").style.display = "block";
 }

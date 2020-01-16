@@ -1,10 +1,10 @@
 
 
 #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-height:240vw;
+height:245vw;
 }
 .mainTitle1 {
-    margin-top:3.3vw;
+    padding-top:4vw;
 }
 
 table {

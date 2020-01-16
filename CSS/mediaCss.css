@@ -239,6 +239,9 @@
     #sidenav {
         top: 200px;
     }
+    .sidenavContent {
+        line-height:3vw;
+    }
     #menuTeamList {
         top:200px;
         margin-left:-30px;

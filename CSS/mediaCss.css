@@ -22,7 +22,7 @@
     }
     
     .slideshowContainer {
-        height: 66vw;
+        height: 50vw;
         width: 100vw;
     }
 
@@ -70,14 +70,14 @@
 
     #googleSlidesContainer {
         width: 100%;
-        height: 43.9vw;
-        padding-bottom:3.6vw;
+        height: 46vw;
+        padding-bottom:2vw;
     }
     #infoSlideshow {
         height:36vw;
         width:60.8vw;
         border-radius:1vw;
-        padding-top:5.2vw;
+        padding-top:10vw;
 
     }
 
@@ -322,7 +322,7 @@
         margin-left: 100px;
     }
     .slideshowContainer {
-        height: 66vw;
+        height: 50vw;
         width: 100vw;
     }
     
@@ -358,7 +358,7 @@
     }
 
     
-    #sidenav, #menuTeamList{
+    #sidenav{
         display:none;
     }
   
@@ -530,7 +530,7 @@
         margin-left: 40px;
     }
     .slideshowContainer {
-        height: 66vw;
+        height: 50vw;
         width: 100vw;
     }
 

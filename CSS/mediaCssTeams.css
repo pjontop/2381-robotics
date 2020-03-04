@@ -1,10 +1,10 @@
 @media only screen and (max-width:1024px) {
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:250vw;
+        height:240vw;
         }
 
         .rightBG1 {
-            height:250vw;
+            height:240vw;
         }
         
 
@@ -44,12 +44,12 @@
 
 @media only screen and (max-width:767px) {
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:260vw;
+        height:250vw;
         padding-top:50px;
         }
 
         .rightBG1 {
-            height:260vw;
+            height:250vw;
         }
         
 

@@ -415,7 +415,7 @@ font-size:30px;
 /* start of of SECTION 4 CSS. Slideshow gallery*/
 /* container of section 4, slideshow gallery */
 .slideshowContainer {
-    height: 66vw;
+    height: 50vw;
     width: 100vw;
 }
 /* slideshow area which displays the images in the slider */

@@ -1,10 +1,12 @@
 ﻿-Links to Jeffrey’s Intake (https://www.youtube.com/channel/UCU5_llTfZoCTksg1Xd9xC8g?view_as=subscriber)
+-Links to 2381 Youtube Channel (https://www.youtube.com/channel/UCZOk1DzPTIjg7k-GD8l2N3w) -> this shit needs to be updated.
 
 -Insane CSS → this shit needs to be clean
+    - Sidebar should slide in and out on hover. 
 -Update teams
 -Update budgets
 -Update games
--Find sponsors
+-Find sponsors -> need website and sponsorship package to be clean though
 -Update results and past competitions
 -Make appealing to investors/sponsors
 -consistent design language

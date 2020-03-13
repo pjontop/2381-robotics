@@ -8,7 +8,7 @@
 .largeTitle {
     position:absolute;
     margin-left:200px;
-    padding-top:90px;
+    padding-top:0;
     width:400px;
 }
 .largeTitle h1 {
@@ -18,13 +18,14 @@
     font-family: "neutra";
     margin-bottom:0;
 }
-.largeTitle p {
+.largeTitle p, .largeTitle li{
     font-size:20px;
     text-decoration:italic;
     color: rgb(249, 211, 139);
     z-index: 200;
     font-family: "neutra";
 }
+
 .largeTitle a {
     font-size:20px;
     color: rgb(249, 211, 139);

@@ -6,14 +6,14 @@
     }
     .largeTitle {
         margin-left:16vw;
-        padding-top:6.6vw;
+        padding-top:4vw;
         width:29vw;
     }
     .largeTitle h1 {
         font-size: 4.4vw;
         margin-bottom:0;
     }
-    .largeTitle p {
+    .largeTitle p, .largeTitle li {
         font-size:1.5vw;
     }
     .largeTitle a {
@@ -99,10 +99,10 @@
 
 @media only screen and (max-width:1024px) {
     #splash , #splash .texture, #splash .rightBG1{
-        height:800px;
+        height:850px;
     }
     .rightBG1{
-        height:800px;
+        height:850px;
     }
     .largeTitle {
         margin-left:50%;
@@ -117,19 +117,26 @@
     .largeTitle p {
         font-size:15px;
     }
+    .largeTitle li {
+        font-size:15px;
+        list-style: none;
+        margin:0;
+        padding:0;
+        margin-left:-4vw;
+    }
     .largeTitle a {
         font-size:15px;
     }
     .formContainer {
         margin-right: 50%;
         margin-left:50%;
-        margin-top:250px;
+        margin-top:350px;
         transform: translateX(50%);
     }
     
     #contactForm {
         width:350px;
-        height:420px;
+        height:42vw;
     }
     
     #contactForm label {
@@ -196,8 +203,12 @@
     .largeTitle h1 {
         font-size: 25px;
     }
-    .largeTitle p {
+    .largeTitle p, .largeTitle li{
         font-size:14px;
+    }
+    .largeTitle li{
+        list-style: none;
+        margin-left:-14vw;
     }
     .largeTitle a {
         font-size:14px;

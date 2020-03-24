@@ -181,8 +181,8 @@ body::-webkit-scrollbar {
     position: relative;
     z-index: 100;
     opacity: 0.85;
-    width: 245px;
-    height: 245px;
+    width: 500px;
+    height: 500px;
 }
 /* side navigation menu */
 #sidenav {

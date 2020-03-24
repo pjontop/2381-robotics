@@ -1,7 +1,7 @@
 
 
 #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-height:234vw;
+height:240vw;
 }
 .mainTitle1 {
     padding:0;
@@ -34,6 +34,19 @@ table p {
     font-size:1.56vw;
     font-family:'neutra';
 
+}
+
+table li {
+    color:#F9D38B;
+    font-size:1.56vw;
+    font-family:'neutra';
+}
+
+table h2 {
+    color:#F9D38B;
+    font-size:1.8vw;
+    line-height:0;
+    font-family:'neutra'; 
 }
 
 .left-text {

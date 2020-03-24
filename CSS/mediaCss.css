@@ -168,11 +168,12 @@
         font-size: 19vw;
         letter-spacing:40px;
     }
+    /* 551 715 */
     
     .robotImage {
-        margin-top: -30vw;
-        width: 25vw;
-        height: 25vw;
+        margin-top: -38vw;
+        width: 27.5vw;
+        height: 35vw;
     }
     .topnav {
         padding-top:1.5vw;
@@ -486,9 +487,9 @@
     
 
 .robotImage {
-    margin-top: -150px;
+    margin-top: -175px;
     width: 200px;
-    height: 200px;
+    height: 260px;
 }
     .mainTitle1 {
         font-size: 40px;

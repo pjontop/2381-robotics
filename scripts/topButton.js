@@ -1,8 +1,8 @@
 
 // function to automatically scroll to the top of the webpage once is loads
-window.onload = function() {
-            window.scrollTo(0, 0);
-}
+// window.onload = function() {
+//             window.scrollTo(0, 0);
+// }
 
 // everytime the user scrolls on the webpage, run this function to make the back to top button visible
 window.onscroll = function() {

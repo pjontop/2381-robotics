@@ -32,7 +32,7 @@ function setCalendar(arr){
         var title = arr[i][0].toUpperCase();
         var date = arr[i][1];
         var content = arr[i][2].split(" ");
-        var printContent = content[0] + " " + content[1] + " " + content[2] + " " + content[3] + " " + content[4] + " " + content[5] + " " + content[6] + " " + content[7] + " " + content[8] + " " + content[9] + " " + content[10] + " " + content[11] + " " + content[12] + " " + content[13] + " " + content[14] + "..."; 
+        var printContent = content[0] + " " + content[1] + " " + content[2] + " " + content[3] + " " + content[4] + " " + content[5] + " " + content[6] + " " + content[7] + " " + content[8] + " " + content[9] + "..."; 
         if (i > 2) {
             if(n == 0) {
                 document.getElementById("calendarContainer").innerHTML += "<td valign='top' class='event1' onclick='messageViewer(" + i + ")' style='display:none;'><div><h1 class='messageTitle'>" + title + "</h1><p class='messageDate'>" + date + "</p><p class='messageContent'>" + printContent + "</p></div></td>"

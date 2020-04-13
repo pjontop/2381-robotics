@@ -182,3 +182,8 @@ td:hover {
   }
   
   .modal-body {padding: 2px 16px;}
+
+  .modal-body a {
+    color:#F9D38B;
+  }
+  

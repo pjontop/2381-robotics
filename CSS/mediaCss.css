@@ -36,30 +36,20 @@
         border: 0.2vw solid rgb(249, 211, 139);
         margin: 0.45vw;
     }
-    #towerTakeoverYT {
-        width: 41vw;
-        height: 23.1vw;
-        border-radius: 9px;
-        margin-top: 40px;
-    }
-    
+
     #vexInfoSection {
-        height: 57vw;
+        height: 62vw;
     }
+
+    #vexInfoSection .texture{
+        height:62vw;
+    }
+
     .leftBG2 .rightBG2 {
-        height:51.2vw;
+        height:62vw;
     }
     
-    #vexInfoSection p {
-        font-size: 1.75vw;
-    }
-    
-    #vexInfoSection img {
-        width: 30vw;
-        height: 30vw;
-        margin-left:145%;
-        margin-top: -6.6vw;
-    }
+ 
   
     .pulsate {
         bottom:2.6vw;
@@ -68,10 +58,9 @@
         transform:translateX(-2.5vw);
     }
 
-    #googleSlidesContainer {
-        width: 100%;
-        height: 46vw;
-        padding-bottom:2vw;
+    #teamImage {
+        width: 100vw;
+        height: 45vw;
     }
     #infoSlideshow {
         height:36vw;
@@ -217,22 +206,6 @@
         margin-left:5.5vw;
         margin-top:1.83vw;
     }
-    #vexInfoSection span {
-        font-size:2.5vw;
-    }
-    #vexInfoSection2 {
-        border-width:0.73vw;
-        margin-top:-3.6vw;
-    }
-    #vexInfoSection2 h1 {
-        font-size:3.3vw;
-        padding-top:3.6vw;
-    }
-    #vexInfoSection2 p {
-        width:60%;
-        font-size: 1.6vw;
-        padding-bottom:3.3vw;
-    }
 
 
 
@@ -279,9 +252,6 @@
     .contactUsButton {
         font-size: 15px;
     }
-    #vexInfoSection p {
-        font-size: 20px;
-    }
 
 
 
@@ -294,19 +264,8 @@
     .leftBG2, .rightBG2 {
         height:675px;
     }
-    #towerTakeoverYT {
-        width: 40.36vw;
-        height: 22.79vw;
-        margin-top: 40px;
-    }
-    #vexInfoSection img {
-        width: 32.55vw;
-        height: 32.55vw;
-        margin-left:140%;
-        margin-top: -4vw;
-    }
-    #googleSlidesContainer {
-        height: 53vw;
+    #teamImage {
+        height: 50vw;
     }
     #infoSlideshow {
         height:47vw;
@@ -340,13 +299,6 @@
 .sponsorsSubContainer {
     margin-left:55px;
     margin-top:30px;
-}
-#vexInfoSection2 h1 {
-    font-size:35px;
-}
-#vexInfoSection2 p {
-    width:70%;
-    font-size: 20px;
 }
 }
 
@@ -481,9 +433,6 @@
         font-size: 15px;
         padding-left:4px;
     }
-    #vexInfoSection p {
-        font-size: 13px;
-    }
     
 
 .robotImage {
@@ -501,24 +450,6 @@
         font-size: 100px;
         letter-spacing:20px;
         padding-top:20px;
-    }
-
-    #towerTakeoverYT {
-        width: 250px;
-        height:150px;
-        margin-left:50%;
-        transform:translateX(-125px);
-        margin-top: 15px;
-        position:relative;
-        margin-bottom:0;
-    }
-    #vexInfoSection img {
-        width: 200px;
-        height: 200px;
-        margin-left:50%;
-        transform:translateX(-100px);  
-        margin-top: -50px;
-        position:relative;
     }
     #teamsBackgroundTitle h1 {
         font-size: 22.5vw;
@@ -584,27 +515,11 @@ display:none;
     margin-left:30px;
     margin-top:15px;
 }
-#googleSlidesContainer {
+#teamImage {
     height: 65vw;
 }
 #infoSlideshow {
     height:60vw;
     width:90vw;
-}
-#vexInfoSection span {
-    font-size:25px;
-}
-#vexInfoSection2 {
-    border-width:5px;
-    margin-top:-30px;
-}
-#vexInfoSection2 h1 {
-    font-size:25px;
-    padding-top:50px;
-}
-#vexInfoSection2 p {
-    width:80%;
-    font-size: 13px;
-    padding-bottom:45px;
 }
 }

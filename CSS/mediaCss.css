@@ -62,13 +62,6 @@
         width: 100vw;
         height: 45vw;
     }
-    #infoSlideshow {
-        height:36vw;
-        width:60.8vw;
-        border-radius:1vw;
-        padding-top:10vw;
-
-    }
 
     #teamsBackgroundTitle h1 {
         font-size: 18.3vw;
@@ -124,7 +117,7 @@
     }
     
     .sidenavContent .activeLink {
-        font-size: 2.2vw;
+        font-size: 1.6vw;
         padding-left:0.4vw;
     }
 
@@ -266,10 +259,6 @@
     }
     #teamImage {
         height: 50vw;
-    }
-    #infoSlideshow {
-        height:47vw;
-        width:77vw;
     }
     #teamsBackgroundTitle h1 {
         font-size: 160px;
@@ -430,7 +419,7 @@
     }
     
     .sidenavContent .activeLink {
-        font-size: 15px;
+        font-size: 14px;
         padding-left:4px;
     }
     
@@ -518,8 +507,5 @@ display:none;
 #teamImage {
     height: 65vw;
 }
-#infoSlideshow {
-    height:60vw;
-    width:90vw;
-}
+
 }

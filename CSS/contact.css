@@ -1,8 +1,8 @@
 #splash {
-    height:800px;
+    height:48vw !important;
 }
 #splash .texture, #splash .rightBG1, #splash .leftBG1{
-    height:800px;
+    height:48vw !important;
 }
 
 .largeTitle {
@@ -12,7 +12,7 @@
     width:400px;
 }
 .largeTitle h1 {
-    font-size: 7vw !important;
+    font-size: 6vw !important;
     color: rgb(249, 211, 139);
     z-index: 200;
     font-family: "neutra";

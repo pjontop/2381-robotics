@@ -23,16 +23,16 @@
     }
     
     #messageTable div{
-        width:45vw;
-        height:45vw;
+        width:40vw;
+        height:40vw;
         border: 0.5vw solid #F9D38B;
         margin:2.6vw !important;
     }
     
     #messageTable .messageTitle {
-        font-size:4vw;
+        font-size:3vw;
         padding:1vw 2vw;
-        width:41vw;
+        width:36vw;
         
     
     }
@@ -78,8 +78,11 @@
 
     }
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-        height:270vw;
+        height:260vw;
         }
+    .mainTitle1 {
+        font-size:8vw;
+    }
     #messageTable {
         width:70vw;
         margin-left:50%;

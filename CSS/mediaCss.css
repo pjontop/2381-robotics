@@ -204,8 +204,56 @@
 
 @media only screen and (max-width:1024px) {
     #sidenav {
-        top: 200px;
+        display:none;
     }
+    #mobileNav {
+        opacity:0.9;
+        display:block;
+        background-color:#F9D38B;
+        width:100%;
+        height:50px;
+        position:fixed; 
+        z-index: 1000;
+        overflow:hidden;
+        transition:0.6s ease-in-out;
+        }
+        .mobileNavContent {
+            margin-top:50px;
+            width:100%;
+            height:500px;
+        }
+        .mobileNavTD {
+        width:100%;
+        text-align:center;
+        height:50px;
+        }
+        
+        #mobileNav .link {
+        color:#AA0723;
+        font-size:16px;
+        text-decoration:none;
+        transition:0.2s ease-in-out;
+        }
+        
+        #mobileNav .link:hover {
+        font-size:20px;
+        }
+        
+        
+        #mobileNav .activeLink {
+            font-weight:bold;
+            font-size:30px;
+        }
+        #mobileNav .activeLink:hover {
+        font-size:30px;
+        }
+        #toggleMobileNav {
+            width:50px;
+            height:50px;
+            position: absolute;
+            right:25px;
+            top:0;
+        }
     .sidenavContent {
         line-height:3vw;
     }
@@ -222,6 +270,16 @@
     } 
     #splash {
         height:500px;
+    }
+    #splashPage {
+        margin-top:50px !important;
+    }
+    .logo2381, .contactUsButton {
+        margin-top:65px;
+    }
+    .logo2381 {
+        width:6vw;
+        height:6vw;
     }
     .vex2019text {
         position: absolute;

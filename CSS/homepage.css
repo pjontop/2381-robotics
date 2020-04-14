@@ -540,6 +540,12 @@ font-size:30px;
     height:55vw;
 }
 
+.vexGameInfo hr {
+    border-color:#F9D38B;
+    width:25%;
+    margin-left:0;
+}
+
 .vexGameInfo table {
     position:absolute;
     color:#F9D38B;
@@ -652,7 +658,8 @@ font-size:30px;
 
 
 #teamsContainer .backgroundYellow {
-    background-color:#91021c;
+    background-color:#AA0723;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding:1.5vw;
     height:35vw;
     width:27vw;

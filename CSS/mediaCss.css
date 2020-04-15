@@ -36,30 +36,20 @@
         border: 0.2vw solid rgb(249, 211, 139);
         margin: 0.45vw;
     }
-    #towerTakeoverYT {
-        width: 41vw;
-        height: 23.1vw;
-        border-radius: 9px;
-        margin-top: 40px;
-    }
-    
+
     #vexInfoSection {
-        height: 57vw;
+        height: 62vw;
     }
+
+    #vexInfoSection .texture{
+        height:62vw;
+    }
+
     .leftBG2 .rightBG2 {
-        height:51.2vw;
+        height:62vw;
     }
     
-    #vexInfoSection p {
-        font-size: 1.75vw;
-    }
-    
-    #vexInfoSection img {
-        width: 30vw;
-        height: 30vw;
-        margin-left:145%;
-        margin-top: -6.6vw;
-    }
+ 
   
     .pulsate {
         bottom:2.6vw;
@@ -68,17 +58,9 @@
         transform:translateX(-2.5vw);
     }
 
-    #googleSlidesContainer {
-        width: 100%;
-        height: 46vw;
-        padding-bottom:2vw;
-    }
-    #infoSlideshow {
-        height:36vw;
-        width:60.8vw;
-        border-radius:1vw;
-        padding-top:10vw;
-
+    #teamImage {
+        width: 100vw;
+        height: 45vw;
     }
 
     #teamsBackgroundTitle h1 {
@@ -135,7 +117,7 @@
     }
     
     .sidenavContent .activeLink {
-        font-size: 2.2vw;
+        font-size: 1.6vw;
         padding-left:0.4vw;
     }
 
@@ -217,29 +199,65 @@
         margin-left:5.5vw;
         margin-top:1.83vw;
     }
-    #vexInfoSection span {
-        font-size:2.5vw;
-    }
-    #vexInfoSection2 {
-        border-width:0.73vw;
-        margin-top:-3.6vw;
-    }
-    #vexInfoSection2 h1 {
-        font-size:3.3vw;
-        padding-top:3.6vw;
-    }
-    #vexInfoSection2 p {
-        width:60%;
-        font-size: 1.6vw;
-        padding-bottom:3.3vw;
-    }
 
 
 
 @media only screen and (max-width:1024px) {
+    body::-webkit-scrollbar {
+    display: none;
+    width:0;
+}
     #sidenav {
-        top: 200px;
+        display:none;
     }
+    #mobileNav {
+        opacity:0.9;
+        display:block;
+        background-color:#F9D38B;
+        width:100%;
+        height:50px;
+        position:fixed; 
+        z-index: 1000;
+        overflow:hidden;
+        transition:0.6s ease-in-out;
+        }
+        .mobileNavContent {
+            margin-top:50px;
+            width:100%;
+            height:500px;
+        }
+        .mobileNavTD {
+        width:100%;
+        text-align:center;
+        height:50px;
+        }
+        
+        #mobileNav .link {
+        color:#AA0723;
+        font-size:16px;
+        text-decoration:none;
+        transition:0.2s ease-in-out;
+        }
+        
+        #mobileNav .link:hover {
+        font-size:20px;
+        }
+        
+        
+        #mobileNav .activeLink {
+            font-weight:bold;
+            font-size:30px;
+        }
+        #mobileNav .activeLink:hover {
+        font-size:30px;
+        }
+        #toggleMobileNav {
+            width:50px;
+            height:50px;
+            position: absolute;
+            right:25px;
+            top:0;
+        }
     .sidenavContent {
         line-height:3vw;
     }
@@ -257,6 +275,16 @@
     #splash {
         height:500px;
     }
+    #splashPage, #splash {
+        margin-top:50px !important;
+    }
+    .logo2381, .contactUsButton {
+        margin-top:65px;
+    }
+    .logo2381 {
+        width:6vw;
+        height:6vw;
+    }
     .vex2019text {
         position: absolute;
         top:450px;
@@ -269,9 +297,6 @@
 .rightBG1 {
     height:550px;
 }
-#vexInfoSection .texture {
-    height:800px;
-} 
 
     .teamLogo {
         font-size: 15px;
@@ -279,39 +304,16 @@
     .contactUsButton {
         font-size: 15px;
     }
-    #vexInfoSection p {
-        font-size: 20px;
-    }
 
 
 
     .mainTitle2 {
         font-size: 200px;
     }
-    #vexInfoSection {
-        height: 800px;
-    }
     .leftBG2, .rightBG2 {
         height:675px;
     }
-    #towerTakeoverYT {
-        width: 40.36vw;
-        height: 22.79vw;
-        margin-top: 40px;
-    }
-    #vexInfoSection img {
-        width: 32.55vw;
-        height: 32.55vw;
-        margin-left:140%;
-        margin-top: -4vw;
-    }
-    #googleSlidesContainer {
-        height: 53vw;
-    }
-    #infoSlideshow {
-        height:47vw;
-        width:77vw;
-    }
+    
     #teamsBackgroundTitle h1 {
         font-size: 160px;
         margin-left: 100px;
@@ -341,86 +343,161 @@
     margin-left:55px;
     margin-top:30px;
 }
-#vexInfoSection2 h1 {
-    font-size:35px;
+
+#vexInfoSection, #vexInfoSection .texture{
+    height:110vw;
 }
-#vexInfoSection2 p {
-    width:70%;
-    font-size: 20px;
+.infoText {
+    width:90vw;
+    margin-left:5vw;
+}
+.infoText .extraBottomPadding {
+    padding-bottom:5vw;
+}
+.infoText img {
+    width:8vw;
+    height:8vw;
+}
+.infoText h1 {
+    font-size:3.5vw;
+}
+.infoText p {
+    font-size:2vw;
+}
+
+.infoText a {
+    font-size:2vw;
+    padding:1vw 2vw;
+    border-radius:1.8vw;
+}
+.statsTable  {
+    margin-top:60vw;
+    padding-top:5vw;
+    width:90vw;
+    margin-left:5vw;
+}
+.statsTable .leftBox h1 {
+    font-size:3.5vw;
+}
+.statsTable .leftBox p {
+    font-size:2vw;
+}
+.statsTable .rightBox h1 {
+    font-size:8vw;
+}
+.statsTable .rightBox h2 {
+    font-size:3vw;
+}
+.infoCards, .infoCards .texture {
+    height:130vw;
+}
+.infoCards table {
+    margin-left:10vw;
+    width:80vw;
+    text-align:center;
+}
+.infoCards td {
+    width:30vw;
+    height:60vw;
+}
+.infoCards .mobileRed {
+    background-color:#AA0723;
+    color:#F9D38B;
+}
+.infoCards .mobileRed hr{
+    border-color:#F9D38B;
+    background-color:#F9D38B;
+}
+.infoCards h2 {
+    font-size:3.5vw;
+}
+.infoCards p {
+    font-size:2vw;
+}
+#teamImage, #teamImage .texture {
+    height: 45vw;
+}
+.vexGameInfo, .vexGameInfo .texture {
+    height:92vw;
+}
+.vexGameInfo table {
+    margin-top:0vw;
+}
+.vexGameInfo p, .vexGameInfo a {
+    font-size:2vw;
+}
+.vexGameInfo h1 {
+    font-size:3.5vw;
+}
+.vexGameInfo iframe {
+    width:38vw;
+    height:23vw;
+}
+#teams, #teams .texture {
+    height:75vw;
+}
+#teamsContainer #teamInfo {
+    height:65vw;
+}
+#teamsContainer .backgroundYellow {
+    height:54vw;
+}
+#teamsContainer #teamInfo p{
+    font-size:1.8vw;
+}
+#teamsContainer #teamInfo h2{
+    font-size:2.8vw;
+}
+#teamsContainer #teamInfo li{
+    font-size:1.8vw;
+}
+
+#teamsContainer #teamInfo a{
+    color:#F9D38B;
+    font-size:1.8vw;
+    font-family:'neutra';
 }
 }
 
 @media only screen and (max-width:767px) {
+   body::-webkit-scrollbar {
+    display: none;
+    width:0;
+}
+.vexGameInfo table {
+    width:90vw;
+    margin-left:0;
+}
+.infoCards table {
+    margin-left:0;
+}
+.vexGameInfo td {
+    padding:0;
+}
+#teamsContainer .backgroundYellow {
+    width:20vw;
+}
+#teamContent td {
+    padding:0;
+}
+    body {
+        overflow-x:hidden;
+    }
     body{
-        width:100%;
+        width:100vw;
     }
     .logo2381 {
-        top:75px;left:35px;width:40px;height:40px;border-radius:5px;
+        left:35px;
+        width:40px;
+        height:40px;
+        border-radius:5px;
     }
-
-    
     #sidenav{
         display:none;
     }
-  
-#mobileNav {
-    opacity:0.9;
-    display:block;
-    background-color:#F9D38B;
-    width:100%;
-    height:50px;
-    position:fixed; 
-    z-index: 1000;
-    overflow:hidden;
-    transition:0.6s ease-in-out;
-    }
-    .mobileNavContent {
-        margin-top:50px;
-        width:100%;
-        height:500px;
-    }
-    .mobileNavTD {
-    width:100%;
-    text-align:center;
-    height:50px;
-    }
-    
-    #mobileNav .link {
-    color:#AA0723;
-    font-size:16px;
-    text-decoration:none;
-    transition:0.2s ease-in-out;
-    }
-    
-    #mobileNav .link:hover {
-    font-size:20px;
-    }
-    
-    
-    #mobileNav .activeLink {
-        font-weight:bold;
-        font-size:30px;
-    }
-    #mobileNav .activeLink:hover {
-    font-size:30px;
-    }
-    #toggleMobileNav {
-        width:50px;
-        height:50px;
-        position: absolute;
-        right:25px;
-        top:0;
-    }
-
-    #vexInfoSection {
-        padding-bottom:100px;
-    }
-
-    
     .link {
         font-size: 10px;
     } 
-
     #splash {
         margin-top:50px;
         height:400px;
@@ -459,8 +536,6 @@
         font-size:11px;
         margin-bottom:20px;
     }
-
-
     .teamLogo {
         font-size: 10px;
     }
@@ -469,7 +544,6 @@
         right:20px;
         border-radius:3px;
         padding:5px;
-        top:80px;
     }
 
     .link:hover {
@@ -478,11 +552,8 @@
     }
     
     .sidenavContent .activeLink {
-        font-size: 15px;
+        font-size: 14px;
         padding-left:4px;
-    }
-    #vexInfoSection p {
-        font-size: 13px;
     }
     
 
@@ -501,24 +572,6 @@
         font-size: 100px;
         letter-spacing:20px;
         padding-top:20px;
-    }
-
-    #towerTakeoverYT {
-        width: 250px;
-        height:150px;
-        margin-left:50%;
-        transform:translateX(-125px);
-        margin-top: 15px;
-        position:relative;
-        margin-bottom:0;
-    }
-    #vexInfoSection img {
-        width: 200px;
-        height: 200px;
-        margin-left:50%;
-        transform:translateX(-100px);  
-        margin-top: -50px;
-        position:relative;
     }
     #teamsBackgroundTitle h1 {
         font-size: 22.5vw;
@@ -584,27 +637,199 @@ display:none;
     margin-left:30px;
     margin-top:15px;
 }
-#googleSlidesContainer {
+#teamImage {
     height: 65vw;
 }
-#infoSlideshow {
-    height:60vw;
+
+/* new additions */
+#vexInfoSection, #vexInfoSection .texture{
+    height:400vw;
+}
+.infoText td {
+    display:inline-block;
+    width:75%;
+}
+
+.infoText .extraBottomPadding {
+    padding-bottom:2vw;
+}
+
+.infoText img {
+    width:12vw;
+    height:12vw;
+}
+
+.infoText h1 {
+    font-size:8vw;
+    line-height:0.2em;
+}
+.infoText p {
+    font-size:3.5vw;
+}
+
+.infoText a {
+    font-size:4vw;
+    padding:2vw 4vw;
+    border-radius:4vw;
+}
+
+
+.statsTable  {
     width:90vw;
+    margin-left:5vw;
+    margin-top:225vw;
+    padding-top:5vw;
 }
-#vexInfoSection span {
-    font-size:25px;
+
+.statsTable td {
+    padding:4vw 6vw;
+    width:60vw;
+    display:inline-block;
 }
-#vexInfoSection2 {
-    border-width:5px;
-    margin-top:-30px;
+.statsTable .leftBox {
+    width:50vw;
 }
-#vexInfoSection2 h1 {
-    font-size:25px;
-    padding-top:50px;
+.statsTable .rightBox {
+    width:50vw;
 }
-#vexInfoSection2 p {
-    width:80%;
-    font-size: 13px;
-    padding-bottom:45px;
+.statsTable .leftBox h1 {
+    font-size:7vw;
 }
+.statsTable .leftBox p {
+    font-size:4vw;
+}
+.statsTable .leftBox hr {
+    background-color:#AA0723;
+    width:40%;
+}
+.statsTable .rightBox td {
+    text-align:center;
+    padding:0;
+    margin:0;
+    display:table-cell !important;
+}
+.statsTable .rightBox h1 {
+    margin-top:10vw;
+    font-size:20vw;
+    line-height:0;
+}
+.statsTable .rightBox h2 {
+    font-size:7vw;
+}
+#teamImage {
+    height:45vw;
+}
+#teamImage .texture {
+    height:45vw;
+}
+#teamImage img{
+    width:90vw;
+    height:41vw;
+}
+
+.infoCards, .infoCards .texture {
+    height:375vw;
+}
+.infoCards td {
+    width:80vw;
+    height:auto !important;
+    box-sizing: border-box;
+    padding:5vw;
+    margin-bottom:5vw;
+    margin-left:10vw;
+}
+.infoCards h2 {
+    font-size:8vw;
+}
+.infoCards p {
+    font-size:3.5vw;
+}
+.vexGameInfo, .vexGameInfo .texture {
+    height:260vw;
+}
+.vexGameInfo table {
+    margin-top:10vw;
+    margin-left:5vw;
+}
+.vexGameInfo td {
+    display:inline-block;
+}
+.vexGameInfo p, .vexGameInfo a {
+    font-size:3.5vw;
+}
+.vexGameInfo h1 {
+    font-size:7vw;
+}
+.vexGameInfo iframe {
+    width:80vw;
+    height:48vw;
+    margin:5vw 0 5vw 2vw;
+    border-radius: 2vw;
+}
+#teamsContainer .tab h1{
+    font-family:'neutra';
+    color:#AA0723;
+    font-size:5vw;
+	transform: rotate(90deg);
+
+}
+
+#teams, #teams .texture {
+    height:170vw;
+}
+#teams .mobileOnly {
+    display:block;
+}
+#teams .notMobile {
+    display:none;
+}
+#teamsContainer #teamContent td {
+    display:inline-block;
+}
+#teamsContainer #teamInfo {
+    height:80vw;
+}
+#teamsContainer .backgroundYellow {
+    height:72vw;
+    width:50vw;
+    margin-left:5vw;
+    margin-top:10vw;
+}
+#teamsContainer #teamInfo h1{
+    font-size:7vw;
+    margin-left:5vw;
+}
+#teamsContainer #teamInfo hr{
+    margin-left:5vw;
+}
+#teamsContainer #teamInfo p{
+    font-size:2.8vw;
+}
+#teamsContainer #teamInfo h2{
+    font-size:4vw;
+}
+#teamsContainer #teamInfo ul{
+    list-style-position: inside;
+    list-style-type:none;
+    padding-left: 0;
+    margin-left:0;
+}
+
+#teamsContainer #teamInfo li{
+    font-size:2.8vw;
+}
+
+#teamsContainer #teamInfo a{
+    font-size:2.8vw;
+}
+#teamsContainer #teamInfo img{
+    width:60vw;
+    margin-left:5vw;
+    margin-top:10vw;
+    margin-bottom:10vw;
+    border-radius: 2vw;
+}
+
+
+
 }

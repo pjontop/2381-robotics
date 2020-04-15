@@ -99,212 +99,148 @@
 
 @media only screen and (max-width:1024px) {
     #splash , #splash .texture, #splash .rightBG1{
-        height:850px;
-    }
-    .rightBG1{
-        height:850px;
+        height:90vw !important;
     }
     .largeTitle {
         margin-left:50%;
-        width:400px;
+        width:40vw;
         transform: translateX(-50%);
-        padding-top:40px;
+        padding-top:4vw;
         text-align: center;
     }
     .largeTitle h1 {
-        font-size: 35px;
+        font-size: 3.5vw;
     }
     .largeTitle p {
-        font-size:15px;
+        font-size:1.5vw;
     }
     .largeTitle li {
-        font-size:15px;
+        font-size:1.5vw;
         list-style: none;
         margin:0;
         padding:0;
         margin-left:-4vw;
     }
     .largeTitle a {
-        font-size:15px;
+        font-size:1.5vw;
     }
     .formContainer {
         margin-right: 50%;
         margin-left:50%;
-        margin-top:350px;
+        margin-top:35vw;
         transform: translateX(50%);
     }
     
     #contactForm {
-        width:350px;
+        width:35.0vw;
         height:42vw;
     }
     
     #contactForm label {
-        font-size:17px;
-        margin-left:25px;
+        font-size:1.7vw;
+        margin-left:2.5vw;
     }
    
     .textInput {
-        width:300px !important;
+        width:30vw !important;
     }
 
     #contactForm textarea {
-        width:300px;
-        height:110px;
+        width:30.0vw;
+        height:11.0vw;
     }
 
       #vexInfoSection {
-        height: 500px;
+        height: 50vw;
+        }
+    #vexInfoSection .texture,#vexInfoSection .rightbg2, #vexInfoSection .leftbg2  {
+        height:50vw;
     }
-    #vexInfoSection .texture {
-        height:500px;
-    }
+
     .googleMaps {
-        margin-top:50px;
-        width:650px;
-        height:350px;
+        margin-top:5vw;
+        width:65vw;
+        height:35vw;
     }
     .postSubmission h1 {
-        padding:20px;
-        font-size:21px;
-        line-height:30px;
+        padding:2vw;
+        font-size:2.1vw;
+        line-height:3vw;
     }
     
     .postSubmission p{
-      padding-left:20px;
-      padding-right:20px;
-      font-size:16px;
+      padding-left:2vw;
+      padding-right:2vw;
+      font-size:1.6vw;
     }
     
     .postSubmission a{
-      padding-left:20px;
-      padding-right:20px;
-      font-size:13px;
+      padding-left:2vw;
+      padding-right:2vw;
+      font-size:1.3vw;
     }
 }
 
 @media only screen and (max-width:767px) {
-    #splash {
-        height:750px;
-    }
-    .rightBG1{
-        height:750px;
-    }
-    #splash .texture{
-        height:755px; 
+    #splash , #splash .texture, #splash .rightBG1{
+        height:150vw !important;
     }
     .largeTitle {
-        margin-left:50%;
-        width:200px;
-        transform: translateX(-50%);
-        padding-top:40px;
-        text-align: center;
+        width:50vw;
+    }
+    .largeTitle ul {
+        list-style-position: inside;
+    list-style-type:none;
+    padding-left: 0;
+    text-align:center;
+    }
+    .largeTitle li {
+    margin-left:0 !important; 
     }
     .largeTitle h1 {
-        font-size: 25px;
+        font-size: 8vw !important;
     }
-    .largeTitle p, .largeTitle li{
-        font-size:14px;
+    .largeTitle p {
+        font-size:3vw !important;
     }
-    .largeTitle li{
-        list-style: none;
-        margin-left:-14vw;
+    .largeTitle li {
+        font-size:3vw;
     }
     .largeTitle a {
-        font-size:14px;
+        font-size:3vw;
     }
-    #sidenav {
-        top: 175px;
-        left: 30px;
-    }
-    #menuTeamList {
-        top:175px;
-        width:15px;
-        line-height:15px;
-        margin-left:-20px;
-    }
-    
-    .link {
-        font-size: 10px;
-    } 
     .formContainer {
-        margin-right: 50%;
-        margin-left:50%;
-        margin-top:300px;
-        transform: translateX(50%);
+        margin-top:60vw;
     }
-    
     #contactForm {
-        width:250px;
-        height:305px;
-        border-radius: 10px;
+        width:40vw;
+        height:60vw;
+        padding:2vw;
     }
     
     #contactForm label {
-        font-size:15px;
-        margin-left:10px;
-        padding-top:20px;
+        font-size:2.5vw;
+        margin-left:3vw;
+        margin-top:2vw;
     }
-    
-    #contactForm .textInput {
-        width:225px !important;
-        font-size:15px;
-        margin-top:5px;
+   
+    .textInput {
+        width:35vw !important;
+        border-bottom:0.5vw solid rgb(249, 211, 139) !important;
     }
+
     #contactForm textarea {
-        width:225px;
-        height:90px;
-        font-size:15px;
-        border-radius:2px;
-        margin-top:10px;
+        width:35vw;
+        height:13vw;
+        border: 0.5vw solid rgb(249, 211, 139) !important;
+        margin-top:2vw;
     }
     
-    #submitForm {
-        padding:4px;
-        width:200px;
-        font-size:12px !important;
-        margin-top:10vw;
-        border-radius:5px;
-    }
-    .submissionText {
-        font-size:50px;
-        padding:40px;
-        line-height:50px;    
-    }
-    #postSubmission p {
-          padding:20px;
-          font-size:20px;
-      }
-    
-      #vexInfoSection {
-        height: 200px;
-    }
-    #vexInfoSection .texture, #vexInfoSection .rightBG2, #vexInfoSection .leftBG2{
-        height:400px;
-    }
-    
-    .googleMaps {
-        width:300px;
-        height:200px;
-        border-radius:10px;
-        margin-top:30px;
-    }
-    
-    .postSubmission h1 {
-        padding:20px;
-        font-size:16px;
-        line-height:30px;
-    }
-    
-    .postSubmission p{
-      padding-left:20px;
-      padding-right:20px;
-      font-size:15px;
-    }
-    
-    .postSubmission a{
-      padding-left:20px;
-      padding-right:20px;
-      font-size:12px;
-    }
+#submitForm {
+    padding:1vw;
+    width:25vw;
+    font-size:2.3vw !important;
+    margin-top:5vw !important;
+    border-radius:2vw;
+}
 }

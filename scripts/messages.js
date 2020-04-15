@@ -39,11 +39,11 @@ function setMessages(arr){
                 printContent += content[i] + " ";
             }
         }
-        if (i > 3) {
-            document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")' style='display:none'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Benjamin Hudson on " + date + "</i></p></td></tr>"
+        if (i > 2) {
+            document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")' style='display:none'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by " + date + "</i></p></td></tr>"
         }
         else{
-        document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by Benjamin Hudson on " + date + "</i></p></td></tr>"
+        document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by " + date + "</i></p></td></tr>"
         }
     }
     console.log(arr);
@@ -53,12 +53,12 @@ function setMessages(arr){
 function showNext(){
     currentMessageSet += 1;
     document.getElementById("prevButton").style.display = "block";
-    if((currentMessageSet + 1) * 4 >= sheetDataLength){
+    if((currentMessageSet + 1) * 3 >= sheetDataLength){
         document.getElementById("nextButton").style.display = "none";
     }
-    for(i = 0; i < 4; i++) {
-        currentMessage = currentMessageSet * 4  + i;
-        oldMessage = (currentMessageSet - 1) * 4 + i; 
+    for(i = 0; i < 3; i++) {
+        currentMessage = currentMessageSet * 3  + i;
+        oldMessage = (currentMessageSet - 1) * 3 + i; 
         document.getElementById("messageTable").getElementsByTagName("tr")[currentMessage].style.display = "block";
         document.getElementById("messageTable").getElementsByTagName("tr")[oldMessage].style.display = "none";
     }
@@ -73,9 +73,9 @@ function showPrev(){
         document.getElementById("prevButton").style.display = "none";
     
     } 
-    for(i = 0; i < 4; i++) {
-        currentMessage = currentMessageSet * 4  + i;
-        oldMessage = (currentMessageSet + 1) * 4 + i; 
+    for(i = 0; i < 3; i++) {
+        currentMessage = currentMessageSet * 3  + i;
+        oldMessage = (currentMessageSet + 1) * 3 + i; 
         document.getElementById("messageTable").getElementsByTagName("tr")[currentMessage].style.display = "block";
         document.getElementById("messageTable").getElementsByTagName("tr")[oldMessage].style.display = "none";
     }
@@ -102,7 +102,7 @@ function messageViewer(messageNum) {
     var date = messages[messageNum][1];
     var content = messages[messageNum][2];
     document.getElementsByClassName("modal-header")[0].getElementsByTagName("h2")[0].innerHTML = title;
-    document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[0].innerHTML = "<i>Posted by Benjamin Hudson on " + date + "</i>";
+    document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[0].innerHTML = "<i>Posted by " + date + "</i>";
     document.getElementsByClassName("modal-body")[0].getElementsByTagName("p")[1].innerHTML = content;
     document.getElementById("myModal").style.display = "block";
 }

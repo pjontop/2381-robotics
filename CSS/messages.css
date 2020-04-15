@@ -7,7 +7,7 @@ iframe {
 }
 
 #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
-height:80vw;
+height:70vw;
 }
 
 .mainTitle1 {
@@ -173,3 +173,4 @@ td:hover {
   .modal-body p {
     font-size:1.5vw;
   }
+  

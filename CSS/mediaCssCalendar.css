@@ -73,10 +73,6 @@
 }
 
 @media only screen and (max-width:767px) {
-    #splashPage {
-        padding-top:50px;
-
-    }
     #splashPage, .rightBG1, .leftBG1, #splashPage .texture{
         height:260vw;
         }

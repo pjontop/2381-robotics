@@ -1,78 +1,82 @@
 <html>
-    <head>
-        <title>2381 Robotics</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- basic CSS document -->
-        <link rel="stylesheet" href="CSS/homepage.css"/>
-        <link rel="stylesheet" href="CSS/resources.css"/>
-        <link rel="stylesheet" href="CSS/hamburger.css"/>
-        <script src="scripts/mobileMenu.js"></script>
 
-        <!-- media query CSS document -->
-        <link rel="stylesheet" href="CSS/mediaCss.css"/>
-        <link rel="stylesheet" href="CSS/mediaCssResources.css"/>
+<head>
+    <title>2381 Robotics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- basic CSS document -->
+    <link rel="stylesheet" href="CSS/homepage.css" />
+    <link rel="stylesheet" href="CSS/resources.css" />
+    <link rel="stylesheet" href="CSS/hamburger.css" />
+    <script src="scripts/mobileMenu.js"></script>
 
-        <!-- Javascript file -->
-        <script src="scripts/menu.js"></script>
-        <script src="scripts/topButton.js"></script>        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-            <div class="texture"></div> <!-- textured image background-->
+    <!-- media query CSS document -->
+    <link rel="stylesheet" href="CSS/mediaCss.css" />
+    <link rel="stylesheet" href="CSS/mediaCssResources.css" />
 
-        <!-- hidden container for colour palette -->
-        <div style="display:none;">
-            #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
-        </div>
-        <div id="mobileNav">
-            <button onclick="toggleMobileNav()" id="toggleMobileNav" class="hamburger hamburger--squeeze" type="button">
-    
+    <!-- Javascript file -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/topButton.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="texture"></div>
+    <!-- textured image background-->
+
+    <!-- hidden container for colour palette -->
+    <div style="display:none;">
+        #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
+    </div>
+    <div id="mobileNav">
+        <button onclick="toggleMobileNav()" id="toggleMobileNav" class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
-    
                 </button>
-    
-                <table class="mobileNavContent">
-                    <!-- sponsors page
+        <table class="mobileNavContent">
+            <!-- sponsors page
                     <tr>
                         <td class="mobileNavTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
                     </tr> -->
-                    <!-- home link -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="index.html">HOME</a></td>
-                    </tr>
-                    <!-- Calender page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
-                    </tr>
-                    <!-- posts page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="messages.html">MESSAGES</a></td>
-                    </tr>
-                    <!-- contact page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
-                    </tr>
-                    <!-- resources page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link activeLink">RESOURCES</a></td>
-                    </tr>
-                </table>
-    <!-- end of sidenav -->
+            <!-- home link -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="index.html">HOME</a></td>
+            </tr>
+            <!-- Calender page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
+            </tr>
+            <!-- posts page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="messages.html">MESSAGES</a></td>
+            </tr>
+            <!-- contact page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
+            </tr>
+            <!-- resources page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link activeLink">RESOURCES</a></td>
+            </tr>
+        </table>
+        <!-- end of sidenav -->
     </div>
 
-        <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
-        <div id="splash">
-            <!-- splitting background into 2 halves and overlaying a textured image -->
-            <div class="leftBG1"></div> <!-- light red-->
-            <div class="rightBG1"></div> <!-- dark red-->
-            <div class="texture"></div> <!-- textured image background-->
-            <!-- Nav bar -->
-            <div class="topnav">
-                <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
-                <a href="index.html"><img src="images/2381Logo.png"  class="logo2381"></button> 
-                    <!-- Secondary logo centered on the top of the page -->
+    <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
+    <div id="splash">
+        <!-- splitting background into 2 halves and overlaying a textured image -->
+        <div class="leftBG1"></div>
+        <!-- light red-->
+        <div class="rightBG1"></div>
+        <!-- dark red-->
+        <div class="texture"></div>
+        <!-- textured image background-->
+        <!-- Nav bar -->
+        <div class="topnav">
+            <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
+            <a href="index.html"><img src="images/2381Logo.png" class="logo2381"></button>
+                <!-- Secondary logo centered on the top of the page -->
                 <center>
                     <div class="teamLogo">2381 ROBOTICS</div>
                 </center>
@@ -80,127 +84,135 @@
                 <div>
                     <a class="contactUsButton" href="contact.html">GET IN TOUCH</a>
                 </div>
-            <!-- End of Nav bar -->
-            </div>
+                <!-- End of Nav bar -->
+        </div>
 
-            <div class="largeTitle">
-                    <h1>RESOURCES</h1>
-                    <p>A list of all the recommended tools for robotics. Immerse yourself in this collection of helpful links and files.</p>
-                </div>
-            <table class="linksContainer">
-                <tr>
-                    <td><h1>FAQ</h1>
-                        <a target="_blank" href="https://docs.google.com/document/d/1G3CO0z7aCOXH_JJ0eBCxwba0oI1-uWOt2pAkguHgc_g/edit">Click here</a></td>
-                    <td><h1>VEX ROBOTICS</h1>
-                        <a target="_blank" href="https://www.vexrobotics.com/vexedr">Click here</a></td>
-                 </tr>
-                <tr>
-                    <td><h1>ROBOT EVENTS</h1>
-                        <a target="_blank" href="https://www.robotevents.com/">Click here</a></td>
-                    <td><h1>VEX FORUM</h1>
-                        <a target="_blank" href="https://www.vexforum.com/">Click here</a></td>
-                 </tr>
-                 <tr>
-                        <td><h1>PRE-SEASON MEETING SLIDES</h1>
-                            <a target="_blank" href="https://docs.google.com/presentation/d/1lbLfFN7JI20XXoc1qQlxK-hAkWI-VGcfsl__4EnDppg/edit">Click here</a></td>
-                        <td><h1>VEX DOWNLOADS</h1>
-                            <a target="_blank" href="https://www.vexrobotics.com/download-search?refinementList[document_types][0]=Game%20Manual">Click here</a></td>
-                        </tr>
-            </table>
-
-
-            <!-- side navigation menu -->
-            <div id="sidenav">
-                <table class="sidenavContent">
-                    <!-- sponsors page
+        <div class="largeTitle">
+            <h1>RESOURCES</h1>
+            <p>A list of all the recommended tools for robotics. Immerse yourself in this collection of helpful links and files.</p>
+        </div>
+        <table class="linksContainer">
+            <tr>
+                <td>
+                    <h1>FAQ</h1>
+                    <a target="_blank" href="https://docs.google.com/document/d/1G3CO0z7aCOXH_JJ0eBCxwba0oI1-uWOt2pAkguHgc_g/edit">Click here</a></td>
+                <td>
+                    <h1>VEX ROBOTICS</h1>
+                    <a target="_blank" href="https://www.vexrobotics.com/vexedr">Click here</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>ROBOT EVENTS</h1>
+                    <a target="_blank" href="https://www.robotevents.com/">Click here</a></td>
+                <td>
+                    <h1>VEX FORUM</h1>
+                    <a target="_blank" href="https://www.vexforum.com/">Click here</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>PRE-SEASON MEETING SLIDES</h1>
+                    <a target="_blank" href="https://docs.google.com/presentation/d/1lbLfFN7JI20XXoc1qQlxK-hAkWI-VGcfsl__4EnDppg/edit">Click here</a></td>
+                <td>
+                    <h1>VEX DOWNLOADS</h1>
+                    <a target="_blank" href="https://www.vexrobotics.com/download-search?refinementList[document_types][0]=Game%20Manual">Click here</a></td>
+            </tr>
+        </table>
+        <!-- side navigation menu -->
+        <div id="sidenav">
+            <table class="sidenavContent">
+                <!-- sponsors page
                     <tr>
                         <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
                     </tr> -->
-                    <!-- home link -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="index.html">HOME</a></td>
-                    </tr>
-                    <!-- Calender page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
-                    </tr>
-                    <!-- posts page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="messages.html">MESSAGES</a></td>
-                    </tr>
-                    <!-- contact page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
-                    </tr>
-                    <!-- resources page -->
-                    <tr>
-                        <td class="menuTD"><a class="link activeLink">RESOURCES</a></td>
-                    </tr>
-                </table>
+                <!-- home link -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="index.html">HOME</a></td>
+                </tr>
+                <!-- Calender page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
+                </tr>
+                <!-- posts page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="messages.html">MESSAGES</a></td>
+                </tr>
+                <!-- contact page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
+                </tr>
+                <!-- resources page -->
+                <tr>
+                    <td class="menuTD"><a class="link activeLink">RESOURCES</a></td>
+                </tr>
+            </table>
             <!-- end of sidenav -->
-            </div>
-            <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
-            <div id="menuTeamList">
-                <!-- list of team letters from A to Z -->
-                <a class="link" href="#2381X">A</a>
-                <br>
-                <a class="link" href="#2381X">B</a>
-                <br>
-                <a class="link" href="#2381X">C</a>
-                <br>
-                <a class="link" href="#2381X">W</a>
-                <br>
-                <a class="link" href="#2381X">X</a>
-                <br>
-                <a class="link" href="#2381Y">Y</a>
-                <br>
-                <a class="link" href="#2381C">Z</a>
-            </div>
-            <!-- End of splash page -->
         </div>
-        <div id="aboutContainer">
-            <div class="leftBG2"></div> <!-- light red-->
-            <div class="rightBG2"></div> <!-- light red--> 
-            <div class="texture"></div><!-- textured image background-->
-            <!-- two buttons to move team slider left and right -->
-            <iframe id="infoSlideshow"src="https://docs.google.com/presentation/d/e/2PACX-1vSibiciqZspD-4BBYf3otZxy5sEgfoQd5j5ulC6bDPp277KBamSilH4MqbbmKlxMN6LOUBq1bZbLq_V/embed?start=false&loop=true&delayms=5000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>        <!-- end of SECTION 3 -->
-            <!-- <iframe id ="JoinUsYT" width="800" height="450" src="https://www.youtube.com/embed/KqlpgIX1Ons" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
+        <div id="menuTeamList">
+            <!-- list of team letters from A to Z -->
+            <a class="link" href="#2381X">A</a>
+            <br>
+            <a class="link" href="#2381X">B</a>
+            <br>
+            <a class="link" href="#2381X">C</a>
+            <br>
+            <a class="link" href="#2381X">W</a>
+            <br>
+            <a class="link" href="#2381X">X</a>
+            <br>
+            <a class="link" href="#2381Y">Y</a>
+            <br>
+            <a class="link" href="#2381C">Z</a>
         </div>
+        <!-- End of splash page -->
+    </div>
+    <div id="aboutContainer">
+        <div class="leftBG2"></div>
+        <!-- light red-->
+        <div class="rightBG2"></div>
+        <!-- light red-->
+        <div class="texture"></div>
+        <!-- textured image background-->
+        <!-- two buttons to move team slider left and right -->
+        <iframe id="infoSlideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vSibiciqZspD-4BBYf3otZxy5sEgfoQd5j5ulC6bDPp277KBamSilH4MqbbmKlxMN6LOUBq1bZbLq_V/embed?start=false&loop=true&delayms=5000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true"
+            webkitallowfullscreen="true"></iframe>
+        <!-- end of SECTION 3 -->
+        <!-- <iframe id ="JoinUsYT" width="800" height="450" src="https://www.youtube.com/embed/KqlpgIX1Ons" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
 
-        <!-- start of section 2 -->
-        <!-- <div class="sponsorsContainer">
+    <!-- start of section 2 -->
+    <!-- <div class="sponsorsContainer">
             <div class="texture"></div>
             <div class="sponsorsSubContainer">
                 <h1>Thanks to all of our sponsors!</h1>
             </div>
         </div> -->
-        <!-- end of section 2 -->
-        
-        <!-- start of SECTION 3. Footer-->
-        <div class="footer">
-            <div class="texture"></div><!-- textured image background -->
-            <!-- media links -->
-            <center>
-                <div>
-                    <a target="_blank" href="https://www.instagram.com/2381_kernel_bye/"><img src="images/instagramLogo.png"></a> <!--instagram-->
-                    <a target="_blank" href="https://github.com/2381-robotics"><img src="images/githubLogo.png"></a><!--github-->
-                    <a target="_blank" href="https://www.youtube.com/channel/UCB_94tNqZLvDAlnGfcLEPUQ"><img src="images/youtubeLogo.png"></a><!--youtube-->
-                </div>
-                <!--2381 seondary logo-->
-                <div class="logo">2381 ROBOTICS</div>
-            </center>
+    <!-- end of section 2 -->
+
+    <!-- start of SECTION 3. Footer-->
+    <div class="footer">
+        <div class="texture"></div>
+        <!-- textured image background -->
+        <!-- media links -->
+        <center>
+            <div>
+                <a target="_blank" href="https://www.instagram.com/2381_kernel_bye/"><img src="images/instagramLogo.png"></a>
+                <!--instagram-->
+                <a target="_blank" href="https://github.com/2381-robotics"><img src="images/githubLogo.png"></a>
+                <!--github-->
+                <a target="_blank" href="https://www.youtube.com/channel/UCB_94tNqZLvDAlnGfcLEPUQ"><img src="images/youtubeLogo.png"></a>
+                <!--youtube-->
+            </div>
+            <!--2381 seondary logo-->
+            <div class="logo">2381 ROBOTICS</div>
+        </center>
         <!-- end of SECTION 3 -->
-        </div>
-        
-        <!-- back to top button -->
-        <a href="#" id="topButton">
-            <img src="images/back-to-top-arrow.png" width="30px" height="30px">
-        </a>
+    </div>
 
+    <!-- back to top button -->
+    <a href="#" id="topButton">
+        <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+    </a>
+</body>
 
-       
-    </body>
 </html>
-    
-
-

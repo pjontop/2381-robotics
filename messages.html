@@ -1,74 +1,77 @@
 <html>
-    <head>
-        <title>2381 Robotics</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- basic CSS document -->
-        <link rel="stylesheet" href="CSS/homepage.css"/>
-        <link rel="stylesheet" href="CSS/messages.css"/>
-        <link rel="stylesheet" href="CSS/hamburger.css"/>
-        <script src="scripts/mobileMenu.js"></script>
 
+<head>
+    <title>2381 Robotics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- basic CSS document -->
+    <link rel="stylesheet" href="CSS/homepage.css" />
+    <link rel="stylesheet" href="CSS/messages.css" />
+    <link rel="stylesheet" href="CSS/hamburger.css" />
+    <script src="scripts/mobileMenu.js"></script>
+    <!-- media query CSS document -->
+    <link rel="stylesheet" href="CSS/mediaCss.css" />
+    <link rel="stylesheet" href="CSS/mediaCssMessages.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- Javascript file -->
+    <script src="scripts/messages.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/topButton.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 
-        <!-- media query CSS document -->
-        <link rel="stylesheet" href="CSS/mediaCss.css"/>
-        <link rel="stylesheet" href="CSS/mediaCssMessages.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <!-- Javascript file -->
-        <script src="scripts/messages.js"></script>
-        <script src="scripts/menu.js"></script>
-        <script src="scripts/topButton.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="mobileNav">
-            <button onclick="toggleMobileNav()" id="toggleMobileNav" class="hamburger hamburger--squeeze" type="button">
-    
+</head>
+
+<body>
+    <div id="mobileNav">
+        <button onclick="toggleMobileNav()" id="toggleMobileNav" class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
-    
                 </button>
-                <table class="mobileNavContent">
-                    <!-- sponsors page
+        <table class="mobileNavContent">
+            <!-- sponsors page
                     <tr>
                         <td class="mobileNavTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
                     </tr> -->
-                    <!-- home link -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="index.html">HOME</a></td>
-                    </tr>
-                    <!-- Calender page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
-                    </tr>
-                    <!-- posts page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link activeLink">MESSAGES</a></td>
-                    </tr>
-                    <!-- contact page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
-                    </tr>
-                    <!-- resources page -->
-                    <tr>
-                        <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
-                    </tr>
-                </table>
-    <!-- end of sidenav -->
+            <!-- home link -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="index.html">HOME</a></td>
+            </tr>
+            <!-- Calender page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
+            </tr>
+            <!-- posts page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link activeLink">MESSAGES</a></td>
+            </tr>
+            <!-- contact page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
+            </tr>
+            <!-- resources page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
+            </tr>
+        </table>
+        <!-- end of sidenav -->
     </div>
-        <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
-        <div id="splashPage">
-            <!-- splitting background into 2 halves and overlaying a textured image -->
-            <div class="leftBG1"></div> <!-- light red-->
-            <div class="rightBG1"></div> <!-- dark red-->
-            <div class="texture"></div> <!-- textured image background-->
-            <!-- Nav bar -->
-            <div class="topnav">
-                <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
-                <a href="index.html"><img src="images/2381Logo.png"  class="logo2381"></button> 
-                    <!-- Secondary logo centered on the top of the page -->
+    <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
+    <div id="splashPage">
+        <!-- splitting background into 2 halves and overlaying a textured image -->
+        <div class="leftBG1"></div>
+        <!-- light red-->
+        <div class="rightBG1"></div>
+        <!-- dark red-->
+        <div class="texture"></div>
+        <!-- textured image background-->
+        <!-- Nav bar -->
+        <div class="topnav">
+            <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
+            <a href="index.html"><img src="images/2381Logo.png" class="logo2381"></button>
+                <!-- Secondary logo centered on the top of the page -->
                 <center>
                     <div class="teamLogo">2381 ROBOTICS</div>
                 </center>
@@ -76,101 +79,112 @@
                 <div>
                     <a class="contactUsButton" href="contact.html">GET IN TOUCH</a>
                 </div>
-            <!-- End of Nav bar -->
-            </div>
-            <!-- side navigation menu -->
-            <div id="sidenav">
-                <table class="sidenavContent">
-                    <!-- sponsors page
+                <!-- End of Nav bar -->
+        </div>
+        <!-- side navigation menu -->
+        <div id="sidenav" data-aos="fade-right">
+            <table class="sidenavContent">
+                <!-- sponsors page
                     <tr>
                         <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
                     </tr> -->
-                    <!-- home link -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="index.html">HOME</a></td>
-                    </tr>
-                    <!-- Calender page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
-                    </tr>
-                    <!-- posts page -->
-                    <tr>
-                        <td class="menuTD"><a class="link activeLink">MESSAGES</a></td>
-                    </tr>
-                    <!-- contact page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
-                    </tr>
-                    <!-- resources page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="resources.html">RESOURCES</a></td>
-                    </tr>
-                </table>
-            <!-- end of sidenav -->
-            </div>
-            <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
-            <div id="menuTeamList">
-                <!-- list of team letters from A to Z -->
-                <a class="link" href="#2381X">A</a>
-                <br>
-                <a class="link" href="#2381X">B</a>
-                <br>
-                <a class="link" href="#2381X">C</a>
-                <br>
-                <a class="link" href="#2381X">W</a>
-                <br>
-                <a class="link" href="#2381X">X</a>
-                <br>
-                <a class="link" href="#2381Y">Y</a>
-                <br>
-                <a class="link" href="#2381C">Z</a>
-            </div>
-            <center>
-                <h1 class="mainTitle1">MESSAGE BOARD</h1>
-            </center>
-            <table id="messageTable">
+                <!-- home link -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="index.html">HOME</a></td>
+                </tr>
+                <!-- Calender page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
+                </tr>
+                <!-- posts page -->
+                <tr>
+                    <td class="menuTD"><a class="link activeLink">MESSAGES</a></td>
+                </tr>
+                <!-- contact page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
+                </tr>
+                <!-- resources page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="resources.html">RESOURCES</a></td>
+                </tr>
             </table>
-            <div class="buttonContainer">
-                <a href="#"><button id="nextButton" class="messageButtons" onclick="showNext()">NEXT</button></a>
-                <a href="#"><button id="prevButton" class="messageButtons" style="display:none;" onclick="showPrev()">PREV</button></a>
-            </div>
-           <!-- End of splash page -->
+            <!-- end of sidenav -->
         </div>
-        
-        <div id="myModal" class="modal">
-    <!-- Modal content -->
+        <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
+        <div id="menuTeamList" data-aos="fade-right">
+            <!-- list of team letters from A to Z -->
+            <a class="link" href="#2381X">A</a>
+            <br>
+            <a class="link" href="#2381X">B</a>
+            <br>
+            <a class="link" href="#2381X">C</a>
+            <br>
+            <a class="link" href="#2381X">W</a>
+            <br>
+            <a class="link" href="#2381X">X</a>
+            <br>
+            <a class="link" href="#2381Y">Y</a>
+            <br>
+            <a class="link" href="#2381C">Z</a>
+        </div>
+        <center>
+            <h1 class="mainTitle1" data-aos="zoom-out" style="transition-duration: 0.75s;">MESSAGE BOARD</h1>
+        </center>
+        <table id="messageTable" data-aos="zoom-out" style="transition-duration: 0.75s">
+        </table>
+        <div class="buttonContainer">
+            <a id="topAnchor" style="position: absolute; top:0;left:0;display:none;"></a>
+            <a href="#"><button id="nextButton" data-aos='fade-up-left'  data-aos-anchor="#topAnchor" style="transition-duration: 0.75s;" class="messageButtons" onclick="showNext()">NEXT</button></a>
+            <a href="#"><button id="prevButton" data-aos='fade-up-left' data-aos-anchor="#topAnchor" style="transition-duration: 0.75s;" class="messageButtons" style="display:none;" onclick="showPrev()">PREV</button></a>
+        </div>
+        <!-- End of splash page -->
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-            <span class="close" onclick="closeModal()">&#10005;</span>
-            <h2></h2>
+                <span class="close" onclick="closeModal()">&#10005;</span>
+                <h2></h2>
             </div>
             <div class="modal-body">
-            <p></p>
-            <p></p>
+                <p></p>
+                <p></p>
             </div>
         </div>
 
-</div>
-<!-- start of SECTION 3. Footer-->
-<div class="footer">
-    <div class="texture"></div><!-- textured image background -->
-    <!-- media links -->
-    <center>
-        <div>
-            <a target="_blank" href="https://www.instagram.com/2381_kernel_bye/"><img src="images/instagramLogo.png"></a> <!--instagram-->
-            <a target="_blank" href="https://github.com/2381-robotics"><img src="images/githubLogo.png"></a><!--github-->
-            <a target="_blank" href="https://www.youtube.com/channel/UCB_94tNqZLvDAlnGfcLEPUQ"><img src="images/youtubeLogo.png"></a><!--youtube-->
-        </div>
-        <!--2381 seondary logo-->
-        <div class="logo">2381 ROBOTICS</div>
-    </center>
-<!-- end of SECTION 3 -->
-</div>
+    </div>
+    <!-- start of SECTION 3. Footer-->
+    <div class="footer">
+        <div class="texture"></div>
+        <!-- textured image background -->
+        <!-- media links -->
+            <center>
+                <div data-aos="fade-up" style="transition-duration: 0.75s">
+                    <a target="_blank" href="https://www.instagram.com/2381_kernel_bye/"><img src="images/instagramLogo.png"></a>
+                    <!--instagram-->
+                    <a target="_blank" href="https://github.com/2381-robotics"><img src="images/githubLogo.png"></a>
+                    <!--github-->
+                    <a target="_blank" href="https://www.youtube.com/channel/UCB_94tNqZLvDAlnGfcLEPUQ"><img src="images/youtubeLogo.png"></a>
+                    <!--youtube-->
+                </div>
+                <!--2381 seondary logo-->
+                <div class="logo">2381 ROBOTICS</div>
+            </center>
+        <!-- end of SECTION 3 -->
+    </div>
 
-<!-- back to top button -->
-<a href="#" id="topButton">
-    <img src="images/back-to-top-arrow.png" width="30px" height="30px">
-</a>
-    </body>
+    <!-- back to top button -->
+    <a href="#" id="topButton">
+        <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+    </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+
 </html>
-    

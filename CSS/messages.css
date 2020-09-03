@@ -16,8 +16,7 @@ height:70vw;
 
 #messageTable {
     position:relative;
-    margin-left:50%;
-    transform: translateX(-50%);
+    margin-left:25%;
     width:50vw;
 }
 

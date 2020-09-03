@@ -15,6 +15,7 @@
 .linksContainer {
     margin-top:7.3vw;
     width:36.6vw;
+    margin-left: 56.7vw;
 }
 .linksContainer td {
     padding:1.5vw;
@@ -44,7 +45,7 @@
         .linksContainer {
             width:40vw;
             margin-top:6vw;
-            margin-left: 75%;
+            margin-left: 55vw;
         }
         .linksContainer td {
             text-align: center;
@@ -75,8 +76,6 @@
             height:42vw;
             width:70vw;
             position:absolute;
-            left:50%;
-            transform: translateX(-50%);
         }
 }
 
@@ -96,13 +95,11 @@
     }
     .linksContainer {
         width:40vw;
-        margin-top:40vw;
-        margin-left: 50%;
-        transform: translate(-50%);
+        margin-left: 30%;
     }
     .largeTitle {
-        margin-left:50%;
-        transform: translate(-50%);
+        position: relative;
+        margin-left:25%;
         text-align: center;
         width:50vw;
     }

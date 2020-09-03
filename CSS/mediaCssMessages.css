@@ -11,6 +11,7 @@
         }
         #messageTable {
             width:65vw;
+            margin-left:17.5%;
         }
         
         #messageTable .messageTitle {
@@ -43,6 +44,7 @@
         }
         #messageTable {
             width:70vw;
+            margin-left:15%;
         }
         
         #messageTable .messageTitle {

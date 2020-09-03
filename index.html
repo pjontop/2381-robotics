@@ -1,28 +1,30 @@
 <html>
-    <head>
-        <title>2381 Robotics</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- basic CSS document -->
-        <link rel="stylesheet" href="CSS/homepage.css"/>
-        <!-- media query CSS document -->
-        <link rel="stylesheet" href="CSS/mediaCss.css"/>
-        <link rel="stylesheet" href="CSS/hamburger.css"/>
 
-        <!-- Javascript file -->
-        <script src="scripts/homepage.js"></script>
-        <script src="scripts/mobileMenu.js"></script>
-        <script src="scripts/topButton.js"></script>
-        
+<head>
+    <title>2381 Robotics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- basic CSS document -->
+    <link rel="stylesheet" href="CSS/homepage.css" />
+    <!-- media query CSS document -->
+    <link rel="stylesheet" href="CSS/mediaCss.css" />
+    <link rel="stylesheet" href="CSS/hamburger.css" />
+    <!-- Javascript file -->
+    <script src="scripts/homepage.js"></script>
+    <script src="scripts/mobileMenu.js"></script>
+    <script src="scripts/topButton.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- hidden container for colour palette -->
-        <div style="display:none;">
-            #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
-        </div>
-        <div id="mobileNav">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- hidden container for colour palette -->
+    <div style="display:none;">
+        #AA0723 (light red) #790218 (dark red) #F9D38B (beige) #004777 (blue) #403F4C (gray)
+    </div>
+    <div id="mobileNav">
         <button onclick="toggleMobileNav()" id="toggleMobileNav" class="hamburger hamburger--squeeze" type="button">
 
                 <span class="hamburger-box">
@@ -30,44 +32,47 @@
                 </span>
 
             </button>
-            <table class="mobileNavContent">
-                <!-- sponsors page
+        <table class="mobileNavContent">
+            <!-- sponsors page
                 <tr>
                     <td class="mobileNavTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
                 </tr> -->
-                <!-- home link -->
-                <tr>
-                    <td class="mobileNavTD"><a class="link activeLink">HOME</a></td>
-                </tr>
-                <!-- Calender page -->
-                <tr>
-                    <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
-                </tr>
-                <!-- posts page -->
-                <tr>
-                    <td class="mobileNavTD"><a class="link" href="messages.html">MESSAGES</a></td>
-                </tr>
-                <!-- contact page -->
-                <tr>
-                    <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
-                </tr>
-                <!-- resources page -->
-                <tr>
-                    <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
-                </tr>
-            </table>
-<!-- end of sidenav -->
-</div>
-        <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
-        <div id="splash">
-            <!-- splitting background into 2 halves and overlaying a textured image -->
-            <div class="leftBG1"></div> <!-- light red-->
-            <div class="rightBG1"></div> <!-- dark red-->
-            <div class="texture"></div> <!-- textured image background-->
-            <!-- Nav bar -->
-            <div class="topnav">
-                <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
-                <a href="index.html"><img src="images/2381Logo.png"  class="logo2381"></button> 
+            <!-- home link -->
+            <tr>
+                <td class="mobileNavTD"><a class="link activeLink">HOME</a></td>
+            </tr>
+            <!-- Calender page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="calendar.html">EVENTS</a></td>
+            </tr>
+            <!-- posts page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="messages.html">MESSAGES</a></td>
+            </tr>
+            <!-- contact page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="contact.html">CONTACT</a></td>
+            </tr>
+            <!-- resources page -->
+            <tr>
+                <td class="mobileNavTD"><a class="link" href="resources.html">RESOURCES</a></td>
+            </tr>
+        </table>
+        <!-- end of sidenav -->
+    </div>
+    <!-- begining of SECTION 1. Splash page (the page that says 2381, and has an image of a robot as well as the menu) -->
+    <div id="splash">
+        <!-- splitting background into 2 halves and overlaying a textured image -->
+        <div class="leftBG1"></div>
+        <!-- light red-->
+        <div class="rightBG1"></div>
+        <!-- dark red-->
+        <div class="texture"></div>
+        <!-- textured image background-->
+        <!-- Nav bar -->
+        <div class="topnav">
+            <!-- 2381 black and white logo, which also acts as a dark/light theme switch for the page -->
+            <a href="index.html"><img src="images/2381Logo.png" class="logo2381"></button>
                 <!-- Secondary logo centered on the top of the page -->
                 <center>
                     <div class="teamLogo">2381 ROBOTICS</div>
@@ -76,103 +81,114 @@
                 <div>
                     <a class="contactUsButton" href="contact.html">GET IN TOUCH</a>
                 </div>
-            <!-- End of Nav bar -->
-            </div>
-            <!-- Text on the bottom of the splash page which says VEX 2019 -->
-            <span class="vex2019text">
+                <!-- End of Nav bar -->
+        </div>
+        <!-- Text on the bottom of the splash page which says VEX 2019 -->
+        <span data-aos="fade-up-left" class="vex2019text">
                 <span class="vexText">VEX</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019
-            </span>
-            <!-- large titles on splash page which say KERNEL BYE'S 2381 -->
-            <div>
-                <!-- Kernel Bye's -->
-                <h1 class="mainTitle1 marginLeft">KERNEL BYE</h1>
-            </div>
-            <div>
-                <!-- large text says 2381 split into two spans for unique colours -->
-                <h1 class="mainTitle2"><span class="mainTitle2dark">23</span><span class="mainTitle2light">81</span></h1>
-            </div>
-            <!-- Image of the clawbot on the center of the page -->
+        </span>
+        <!-- large titles on splash page which say KERNEL BYE'S 2381 -->
+        <div data-aos="zoom-out" style="transition-duration: 1s !important;">
+            <!-- Kernel Bye's -->
+            <h1 class="mainTitle1 marginLeft">KERNEL BYE</h1>
+        </div>
+        <div data-aos="zoom-out" style="transition-duration: 1s !important;">
+            <!-- large text says 2381 split into two spans for unique colours -->
+            <h1 class="mainTitle2"><span class="mainTitle2dark">23</span><span class="mainTitle2light">81</span></h1>
+        </div>
+        <!-- Image of the clawbot on the center of the page -->
+        <div data-aos="zoom-out" style="transition-duration: 1s !important;" class="robotImageAnimatedContainer">
             <div>
                 <center><img src="images/robot2.png" class="robotImage"></center>
             </div>
-            <!-- side navigation menu -->
-            <div id="sidenav">
-                <table class="sidenavContent">
-                    <!-- sponsors page
+        </div>
+        <!-- side navigation menu -->
+        <div data-aos="fade-right" id="sidenav">
+            <table class="sidenavContent">
+                <!-- sponsors page
                     <tr>
                         <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS</a></td>
                     </tr> -->
-                    <!-- home link -->
-                    <tr>
-                        <td class="menuTD"><a class="link activeLink">HOME</a></td>
-                    </tr>
-                    <!-- Calender page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
-                    </tr>
-                    <!-- posts page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="messages.html">MESSAGES</a></td>
-                    </tr>
-                    <!-- contact page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
-                    </tr>
-                    <!-- resources page -->
-                    <tr>
-                        <td class="menuTD"><a class="link" href="resources.html">RESOURCES</a></td>
-                    </tr>
-                </table>
+                <!-- home link -->
+                <tr>
+                    <td class="menuTD"><a class="link activeLink">HOME</a></td>
+                </tr>
+                <!-- Calender page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="calendar.html">EVENTS</a></td>
+                </tr>
+                <!-- posts page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="messages.html">MESSAGES</a></td>
+                </tr>
+                <!-- contact page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="contact.html">CONTACT</a></td>
+                </tr>
+                <!-- resources page -->
+                <tr>
+                    <td class="menuTD"><a class="link" href="resources.html">RESOURCES</a></td>
+                </tr>
+            </table>
             <!-- end of sidenav -->
-            </div>
-            <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
-            <div id="menuTeamList">
-                <!-- list of team letters from A to Z -->
-                <a class="link" href="#2381X">A</a>
-                <br>
-                <a class="link" href="#2381X">B</a>
-                <br>
-                <a class="link" href="#2381X">C</a>
-                <br>
-                <a class="link" href="#2381X">W</a>
-                <br>
-                <a class="link" href="#2381X">X</a>
-                <br>
-                <a class="link" href="#2381Y">Y</a>
-                <br>
-                <a class="link" href="#2381C">Z</a>
-            </div>
-            <!-- End of splash page -->
         </div>
+        <!-- start of the 2381 team list which is the bar positioned on the side of the side navigation menu -->
+        <div id="menuTeamList" data-aos="fade-right">
+            <!-- list of team letters from A to Z -->
+            <a class="link" href="#2381X">A</a>
+            <br>
+            <a class="link" href="#2381X">B</a>
+            <br>
+            <a class="link" href="#2381X">C</a>
+            <br>
+            <a class="link" href="#2381X">W</a>
+            <br>
+            <a class="link" href="#2381X">X</a>
+            <br>
+            <a class="link" href="#2381Y">Y</a>
+            <br>
+            <a class="link" href="#2381C">Z</a>
+        </div>
+        <!-- End of splash page -->
+    </div>
 
-
-        <!-- <div class="sponsorsContainer">
+    <!-- <div class="sponsorsContainer">
             <div class="texture"></div>
             <div class="sponsorsSubContainer">
                 <h1>Thanks to all of our sponsors!</h1>
             </div>
         </div> -->
 
+    <!-- Start of SECTION 2. The information section about VRC -->
 
+    <div id="vexInfoSection">
+        <!-- splitting background into 2 halves and overlaying a textured image -->
+        <div class="leftBG2"></div>
+        <!-- light red-->
+        <div class="rightBG2"></div>
+        <!-- gradient which fades from light red to dark red-->
+        <div class="texture"></div>
+        <!-- textured image background-->
+        <!-- First block of information (paragraph 1, vex robotics image, and youtube video) -->
+        <div data-aos="fade-up" style="transition-duration: 0.7s !important;">
 
-
-
-
-
-        <!-- Start of SECTION 2. The information section about VRC -->
-        
-        <div id="vexInfoSection">
-            <!-- splitting background into 2 halves and overlaying a textured image -->
-            <div class="leftBG2"></div> <!-- light red-->
-            <div class="rightBG2"></div> <!-- gradient which fades from light red to dark red-->
-            <div class="texture"></div> <!-- textured image background-->
-            <!-- First block of information (paragraph 1, vex robotics image, and youtube video) -->
-            
             <table class="infoText">
                 <tr>
-                    <td valign="top" class="extraBottomPadding"><img src="images/person.png"><h1>Who</h1><p>Kernel Bye’s 6 competitive teams are comprised of 40 dedicated high school students, joined by a common goal to collaborate, share knowledge and explore STEM fields. Our hardworking members are dedicated individuals who frequently travel around Ontario in order to compete against other VEX teams with the support of mentors, teachers, and parents. </p></td>
-                    <td valign="top" class="extraBottomPadding"><img src="images/location.png"><h1>Where</h1><p>2381 Robotics is a high school robotics club run at Colonel By Secondary School in Ottawa, Ontario. Our club welcomes a very diverse set of bright students coming from all over the city of Ottawa due to the prestigious International Baccalaureate (IB) program offered at Colonel By, and provides a productive workspace for members to prepare for competitions.</p></td>
-                    <td valign="top" class="extraBottomPadding"><img src="images/gears.png"><h1>What</h1><p>Every year, VEX releases a new game-based engineering challenge. 2381 teams are challenged to apply the engineering process to real-world problems in order to design, build, and program a robot to compete. Tournaments are held year-round at the regional, provincial, national, and international level at the VEX Robotics World Championship. </p></td>
+                    <td valign="top" class="extraBottomPadding"><img src="images/person.png">
+                        <h1>Who</h1>
+                        <p>Kernel Bye’s 6 competitive teams are comprised of 40 dedicated high school students, joined by a common goal to collaborate, share knowledge and explore STEM fields. Our hardworking members are dedicated individuals who frequently
+                            travel around Ontario in order to compete against other VEX teams with the support of mentors, teachers, and parents. </p>
+                    </td>
+                    <td valign="top" class="extraBottomPadding"><img src="images/location.png">
+                        <h1>Where</h1>
+                        <p>2381 Robotics is a high school robotics club run at Colonel By Secondary School in Ottawa, Ontario. Our club welcomes a very diverse set of bright students coming from all over the city of Ottawa due to the prestigious International
+                            Baccalaureate (IB) program offered at Colonel By, and provides a productive workspace for members to prepare for competitions.</p>
+                    </td>
+                    <td valign="top" class="extraBottomPadding"><img src="images/gears.png">
+                        <h1>What</h1>
+                        <p>Every year, VEX releases a new game-based engineering challenge. 2381 teams are challenged to apply the engineering process to real-world problems in order to design, build, and program a robot to compete. Tournaments are held
+                            year-round at the regional, provincial, national, and international level at the VEX Robotics World Championship. </p>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="3">
@@ -180,182 +196,242 @@
                     </td>
                 </tr>
             </table>
-            
-            <table class="statsTable" cellspacing="20px">
-                <tr>
-                    <td class="leftBox"><h1>Our Mission</h1><hr><p>2381’s mission is to establish a platform to increase interest and involvement in STEM education through robotics.  Since its establishment in 2015, the club has inspired years of innovation at Colonel By, boasting 6 competitive teams, 2381A, 2381C, 2381D, 2381W, 2381Y, and 2381Z which participate in VEX Robotics Competitions. Our success has served as inspiration and paved a path for future teams as the club continues to grow.</p></td>
-                    <td class="rightBox">
-                        <table>
-                            <tr><td><h1>17</h1><h2>Events</h2></td>
-                                <td><h1>24</h1><h2>Awards</h2></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
-            <!-- End of SECTION 2 -->
         </div>
-
-
-        <!-- Start of SECTION 3. The info google slides -->
- 
-        <div id="infoCards" class="infoCards">
-            <div class="texture"></div>
-            <table>
-                <tr>
-                    <td class="mobileRed"><h2>Teams</h2><hr><p>2381 robotics currently boasts 6 competitive teams, 2381A, 2381C, 2381D, 2381W, 2381Y, and 2381Z which participate in VEX Robotics Competitions. We have a very diverse set of bright students coming from all over the city of Ottawa due to the prestigious International Baccalaureate (IB) program offered at Colonel By. Our hardworking members are dedicated individuals who frequently travel around Ontario in order to compete against other VEX teams. Since the creation of our club in 2015, our success has served as inspiration and paved a path for future teams as the club continues to grow.</p></td>
-                    <td><h2>History</h2><hr><p>Since the establishment of the club in 2015, our club has competed in numerous VEX Robotics Competitions. Our executive team has been working tirelessly in order to organize all the events and incorporate the VEX experience into the club. Over the years, the club has inspired years of innovation at Colonel By and proved itself through its numerous achievements.</p></td>
-                    <td><h2>Values</h2><hr><p>At 2381 Robotics, we believe in hard work, dedication, passion, and most important of all, having fun. Our club provides a productive workspace for members to prepare for competitions. Members constantly perform research outside of the club, and communicate with fellow team members in order to produce the most effective robot. With experienced members, mentors, and all the necessary resources, our members are given the opportunity to design, build, program, and test their robots. </p></td>
-                    <td class="mobileRed"><h2>Awards</h2><hr><p>Since its beginning, 2381 Robotics has had a lengthy history of performing exceptionally well at VEX Robotics Competitions. Over the years, the club has won numerous awards for their success. In previous years, 2381 teams have won the Innovate, Design, and Think awards, as well as Tournament Champions. This year, 2381C has won both Excellence and Innovate, and 2381Z has won Design. With half of the season left, our teams will continue to compete for many more. </p></td>
-                </tr>
-            </table>
-        </div>
-        
-        
-        
-        <div id="teamImage">
-            <div class="texture"></div>
+        <table class="statsTable" cellspacing="20px">
+            <tr>
+                <td class="leftBox" data-aos="fade-right" style="transition-duration: 0.75s;">
+                    <h1>Our Mission</h1>
+                    <hr>
+                    <p>2381’s mission is to establish a platform to increase interest and involvement in STEM education through robotics. Since its establishment in 2015, the club has inspired years of innovation at Colonel By, boasting 6 competitive teams,
+                        2381A, 2381C, 2381D, 2381W, 2381Y, and 2381Z which participate in VEX Robotics Competitions. Our success has served as inspiration and paved a path for future teams as the club continues to grow.</p>
+                </td>
+                <td class="rightBox" data-aos="fade-left" style="transition-duration: 0.75s;">
+                    <table>
+                        <tr>
+                            <td>
+                                <h1>17</h1>
+                                <h2>Events</h2>
+                            </td>
+                            <td>
+                                <h1>24</h1>
+                                <h2>Awards</h2>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- End of SECTION 2 -->
+    </div>
+    <!-- Start of SECTION 3. The info google slides -->
+    <div id="infoCards" class="infoCards">
+        <div class="texture"></div>
+        <table>
+            <tr>
+                <td data-aos="fade-right" style="transition-duration: 0.75s; transition-delay:0s" class="mobileRed">
+                    <h2>Teams</h2>
+                    <hr>
+                    <p>2381 robotics currently boasts 6 competitive teams, 2381A, 2381C, 2381D, 2381W, 2381Y, and 2381Z which participate in VEX Robotics Competitions. We have a very diverse set of bright students coming from all over the city of Ottawa
+                        due to the prestigious International Baccalaureate (IB) program offered at Colonel By. Our hardworking members are dedicated individuals who frequently travel around Ontario in order to compete against other VEX teams. Since the
+                        creation of our club in 2015, our success has served as inspiration and paved a path for future teams as the club continues to grow.</p>
+                </td>
+                <td data-aos="fade-right" style="transition-duration: 0.75s; transition-delay:0.25s">
+                    <h2>History</h2>
+                    <hr>
+                    <p>Since the establishment of the club in 2015, our club has competed in numerous VEX Robotics Competitions. Our executive team has been working tirelessly in order to organize all the events and incorporate the VEX experience into the
+                        club. Over the years, the club has inspired years of innovation at Colonel By and proved itself through its numerous achievements.</p>
+                </td>
+                <td data-aos="fade-right" style="transition-duration: 0.75s; transition-delay:0.5s">
+                    <h2>Values</h2>
+                    <hr>
+                    <p>At 2381 Robotics, we believe in hard work, dedication, passion, and most important of all, having fun. Our club provides a productive workspace for members to prepare for competitions. Members constantly perform research outside of
+                        the club, and communicate with fellow team members in order to produce the most effective robot. With experienced members, mentors, and all the necessary resources, our members are given the opportunity to design, build, program,
+                        and test their robots. </p>
+                </td>
+                <td data-aos="fade-right" style="transition-duration: 0.75s; transition-delay:0.75s" class="mobileRed">
+                    <h2>Awards</h2>
+                    <hr>
+                    <p>Since its beginning, 2381 Robotics has had a lengthy history of performing exceptionally well at VEX Robotics Competitions. Over the years, the club has won numerous awards for their success. In previous years, 2381 teams have won
+                        the Innovate, Design, and Think awards, as well as Tournament Champions. This year, 2381C has won both Excellence and Innovate, and 2381Z has won Design. With half of the season left, our teams will continue to compete for many
+                        more. </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="teamImage">
+        <div class="texture"></div>
+        <div data-aos="fade-down" style="transition-duration: 0.75s;">
             <img src="images/teamPic.PNG">
         </div>
-
-
-
-        <div class="vexGameInfo">
-            <div class="texture"></div>
-            <table>
-                <tr>
-                    <td><h1>About Us</h1><hr><p>2381 Robotics is a high school robotics club run at Colonel By Secondary School in Ottawa, Ontario. Since its establishment in 2015, the club has inspired years of innovation and Colonel By with multiple competitive teams working on robots for VEX EDR Robotics Competitions where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete.<br><br><a href="https://www.vexrobotics.com/" target="_blank" class="vexLink">Click here to visit their website</a></p></td>
-                    <td align="center"><iframe src="https://www.youtube.com/embed/JyYm1Ybs6CY" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                </tr>
-                <tr>
-                    <td algin="center"><iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                    <td><h1>Tower Takeover</h1><hr><p>The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.
-                        <br><br><a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank" class="vexLink">Click here for more information</a></p></td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="teams">
-            <div class="texture"></div>
-            <table id="teamsContainer" cellspacing="0">
-                <tr>
-                    <td valign="center" class="tab activeTab" onclick="selectTeam(0)"><h1>2381A</h1></td>
-                    <td id="teamInfo" rowspan="6" >
-                        <table cellspacing="">
-                            <tr id="teamContent">
-                                <td valign='center'><h1 class="mobileOnly">2381A</h1><hr class="mobileOnly"><div class='backgroundYellow'><h2>Members</h2><p>Kevin Chen, Ricky Chen, Lawrence Ju, Chris Liu, Robert Macwha, Eric Luo, and Eren Suner</p><h2>Team Stats</h2><a target='_blank' href='https://vexdb.io/teams/view/2381a'>View Stats</a></div></td>
-                                <td valign='top'><h1 class="notMobile">2381A</h1><hr class="notMobile"><img src='images/2381A.JPG'></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="center" class="tab" onclick="selectTeam(1)"><h1>2381C</h1></td>
-                </tr>
-                <tr>
-                    <td valign="center" class="tab" onclick="selectTeam(2)"><h1>2381D</h1></td>
-                </tr>
-                <tr>
-                    <td valign="center" class="tab" onclick="selectTeam(3)"><h1>2381W</h1></td>
-                </tr>
-                <tr>
-                    <td valign="center" class="tab" onclick="selectTeam(4)"><h1>2381Y</h1></td>
-                </tr>
-                <tr>
-                    <td valign="center" class="tab" onclick="selectTeam(5)"><h1>2381Z</h1></td>
-                </tr>
-            </table>
-        </div>
-
-
-        <!-- SECTION 4. Slideshow gallery -->
-        <div class="slideshowContainer">
-            <div class="slideshow">
-                <!-- container of non visible radio buttons which change slides -->
-                <div class="slides">
-                    <input type="radio" name="r" id="r1" onclick="changeSlide(0)">
-                    <input type="radio" name="r" id="r2" onclick="changeSlide(1)">
-                    <input type="radio" name="r" id="r3" onclick="changeSlide(2)">
-                    <input type="radio" name="r" id="r4" onclick="changeSlide(3)">
-                    <input type="radio" name="r" id="r5" onclick="changeSlide(4)">
-                    <input type="radio" name="r" id="r6" onclick="changeSlide(5)">
-                    <input type="radio" name="r" id="r7" onclick="changeSlide(6)">
-                    <input type="radio" name="r" id="r8" onclick="changeSlide(7)">
-                    <input type="radio" name="r" id="r9" onclick="changeSlide(8)">
-                    <input type="radio" name="r" id="r10" onclick="changeSlide(9)">
-                    <!-- Start of slides -->
-                    <div id="s1" class="slide">
-                        <img src="images/ss1.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img  src="images/ss2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/ss3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img  src="images/ss4.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/ss5.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img  src="images/massey-vanier-11.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img  src="images/massey-vanier-12.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/massey-vanier-13.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img  src="images/massey-vanier-14.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img  src="images/massey-vanier-15.jpg" alt="">
-                    </div>
+    </div>
+    <div class="vexGameInfo">
+        <div class="texture"></div>
+        <table>
+            <tr>
+                <td data-aos="fade-down" style="transition-duration: 0.75s;">
+                    <h1>About Us</h1>
+                    <hr>
+                    <p>2381 Robotics is a high school robotics club run at Colonel By Secondary School in Ottawa, Ontario. Since its establishment in 2015, the club has inspired years of innovation and Colonel By with multiple competitive teams working on
+                        robots for VEX EDR Robotics Competitions where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete.<br><br><a href="https://www.vexrobotics.com/" target="_blank" class="vexLink">Click here to visit their website</a></p>
+                </td>
+                <td align="center" data-aos="fade-down-left" style="transition-duration: 0.75s;"><iframe src="https://www.youtube.com/embed/JyYm1Ybs6CY" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            </tr>
+            <tr>
+                <td align="center" data-aos="fade-up-right" style="transition-duration: 0.75s;"><iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                <td data-aos="fade-down" style="transition-duration: 0.75s;">
+                    <h1>Tower Takeover</h1>
+                    <hr>
+                    <p>The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed
+                        by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.
+                        <br><br><a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank" class="vexLink">Click here for more information</a></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="teams">
+        <div class="texture"></div>
+        <table id="teamsContainer" cellspacing="0" data-aos="zoom-out">
+            <tr>
+                <td valign="center" class="tab activeTab" onclick="selectTeam(0)">
+                    <h1>2381A</h1>
+                </td>
+                <td id="teamInfo" rowspan="6">
+                    <table cellspacing="">
+                        <tr id="teamContent">
+                            <td valign='center'>
+                                <h1 class="mobileOnly">2381A</h1>
+                                <hr class="mobileOnly">
+                                <div class='backgroundYellow' data-aos="flip-left">
+                                    <h2>Members</h2>
+                                    <p>Kevin Chen, Ricky Chen, Lawrence Ju, Chris Liu, Robert Macwha, Eric Luo, and Eren Suner</p>
+                                    <h2>Team Stats</h2><a target='_blank' href='https://vexdb.io/teams/view/2381a'>View Stats</a></div>
+                            </td>
+                            <td data-aos="fade-up" valign='top' style="transition-duration: 0.75s;">
+                                <h1 class="notMobile">2381A</h1>
+                                <hr class="notMobile"><img src='images/2381A.JPG'></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="center" class="tab" onclick="selectTeam(1)">
+                    <h1>2381C</h1>
+                </td>
+            </tr>
+            <tr>
+                <td valign="center" class="tab" onclick="selectTeam(2)">
+                    <h1>2381D</h1>
+                </td>
+            </tr>
+            <tr>
+                <td valign="center" class="tab" onclick="selectTeam(3)">
+                    <h1>2381W</h1>
+                </td>
+            </tr>
+            <tr>
+                <td valign="center" class="tab" onclick="selectTeam(4)">
+                    <h1>2381Y</h1>
+                </td>
+            </tr>
+            <tr>
+                <td valign="center" class="tab" onclick="selectTeam(5)">
+                    <h1>2381Z</h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- SECTION 4. Slideshow gallery -->
+    <div class="slideshowContainer" data-aos="fade-up" style="transition-duration: 0.75s;">
+        <div class="slideshow">
+            <!-- container of non visible radio buttons which change slides -->
+            <div class="slides">
+                <input type="radio" name="r" id="r1" onclick="changeSlide(0)">
+                <input type="radio" name="r" id="r2" onclick="changeSlide(1)">
+                <input type="radio" name="r" id="r3" onclick="changeSlide(2)">
+                <input type="radio" name="r" id="r4" onclick="changeSlide(3)">
+                <input type="radio" name="r" id="r5" onclick="changeSlide(4)">
+                <input type="radio" name="r" id="r6" onclick="changeSlide(5)">
+                <input type="radio" name="r" id="r7" onclick="changeSlide(6)">
+                <input type="radio" name="r" id="r8" onclick="changeSlide(7)">
+                <input type="radio" name="r" id="r9" onclick="changeSlide(8)">
+                <input type="radio" name="r" id="r10" onclick="changeSlide(9)">
+                <!-- Start of slides -->
+                <div id="s1" class="slide">
+                    <img src="images/ss1.jpg" alt="">
                 </div>
-                <!-- bars/labels for the radio buttons to navigate through slides -->
-                <div class="slideNavigation">
-                    <label for="r1" class="bar" ></label>
-                    <label for="r2" class="bar" ></label>
-                    <label for="r3" class="bar" ></label>
-                    <label for="r4" class="bar" ></label>
-                    <label for="r5" class="bar" ></label>
-                    <label for="r6" class="bar" ></label>
-                    <label for="r7" class="bar" ></label>
-                    <label for="r8" class="bar" ></label>
-                    <label for="r9" class="bar" ></label>
-                    <label for="r10" class="bar" ></label>
+                <div class="slide">
+                    <img src="images/ss2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/ss3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/ss4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/ss5.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/massey-vanier-11.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/massey-vanier-12.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/massey-vanier-13.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/massey-vanier-14.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/massey-vanier-15.jpg" alt="">
                 </div>
             </div>
-        <!-- end of SECTION 4 -->
+            <!-- bars/labels for the radio buttons to navigate through slides -->
+            <div class="slideNavigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+                <label for="r6" class="bar"></label>
+                <label for="r7" class="bar"></label>
+                <label for="r8" class="bar"></label>
+                <label for="r9" class="bar"></label>
+                <label for="r10" class="bar"></label>
+            </div>
         </div>
-
-
-        <!-- start of SECTION 5. Footer-->
-        <div class="footer">
-            <div class="texture"></div><!-- textured image background -->
-            <!-- media links -->
+        <!-- end of SECTION 4 -->
+    </div>
+    <!-- start of SECTION 5. Footer-->
+    <div class="footer">
+        <div class="texture"></div>
+        <!-- textured image background -->
+        <!-- media links -->
             <center>
-                <div>
-                    <a target="_blank" href="https://www.instagram.com/2381_kernel_bye/"><img src="images/instagramLogo.png"></a> <!--instagram-->
-                    <a target="_blank" href="https://github.com/2381-robotics"><img src="images/githubLogo.png"></a><!--github-->
-                    <a target="_blank" href="https://www.youtube.com/channel/UCB_94tNqZLvDAlnGfcLEPUQ"><img src="images/youtubeLogo.png"></a><!--youtube-->
+                <div data-aos="fade-up" style="transition-duration: 0.75s">
+                    <a target="_blank" href="https://www.instagram.com/2381_kernel_bye/"><img src="images/instagramLogo.png"></a>
+                    <!--instagram-->
+                    <a target="_blank" href="https://github.com/2381-robotics"><img src="images/githubLogo.png"></a>
+                    <!--github-->
+                    <a target="_blank" href="https://www.youtube.com/channel/UCB_94tNqZLvDAlnGfcLEPUQ"><img src="images/youtubeLogo.png"></a>
+                    <!--youtube-->
                 </div>
                 <!--2381 seondary logo-->
                 <div class="logo">2381 ROBOTICS</div>
             </center>
         <!-- end of SECTION 5 -->
-        </div>
-        
-        <!-- back to top button -->
-        <a href="#" id="topButton">
-            <img src="images/back-to-top-arrow.png" width="30px" height="30px">
-        </a>
+    </div>
+    <!-- back to top button -->
+    <a href="#" id="topButton">
+        <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+    </a>
 
-    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
 </html>
-    
-    

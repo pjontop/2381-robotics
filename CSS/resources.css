@@ -23,11 +23,7 @@
     font-family: "neutra";
 }
 .linksContainer {
-    margin-top:100px;
-    width:500px;
     position: relative;
-    margin-left: 75%;
-    transform:translateX(-50%);
 }
 .linksContainer td {
     padding:20px;
@@ -66,6 +62,5 @@
     height:42vw;
     width:70vw;
     position:absolute;
-    left:50%;
-    transform: translateX(-50%);
+    margin-left: 15%;
 }

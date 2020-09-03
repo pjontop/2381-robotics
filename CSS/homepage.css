@@ -6,11 +6,8 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     html,
     body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-    body {
-        overflow-x: hidden;
+        width: 100vw !important;
+        overflow-x: hidden !important;
     }
 }
 
@@ -206,7 +203,8 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     float: right;
     color: #F9D38B;
-    font-size: 21px;
+    transition-delay: 0.5s;
+    transition-duration: 1s !important;
     right: 40px;
     bottom: 31px;
     z-index: 100;
@@ -609,7 +607,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .infoCards td:hover {
-    transform: translateY(-15px);
+    transition: 0.2s ease-in-out !important;
+    transition-delay: 0s !important;
+    transform: translateY(-15px) !important;
     background-color: #AA0723;
     color: #F9D38B;
 }
@@ -617,13 +617,6 @@ body::-webkit-scrollbar-thumb:hover {
 .infoCards td:hover hr {
     background-color: #F9D38B;
     border-color: #F9D38B;
-}
-
-.infoCards div {
-    position: absolute;
-    background-color: #AA0723;
-    color: #F9D38B;
-    font-size: 2vw;
 }
 
 .infoCards h2 {

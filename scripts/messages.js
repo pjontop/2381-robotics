@@ -1,81 +1,81 @@
-
 var currentMessageSet = 0;
 var sheetDataLength = 0;
 var messages = [];
-$(document).ready(function () {
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1_N_KNtrumRViyYE_GtDQ6dkLJNkvacX3_H2IfdyF9O4/od6/public/values?alt=json", function (data) {
-var sheetData = data.feed.entry;
-var i;
-var tempList;
-sheetDataLength = sheetData.length;
-for (i = 0; i < sheetData.length; i++) {
 
-  var title = data.feed.entry[i]['gsx$_cn6ca']['$t'];
-  var date = data.feed.entry[i]['gsx$_cokwr']['$t'];
-  var content = data.feed.entry[i]['gsx$_cpzh4']['$t'];
+$(document).ready(function() {
+    $.getJSON("https://spreadsheets.google.com/feeds/list/1_N_KNtrumRViyYE_GtDQ6dkLJNkvacX3_H2IfdyF9O4/od6/public/values?alt=json", function(data) {
+        var sheetData = data.feed.entry;
+        var i;
+        var tempList;
+        sheetDataLength = sheetData.length;
+        for (i = 0; i < sheetData.length; i++) {
 
-    tempList = [title, date, content];
-    messages.push(tempList);
+            var title = data.feed.entry[i]['gsx$_cn6ca']['$t'];
+            var date = data.feed.entry[i]['gsx$_cokwr']['$t'];
+            var content = data.feed.entry[i]['gsx$_cpzh4']['$t'];
 
-}
-setMessages(messages);
+            tempList = [title, date, content];
+            messages.push(tempList);
 
+        }
+        setMessages(messages);
+
+    });
 });
-});
 
-function setMessages(arr){
+function setMessages(arr) {
+
     var length = arr.length;
     var i;
-    for(i=0;i< length; i++) {
+    for (i = 0; i < length; i++) {
         var title = arr[i][0].toUpperCase();
         var date = arr[i][1];
         var content = arr[i][2].split(" ");
         var printContent = "";
         if (content.length > 15) {
-            printContent = content[0] + " " + content[1] + " " + content[2] + " " + content[3] + " " + content[4] + " " + content[5] + " " + content[6] + " " + content[7] + " " + content[8] + " " + content[9] + " " + content[10] + " " + content[11] + " " + content[12] + " " + content[13] + " " + content[14] + "..."; 
-        }
-        else {
-            for(i=0; i < content.length;i++) {
+            printContent = content[0] + " " + content[1] + " " + content[2] + " " + content[3] + " " + content[4] + " " + content[5] + " " + content[6] + " " + content[7] + " " + content[8] + " " + content[9] + " " + content[10] + " " + content[11] + " " + content[12] + " " + content[13] + " " + content[14] + "...";
+        } else {
+            for (i = 0; i < content.length; i++) {
                 printContent += content[i] + " ";
             }
         }
         if (i > 2) {
             document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")' style='display:none'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by " + date + "</i></p></td></tr>"
-        }
-        else{
-        document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by " + date + "</i></p></td></tr>"
+        } else {
+            document.getElementById("messageTable").innerHTML += "<tr onclick='messageViewer(" + i + ")'><td class='messageContainer'><h1 class='messageTitle'>" + title + "</h1><p class='messageContent'>" + printContent + "</p><p class='messageDate'><i>Posted by " + date + "</i></p></td></tr>"
         }
     }
     console.log(arr);
-    
+
 
 }
-function showNext(){
+
+function showNext() {
     currentMessageSet += 1;
     document.getElementById("prevButton").style.display = "block";
-    if((currentMessageSet + 1) * 3 >= sheetDataLength){
+    if ((currentMessageSet + 1) * 3 >= sheetDataLength) {
         document.getElementById("nextButton").style.display = "none";
     }
-    for(i = 0; i < 3; i++) {
-        currentMessage = currentMessageSet * 3  + i;
-        oldMessage = (currentMessageSet - 1) * 3 + i; 
+    for (i = 0; i < 3; i++) {
+        currentMessage = currentMessageSet * 3 + i;
+        oldMessage = (currentMessageSet - 1) * 3 + i;
         document.getElementById("messageTable").getElementsByTagName("tr")[currentMessage].style.display = "block";
         document.getElementById("messageTable").getElementsByTagName("tr")[oldMessage].style.display = "none";
     }
-    
+
 
 }
 
-function showPrev(){
+function showPrev() {
     currentMessageSet -= 1;
     document.getElementById("nextButton").style.display = "block";
-    if(currentMessageSet <= 0){
+    if (currentMessageSet <= 0) {
         document.getElementById("prevButton").style.display = "none";
-    
-    } 
-    for(i = 0; i < 3; i++) {
-        currentMessage = currentMessageSet * 3  + i;
-        oldMessage = (currentMessageSet + 1) * 3 + i; 
+
+    }
+    for (i = 0; i < 3; i++) {
+        currentMessage = currentMessageSet * 3 + i;
+        oldMessage = (currentMessageSet + 1) * 3 + i;
         document.getElementById("messageTable").getElementsByTagName("tr")[currentMessage].style.display = "block";
         document.getElementById("messageTable").getElementsByTagName("tr")[oldMessage].style.display = "none";
     }
@@ -93,10 +93,11 @@ function closeModal() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == document.getElementById("myModal")) {
-    document.getElementById("myModal").style.display = "none";
-  }
+    if (event.target == document.getElementById("myModal")) {
+        document.getElementById("myModal").style.display = "none";
+    }
 }
+
 function messageViewer(messageNum) {
     var title = messages[messageNum][0].toUpperCase();
     var date = messages[messageNum][1];

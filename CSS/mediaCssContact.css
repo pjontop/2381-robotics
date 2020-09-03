@@ -99,7 +99,7 @@
 
 @media only screen and (max-width:1024px) {
     #splash , #splash .texture, #splash .rightBG1{
-        height:90vw !important;
+        height:60vw !important;
     }
     .largeTitle {
         margin-left:50%;
@@ -125,10 +125,13 @@
         font-size:1.5vw;
     }
     .formContainer {
+        width:50vw;
         margin-right: 50%;
-        margin-left:50%;
-        margin-top:35vw;
-        transform: translateX(50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-left:-25vw; */
+        /* margin-left:50%; */
     }
     
     #contactForm {
@@ -187,6 +190,8 @@
     }
     .largeTitle {
         width:50vw;
+        margin-left: 25%;
+        position: relative;
     }
     .largeTitle ul {
         list-style-position: inside;
@@ -210,7 +215,10 @@
         font-size:3vw;
     }
     .formContainer {
-        margin-top:60vw;
+        margin:0;
+        margin-top:10%;
+        width: 100%;
+        
     }
     #contactForm {
         width:40vw;

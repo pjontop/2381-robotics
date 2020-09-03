@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/homepage.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="stylesheet" href="CSS/hamburger.css" />
+    <script src="scripts/menu.js"></script>
     <script src="scripts/mobileMenu.js"></script>
     <!-- media query CSS document -->
     <link rel="stylesheet" href="CSS/mediaCss.css" />
@@ -15,8 +16,10 @@
     <!-- Javascript file -->
     <script src="scripts/menu.js"></script>
     <script src="scripts/topButton.js"></script>
-    <?php include 'contact-form-handler.php';?>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -81,7 +84,7 @@
                 </div>
                 <!-- End of Nav bar -->
         </div>
-        <div class="largeTitle">
+        <div class="largeTitle" data-aos="zoom-out" style="transition-duration: 0.75s">
             <h1>CONTACT</h1>
             <p>Comments, questions, or concerns? We have answers! Let us know by filling out this form. Also visit our <a target="_blank" href="https://docs.google.com/document/d/1G3CO0z7aCOXH_JJ0eBCxwba0oI1-uWOt2pAkguHgc_g/edit">FAQ Page</a>.<br><br>Contact
                 Info:
@@ -150,7 +153,6 @@
         </div>
         <!-- End of splash page -->
     </div>
-
     <!-- start of section 2 -->
     <!-- <div class="sponsorsContainer">
             <div class="texture"></div>
@@ -168,7 +170,7 @@
         <div class="texture"></div>
         <!-- textured image background-->
         <center>
-            <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11194.939958297802!2d-75.60307030409709!3d45.45499617216066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce10225d8e40cb%3A0x3025fa1e80ed33f8!2sColonel%20By%20Secondary%20School!5e0!3m2!1sen!2sca!4v1572442860330!5m2!1sen!2sca"
+            <iframe data-aos="fade-up" style="transition-duration: 0.75s" class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11194.939958297802!2d-75.60307030409709!3d45.45499617216066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce10225d8e40cb%3A0x3025fa1e80ed33f8!2sColonel%20By%20Secondary%20School!5e0!3m2!1sen!2sca!4v1572442860330!5m2!1sen!2sca"
                 heightframeborder="0" style="border:0;" allowfullscreen=""></iframe>
         </center>
     </div>
@@ -178,7 +180,7 @@
         <!-- textured image background -->
         <!-- media links -->
         <center>
-            <div>
+            <div data-aos="fade-up" style="transition-duration: 0.75s">
                 <a target="_blank" href="https://www.instagram.com/2381_kernel_bye/"><img src="images/instagramLogo.png"></a>
                 <!--instagram-->
                 <a target="_blank" href="https://github.com/2381-robotics"><img src="images/githubLogo.png"></a>
@@ -196,5 +198,9 @@
         <img src="images/back-to-top-arrow.png" width="30px" height="30px">
     </a>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </html>

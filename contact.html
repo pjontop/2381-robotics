@@ -97,17 +97,18 @@
         </div>
         <div class="formContainer" data-aos="zoom-out" style="transition-duration: 0.75s">
             <div id="contactForm">
-                <form method="POST" id="contact_form" action="https://inviable-gyroscope.000webhostapp.com/contact-form-handler.php">
+                <form id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScLC_e_1J20ml1crSrN1s8_xcwZDln80bBsP6xG6gk8cMq3vA/formResponse?usp=pp_url" target="hidden_iframe" onsubmit="window.location.href = 'contactSubmission.html'">
                     <label>Name</label><br>
-                    <center><input class="textInput" id="name" type="text" name="name" required></center>
+                    <center><input class="textInput" id="entry.4775366" type="text" name="entry.4775366" required></center>
                     <label>Email</label><br>
-                    <center><input class="textInput" id="email" type="email" name="email" required></center>
+                    <center><input class="textInput" id="entry.1153034010" type="email" name="entry.1153034010" required></center>
                     <label>Subject</label><br>
-                    <center><input class="textInput" id="subject" type="text" name="subject" required></center>
+                    <center><input class="textInput" id="entry.1086151117" type="text" name="entry.1086151117" required></center>
                     <label>Message</label><br>
-                    <center><textarea id="message" name="message" required></textarea></center>
+                    <center><textarea id="entry.1568670679" name="entry.1568670679" required></textarea></center>
                     <center><input id="submitForm" type="submit" value="Submit"></center>
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
             </div>
         </div>
         <!-- side navigation menu -->
